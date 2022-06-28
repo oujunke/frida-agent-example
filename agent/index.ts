@@ -1,5 +1,5 @@
 import { log } from "./logger";
-
+//frida -U 修仙家族模拟器 --no-pause -l _agent.js
 //
 //get_self_process_name()获取当前运行进程包名
 //参考：https://github.com/lasting-yang/frida_dump/blob/master/dump_dex_class.js
@@ -89,6 +89,28 @@ function frida_Memory()
     }
     );
 }
+function test(){
+    /*var modules=Process.enumerateModules();
+    for (var i = 0; i < modules.length; i++){
+        console.log("模块:"+modules[i].name);
+    }*/
+    Java.perform(()=>{
+        /*var cs=Java.enumerateLoadedClassesSync();
+        for (var i = 0; i < cs.length; i++){
+            if(cs[i].indexOf('com.tapsdk.antiaddiction.models.IdentifyModel')>=0){
+                console.log("类名:"+cs[i]);
+            }
+        }*/
+        var im=Java.use("com.tapsdk.antiaddiction.models.IdentifyModel");
+        (im["checkIdentify"]as Java.Method).implementation=function(card:string){
+            console.log("d:"+card);
+        };
+    });
+    //var openPtr = Module.getBaseAddress('il2cpp');
+    //console.log("地址:"+openPtr);
+    //Interceptor.attach()
+}
 log('准备执行...');
+test();
 //setImmediate(frida_Memory); 
 log('执行完毕...');
