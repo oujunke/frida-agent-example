@@ -1,5 +1,4 @@
 import { log } from "./logger";
-<<<<<<< HEAD
 //
 function test(){
     /*Interceptor.attach(Module.getExportByName("libil2cpp.so","__android_log_print"),{
@@ -24,18 +23,6 @@ function test(){
               },onLeave:function(){
                 log("libmain-JNI_OnLeave");
               }
-=======
-//import "frida-il2cpp-bridge";
-//frida -U 修仙家族模拟器 --no-pause -l _agent.js
-//com.cccs.xxjz
-//
-//get_self_process_name()获取当前运行进程包名
-//参考：https://github.com/lasting-yang/frida_dump/blob/master/dump_dex_class.js
-/*function get_self_process_name()
-{
-	var openPtr = Module.getExportByName('libc.so', 'open');
-	var open = new NativeFunction(openPtr, 'int', ['pointer', 'int']);
->>>>>>> cf33404de981c0bc934dad46b2bb28a457745671
 
             });
             var me=Process.getModuleByName("libil2cpp.so");
@@ -136,8 +123,6 @@ function test2(){
         }
         //log("搜索完毕");
     }
-<<<<<<< HEAD
-
     setInterval(function () {
         frida_Memory("AF 1B B1 FA 18");
     }, 0);
@@ -145,54 +130,4 @@ function test2(){
 }
 log('准备执行...');
 test2();
-=======
-    );
-}*/
-function test(){
-    /*var modules=Process.enumerateModules();
-    for (var i = 0; i < modules.length; i++){
-        console.log("模块:"+modules[i].name);
-    }*/
-    Java.perform(()=>{
-        /*var cs=Java.enumerateLoadedClassesSync();
-        for (var i = 0; i < cs.length; i++){
-            if(cs[i].indexOf('com.tapsdk.antiaddiction.models.IdentifyModel')>=0){
-                console.log("类名:"+cs[i]);
-            }
-        }*/
-        var im=Java.use("com.tapsdk.antiaddiction.models.IdentifyModel");
-        var tt=im.$init();
-        var ps=im.class["getDeclaredMethods"]();
-        for(var i=0;i<ps.length;i++){
-            var mn=ps[i];
-            ps[i].implementation=function(){
-                console.log("Hook方法"+mn+":开始执行");
-                return mn(arguments);
-            }
-            console.log("Hook方法"+mn+":成功");
-        }
-        /*(im["checkIdentify"]as Java.Method).implementation=function(card : string){
-            console.log("card:"+card);
-            return this["checkIdentify"](card);
-        }
-        var res=im["checkIdentify"]("123456789");
-        console.log("res:"+res);*/
-        /*(im["checkIdentify"]as Java.Method).implementation=function(){
-            console.log("d:"+arguments);
-        };*/
-    });
-    //var openPtr = Module.getBaseAddress('il2cpp');
-    //console.log("地址:"+openPtr);
-    //Interceptor.attach()
-}
-function testIl2(){
-    /*Il2Cpp.perform(() => {
-        // code here
-        log("v-:"+Il2Cpp.unityVersion);
-    });*/
-}
-log('准备执行...');
-test();
-//setImmediate(frida_Memory); 
->>>>>>> cf33404de981c0bc934dad46b2bb28a457745671
 log('执行完毕...');
