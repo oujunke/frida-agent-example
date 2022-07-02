@@ -1,0 +1,93 @@
+ 
+ //start 判断是否实名
+ Called com.tapsdk.antiaddiction.models.IdentifyModel.inquireIdentifyState(java.lang.String, java.lang.String)
+(agent) [809726] Backtrace:
+        com.tapsdk.antiaddiction.models.IdentifyModel.inquireIdentifyState(Native Method)
+        com.tapsdk.antiaddiction.AntiAddictionImpl$22.call(AntiAddictionImpl.java:802)
+        com.tapsdk.antiaddiction.AntiAddictionImpl$22.call(AntiAddictionImpl.java:796)
+        com.tapsdk.antiaddiction.reactor.internal.operators.OnSubscribeMap$MapSubscriber.onNext(OnSubscribeMap.java:72)
+        com.tapsdk.antiaddiction.AntiAddictionImpl$23.call(AntiAddictionImpl.java:793)
+        com.tapsdk.antiaddiction.AntiAddictionImpl$23.call(AntiAddictionImpl.java:789)
+        com.tapsdk.antiaddiction.reactor.Observable.unsafeSubscribe(Observable.java:205)
+        com.tapsdk.antiaddiction.reactor.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:51)
+        com.tapsdk.antiaddiction.reactor.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:36)
+        com.tapsdk.antiaddiction.reactor.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:50)
+        com.tapsdk.antiaddiction.reactor.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:32)
+        com.tapsdk.antiaddiction.reactor.Observable.unsafeSubscribe(Observable.java:205)
+        com.tapsdk.antiaddiction.reactor.internal.operators.OperatorSubscribeOn$SubscribeOnSubscriber.call(OperatorSubscribeOn.java:102)
+        com.tapsdk.antiaddiction.reactor.schedulers.CachedThreadScheduler$EventLoopWorker$1.call(CachedThreadScheduler.java:238)
+        com.tapsdk.antiaddiction.reactor.schedulers.ScheduledAction.run(ScheduledAction.java:57)
+        java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+        java.util.concurrent.FutureTask.run(FutureTask.java:266)
+        java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+        java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+        java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+        java.lang.Thread.run(Thread.java:920)
+
+(agent) [809726] Arguments com.tapsdk.antiaddiction.models.IdentifyModel.inquireIdentifyState(N6ADBwlbtwKnXFgikl, 2e7f31cf7dce469ca875325d214a0d3d-1)
+(agent) [809726] Return Value: com.tapsdk.antiaddiction.reactor.Observable@f12c856
+ //end 判断是否实名
+ 
+ //start 校验实名验证
+ Called com.tapsdk.antiaddiction.models.IdentifyModel.identifyUserManually(java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+(agent) [772586] Backtrace:
+        com.tapsdk.antiaddiction.models.IdentifyModel.identifyUserManually(Native Method)
+        com.tapsdk.antiaddictionui.widget.DialogGameRealName.chooseIdentifyObservable(DialogGameRealName.java:162)
+        com.tapsdk.antiaddictionui.widget.DialogGameRealName.identifyUserReal(DialogGameRealName.java:176)
+        com.tapsdk.antiaddictionui.widget.DialogGameRealName.access$500(DialogGameRealName.java:44)
+        com.tapsdk.antiaddictionui.widget.DialogGameRealName$3.onSuccess(DialogGameRealName.java:254)
+        com.tapsdk.antiaddictionui.widget.DialogGameRealName$3.onSuccess(DialogGameRealName.java:251)
+        com.tapsdk.antiaddiction.AntiAddictionImpl$24.onNext(AntiAddictionImpl.java:932)
+        com.tapsdk.antiaddiction.AntiAddictionImpl$24.onNext(AntiAddictionImpl.java:918)
+        com.tapsdk.antiaddiction.reactor.observers.SafeSubscriber.onNext(SafeSubscriber.java:141)
+        com.tapsdk.antiaddiction.reactor.internal.operators.OperatorObserveOn$ObserveOnSubscriber.call(OperatorObserveOn.java:206)
+        com.tapsdk.antiaddiction.reactor.rxandroid.schedulers.LooperScheduler$ScheduledAction.run(LooperScheduler.java:97)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.app.ActivityThread.main(ActivityThread.java:7839)
+        java.lang.reflect.Method.invoke(Native Method)
+        com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+        com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+
+(agent) [772586] Arguments com.tapsdk.antiaddiction.models.IdentifyModel.identifyUserManually(N6ADBwlbtwKnXFgikl, 2e7f31cf7dce469ca875325d214a0d3d-1, 生生世世是, 1111111111)
+(agent) [772586] Return Value: com.tapsdk.antiaddiction.reactor.Observable@e08a0d
+//end 校验实名验证
+//start 进入实名
+Called com.tapsdk.antiaddiction.AntiAddictionImpl.checkStandaloneCacheAndFetchUserIdentifyState(java.lang.String, java.lang.String, com.tapsdk.antiaddiction.Callback)
+(agent) [864393] Backtrace:
+        com.tapsdk.antiaddiction.AntiAddictionImpl.checkStandaloneCacheAndFetchUserIdentifyState(Native Method)
+        com.tapsdk.antiaddiction.AntiAddictionKit.checkStandaloneCacheAndFetchUserIdentifyState(AntiAddictionKit.java:54)
+        com.tapsdk.antiaddictionui.AntiAddictionUIImpl.checkUserAuthIdentify(AntiAddictionUIImpl.java:389)
+        com.tapsdk.antiaddictionui.AntiAddictionUIImpl.access$500(AntiAddictionUIImpl.java:57)
+        com.tapsdk.antiaddictionui.AntiAddictionUIImpl$4.onNext(AntiAddictionUIImpl.java:304)
+        com.tapsdk.antiaddictionui.AntiAddictionUIImpl$4.onNext(AntiAddictionUIImpl.java:273)
+        com.tapsdk.antiaddiction.reactor.observers.SafeSubscriber.onNext(SafeSubscriber.java:141)
+        com.tapsdk.antiaddiction.reactor.internal.operators.OperatorObserveOn$ObserveOnSubscriber.call(OperatorObserveOn.java:206)
+        com.tapsdk.antiaddiction.reactor.rxandroid.schedulers.LooperScheduler$ScheduledAction.run(LooperScheduler.java:97)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.app.ActivityThread.main(ActivityThread.java:7839)
+        java.lang.reflect.Method.invoke(Native Method)
+        com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+        com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+
+(agent) [864393] Arguments com.tapsdk.antiaddiction.AntiAddictionImpl.checkStandaloneCacheAndFetchUserIdentifyState(N6ADBwlbtwKnXFgikl, 2e7f31cf7dce469ca875325d214a0d3d-1, [object Object])
+//end 进入实名
+//start 监听创建方法
+Called com.tapsdk.antiaddictionui.AntiAddictionUIImpl.init(android.app.Activity, java.lang.String, com.tapsdk.antiaddiction.config.AntiAddictionFunctionConfig, com.tapsdk.antiaddictionui.AntiAddictionUICallback)
+(agent) [211761] Backtrace:
+        com.tapsdk.antiaddictionui.AntiAddictionUIImpl.init(Native Method)
+        com.tapsdk.antiaddictionui.AntiAddictionUIKit.init(AntiAddictionUIKit.java:21)
+        com.tapsdk.antiaddictionui.NativeAntiAddictionUIKitPlugin.initSDK(NativeAntiAddictionUIKitPlugin.java:92)
+        com.unity3d.player.UnityPlayer.nativeRender(Native Method)
+        com.unity3d.player.UnityPlayer.access$600(Unknown Source:0)
+        com.unity3d.player.UnityPlayer$g$1.handleMessage(Unknown Source:150)
+        android.os.Handler.dispatchMessage(Handler.java:102)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        com.unity3d.player.UnityPlayer$g.run(Unknown Source:20)
+//end 监听创建方法

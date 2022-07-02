@@ -2,30 +2,9 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "npm",
-			"script": "build",
-			"group": "build",
-			"problemMatcher": [],
-			"label": "npm: build",
-			"detail": "frida-compile agent/index.ts -o _agent.js -c"
-		},{
 			"type": "shell",
-			 "command":["frida -U -f ${fileBasenameNoExtension} --no-pause -l _${fileBasenameNoExtension}.js"],
+			 "command":["frida -U -f 修仙家族模拟器 --no-pause -l _agent.js"],
 			 "label": "npm: 开始执行"
-		},{
-			"type": "npm",
-			"script": "build",
-			"group": "build",
-			"problemMatcher": [],
-			"label": "npm: 编译文件",
-			"detail": "frida-compile agent/${fileBasenameNoExtension}.ts -o _${fileBasenameNoExtension}.js -c"
-		},{
-			"type": "npm",
-			"script": "build",
-			"group": "build",
-			"problemMatcher": [],
-			"label": "npm: 监视文件修改",
-			"detail": "frida-compile agent/${fileBasenameNoExtension}.ts -o _${fileBasenameNoExtension}.js -w"
 		}
 	]
 }
