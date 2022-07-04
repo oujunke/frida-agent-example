@@ -1,133 +1,144 @@
 import { log } from "./logger";
 //
-function test(){
-    /*Interceptor.attach(Module.getExportByName("libil2cpp.so","__android_log_print"),{
-        onEnter(args) {
-            log("args:"+args);
-        },
-        onLeave(retval) {
-            log("onLeave:"+retval);
-        }
-      });*/
-      Java.perform(()=>{
-        var sy=Java.use("java.lang.Runtime");
-        sy["loadLibrary"].overload('java.lang.String').implementation=function(name:string){
-          log("loadLibrary:"+name);
-          var b= this.loadLibrary(name);
-          if(name.indexOf('libmain.so')>=0){
-            var main=Process.getModuleByName("libmain.so");
-            log("libmain.so:"+main);
-            Interceptor.attach(main.getExportByName("JNI_OnLoad"),{
-              onEnter:function(){
-                log("libmain-JNI_OnLoad");
-              },onLeave:function(){
-                log("libmain-JNI_OnLeave");
-              }
 
-            });
-            var me=Process.getModuleByName("libil2cpp.so");
-            log("me:"+me);
-            var mex=me.enumerateExports();
-            for(var i=0;i<mex.length;i++){
-              log("mex["+i+"]:"+mex[i]);
-            }
-          }
-          return b;
+function test(){
+  Java.perform(()=>{
+    var sy=Java.use("com.unity3d.player.UnityPlayer");
+    sy["$init"] .overload('android.content.Context', 'com.unity3d.player.IUnityPlayerLifecycleEvents').implementation
+    =function(a:any,b:any){
+      log("init:"+a+"-"+b);
+      var b= this.$init(a,b);
+      var ba=Module.findExportByName("libil2cpp.so","JNI_OnLoad");
+      var ad=ba?.sub(0x00374BAC).add(0x00482520);
+      var tt=Module.findExportByName("libil2cpp.so","il2cpp_image_get_name");
+      log("tt:"+tt+"-ttt:"+ba?.sub(0x00374BAC).add(0x37309C));
+      log("ad:"+ad)
+      Interceptor.attach(<NativePointerValue>ad,{
+        onEnter:function(){
+          log("onEnter:"+this+"-args"+arguments);
+        },
+        onLeave:function(par){
+          log("onLeave:"+par);
         }
       });
-      /*var base=Module.getBaseAddress("libil2cpp.so");
-      log("base:"+base);
-      var es=Process.getModuleByName("libil2cpp.so").enumerateExports();
-      for (var i=0;i<es.length;i++){
-        log(es[i].name);
-      }
-      log('完成');*/
+      Interceptor.attach(<NativePointerValue>ba?.sub(0x374BAC).add(0x00483238),{
+        onEnter:function(){
+          log("onEnter:"+this+"-args"+arguments);
+        },
+        onLeave:function(par){
+          log("onLeave:"+par);
+        }
+      });
+      return b;
+    };
+  });
 }
 function test1(){
-    Java.perform(()=>{
-      var sy=Java.use("com.unity3d.player.UnityPlayer");
-      sy["loadNative"].overload('java.lang.String').implementation=function(name:string){
-        log("loadNative:"+name);
-        var b= this.loadNative(name);
-        return b;
-      }
-      sy["$init"] .overload('android.content.Context', 'com.unity3d.player.IUnityPlayerLifecycleEvents').implementation=function(a:any,b:any){
-        log("init:"+a+"-"+b);
-        var b= this.$init(a,b);
-        /*var base=Module.getBaseAddress("libil2cpp.so");
-        log("base:"+base);
-        var es=Process.getModuleByName("libil2cpp.so").enumerateExports();
-        for (var i=0;i<es.length;i++){
-          log(es[i].name);
+  Java.perform(()=>{
+    var sy=Java.use("com.unity3d.player.UnityPlayer");
+    sy["$init"] .overload('android.content.Context', 'com.unity3d.player.IUnityPlayerLifecycleEvents').implementation
+    =function(a:any,b:any){
+      log("init:"+a+"-"+b);
+      var b= this.$init(a,b);
+  var ba=Module.findExportByName("libil2cpp.so","JNI_OnLoad");
+  var ad=ba?.sub(0x003790EC);
+  function interc(par2:string,name:string){
+    var po1=<NativePointerValue>ad?.add(par2);
+    Interceptor.attach(po1,{
+      onEnter:function(args){
+        log(name+"-"+par2+"-"+po1+"-调用栈:"+Thread.backtrace(this.context, Backtracer.ACCURATE)
+        .map(DebugSymbol.fromAddress).join('\n') + '\n');
+        log(name+"-"+par2+"-onEnter:"+this+"-args:"+args);
+        /*var str="";
+        for(var i=0;i<args.length;i++){
+          str=str+i+":"+args[i]+";";
         }
-        log('完成');*/
-        var ba=Module.findExportByName("libil2cpp.so","JNI_OnLoad");
-        var ad=ba?.sub(0x374BAC).add(0x39B698);
-        log("ad:"+ad)
-        Interceptor.attach(<NativePointerValue>ad,{
-          onEnter:function(){
-            log("onEnter:"+this+"-args"+arguments);
-          },
-          onLeave:function(par){
-            log("onLeave:"+par);
-          }
-        });
-        return b;
+        log(name+"-"+par2+"-onEnter:"+this+"-args:"+str);*/
+      },
+      onLeave:function(par){
+        log(name+"-"+par2+"-onLeave:"+par);
       }
     });
-}
-function test2(){
-  var a=0;
-  Java.perform(function () {
-    function frida_Memory(pattern:string) {
-        //log("头部标识:" + pattern);
-        //枚举内存段的属性,返回指定内存段属性地址
-        var addrArray = Process.enumerateRanges("r--");
-        for (var i = 0; i < addrArray.length; i++) {
-            var addr = addrArray[i];
-            Memory.scan(addr.base, addr.size, pattern,
-                {
-                    onMatch: function (address, size) {
-                        log('搜索到 ' + pattern + " 地址是:" + address.toString());
-                        log(hexdump(address,
-                            {
-                                offset: 0,
-                                length: 64,
-                                header: true,
-                                ansi: true
-                            }));
-                        //0x108，0x10C如果不行，换0x100，0x104
-                        var DefinitionsOffset = address.add( 0x100);
-                        var DefinitionsOffset_size = DefinitionsOffset.readInt();
-
-                        var DefinitionsCount = address.add(0x104);
-                        var DefinitionsCount_size = DefinitionsCount.readInt();
-
-                        //根据两个偏移得出global-metadata大小
-                        var global_metadata_size = DefinitionsOffset_size + DefinitionsCount_size
-                        log("大小："+global_metadata_size);
-                        if (global_metadata_size > 0) {
-                            a=a+1;
-                            var file = new File("/storage/emulated/0/Download/global-metadata"+a+".dat", "wb");
-                            file.write(<ArrayBuffer>address.readByteArray(global_metadata_size));
-                            file.flush();
-                            file.close();
-                            log('导出完毕...');
-                        }
-                    },
-                    onComplete: function () {
-                        
-                    }
-                }
-            );
-        }
-        //log("搜索完毕");
-    }
-    setInterval(function () {
-        frida_Memory("AF 1B B1 FA 18");
-    }, 0);
+  }
+  function rinterc(par2:string,name:string){
+    var po1=<NativePointerValue>ad?.add(par2);
+    var rpo1 = new NativeFunction(po1, 'pointer', ['pointer', 'int']);
+    var int1=function(n1:NativePointer, n2:number):NativePointer {
+      log(name+'-n1:' + n1+"-n2:"+n2);
+      //n1.add(224).writeInt(11111);
+      var fd = rpo1(n1, n2*10000000);
+      log('Got fd: ' + fd);
+      return fd;
+    };
+    Interceptor.replace(po1, new NativeCallback(int1
+      ,'pointer', ['pointer', 'int']));
+  }
+  function rinterc2(par2:string,name:string){
+    var po1=<NativePointerValue>ad?.add(par2);
+    var rpo1 = new NativeFunction(po1, 'pointer', ['pointer', 'pointer']);
+    var int1=function(n1:NativePointer, n2:NativePointer):NativePointer {
+      log(name+'-n1:' + n1+"-n2:"+n2);
+      //n1.add(224).writeInt(11111);
+      var fd = rpo1(n1, n2.add(30000));
+      log('Got fd: ' + fd);
+      return fd;
+    };
+    Interceptor.replace(po1, new NativeCallback(int1
+      ,'pointer', ['pointer', 'pointer']));
+  }
+  /*function cinterc(par2:string,name:string){
+    var po1=<NativePointerValue>ad?.add(par2);
+    //var rpo1 = new NativeFunction(po1, 'pointer', ['pointer', 'int']);
+    var int1=function(n1:number, n2:number,n3:NativePointer):NativePointer {
+      log(name+'-n1:' + n1+"-n2:"+n2);
+      //n1.add(224).writeInt(11111);
+      var fd = n3.compare(n1, n2*100000);
+      log('Got fd: ' + fd);
+      return fd;
+    };
+    Interceptor.replace(po1, new NativeCallback(int1
+      ,'pointer', ['int', 'int','pointer']));
+  }*/
+  //rinterc("0x0051A4FC","ChangeMerits");//加功德
+  rinterc("0x005643d0","AddMoney")//页面加灵石
+  rinterc("0x006d1abc","AddSuperAccelerationLastTime");//加加速时间
+  rinterc2("0x0055b90c","ChangeShopRefreshTimes");//加刷新次数
+  
+  /*interc("0x00c935a8","ChangeMoney");
+  interc("0x005127d8","UpdateMoney");
+  interc("0x00bf0ca8","set_money");
+  interc("0x00b5a944","set_money");
+  interc("0x00b6e898","set_money");
+  interc("0x00b9b5c4","set_money");
+  interc("0x00c0bed0","set_money");
+  interc("0x00c8a46c","set_money");
+  interc("0x0048597c","set_money");*/
+  //读取功德
+  /*interc("0x00bf0b34","get_merits");
+  interc("0x00557a50","get_merits");
+  interc("0x00536784","GetCurrentGameWorldCanAquireMerits");
+  interc("0x004b3a18","GetTalentNeedMerits");
+  interc("0x004b4be0","GetMerits");
+  interc("0x00557a90","GetPreVersionMerits");
+  interc("0x00557d90","ChangeMerits");*/
+  /*interc("0x00557a5c","set_money");
+  interc("0x00557a90","set_money");
+  interc("0x00557bb8","set_money");
+  interc("0x00557d90","set_money");
+  interc("0x00557df0","set_money");
+  interc("0x00557dfc","set_money");
+  interc("0x00557d68","set_money");*/
+  //播放次数
+  /*interc("0x004ab4e8","PlayAdVideo");
+  interc("0x0051A4FC","ChangeMerits")*/
+  //interc("0x006D1A14","GS_GSWorld_AddRewardAdPlayedTimes_sub_6D1A14");
+  //interc("0x004AB42C","GameApp_AddTodayShowAdVideoTimes_sub_4AB42C");
+  return b;
+};
 });
 }
 log('准备执行...');
-test2();
+//var pat=new NativePointer(0xfb4b);
+//pat.add(224).writeInt(0x111111);
+test1();
 log('执行完毕...');
