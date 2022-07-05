@@ -1,0 +1,1454 @@
+Microsoft Windows [版本 10.0.19044.1766]
+(c) Microsoft Corporation。保留所有权利。
+
+C:\Users\BD>objection -d -g 修仙家族模拟器 explore
+[debug] Agent path is: C:\Users\BD\AppData\Local\Programs\Python\Python310\lib\site-packages\objection\agent.js
+[debug] Injecting agent...
+Using USB device `Android Emulator 5554`
+[debug] Attempting to attach to process: `修仙家族模拟器`
+[debug] Process attached!
+Agent injected and responds ok!
+
+     _   _         _   _
+ ___| |_|_|___ ___| |_|_|___ ___
+| . | . | | -_|  _|  _| | . |   |
+|___|___| |___|___|_| |_|___|_|_|
+      |___|(object)inject(ion) v1.11.0
+
+     Runtime Mobile Exploration
+        by: @leonjza from @sensepost
+
+[tab] for command suggestions
+com.cccs.xxjz on (google: 12) [usb] # android hooking watch class_method com.bytedance.sdk.openadsdk.AdSlot.init --dump-args --dump-backtrace --dump-return  --json hook.txt
+- [incoming message] ------------------
+{
+  "payload": "Attempting to watch class \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m and method \u001b[32minit\u001b[39m.",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) Attempting to watch class com.bytedance.sdk.openadsdk.AdSlot and method init.
+- [incoming message] ------------------
+{
+  "payload": "\u001b[31mError:\u001b[39m Unable to find method \u001b[91minit\u001b[39m in class \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) Error: Unable to find method init in class com.bytedance.sdk.openadsdk.AdSlot
+com.cccs.xxjz on (google: 12) [usb] # android hooking watch class_method com.bytedance.sdk.openadsdk.AdSlot.$init --dump-args --dump-backtrace --dump-return  --json hook.txt
+- [incoming message] ------------------
+{
+  "payload": "Attempting to watch class \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m and method \u001b[32m$init\u001b[39m.",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) Attempting to watch class com.bytedance.sdk.openadsdk.AdSlot and method $init.
+- [incoming message] ------------------
+{
+  "payload": "Hooking \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92m$init\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) Hooking com.bytedance.sdk.openadsdk.AdSlot.$init()
+- [incoming message] ------------------
+{
+  "payload": "Hooking \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92m$init\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) Hooking com.bytedance.sdk.openadsdk.AdSlot.$init(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "Registering job \u001b[94m345688\u001b[39m. Type: \u001b[92mwatch-method for: com.bytedance.sdk.openadsdk.AdSlot.$init\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) Registering job 345688. Type: watch-method for: com.bytedance.sdk.openadsdk.AdSlot.$init
+com.cccs.xxjz on (google: 12) [usb] # - [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleAdapterConfiguration.getBiddingToken(Unknown Source:418)\n\tbykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_int108.a.a(GMAdapterConfigurationManager.java:8)\n\tbykvm_19do.bykvm_19do.bykvm_if122.bykvm_int108.a.a(InitADNHelper.java:5)\n\tbykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_char12.a.a(Unknown Source:340)\n\tbykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_char12.a.a(Unknown Source:0)\n\tbykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_if122.f.a(TTServerBiddingCore.java:14)\n\tcom.bytedance.msdk.core.corelogic.d.a(Unknown Source:60)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:500)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$f.run(TTAdHeaderBidingRequestCore.java:193)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleAdapterConfiguration.getBiddingToken(Unknown Source:418)
+        bykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_int108.a.a(GMAdapterConfigurationManager.java:8)
+        bykvm_19do.bykvm_19do.bykvm_if122.bykvm_int108.a.a(InitADNHelper.java:5)
+        bykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_char12.a.a(Unknown Source:340)
+        bykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_char12.a.a(Unknown Source:0)
+        bykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_if122.f.a(TTServerBiddingCore.java:14)
+        com.bytedance.msdk.core.corelogic.d.a(Unknown Source:60)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:500)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$f.run(TTAdHeaderBidingRequestCore.java:193)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleAdapterConfiguration.getBiddingToken(Unknown Source:418)\n\tbykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_int108.a.a(GMAdapterConfigurationManager.java:8)\n\tbykvm_19do.bykvm_19do.bykvm_if122.bykvm_int108.a.a(InitADNHelper.java:5)\n\tbykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_char12.a.a(Unknown Source:340)\n\tbykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_char12.a.a(Unknown Source:0)\n\tbykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_if122.f.a(TTServerBiddingCore.java:14)\n\tcom.bytedance.msdk.core.corelogic.d.a(Unknown Source:60)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:500)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$f.run(TTAdHeaderBidingRequestCore.java:193)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleAdapterConfiguration.getBiddingToken(Unknown Source:418)
+        bykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_int108.a.a(GMAdapterConfigurationManager.java:8)
+        bykvm_19do.bykvm_19do.bykvm_if122.bykvm_int108.a.a(InitADNHelper.java:5)
+        bykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_char12.a.a(Unknown Source:340)
+        bykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_char12.a.a(Unknown Source:0)
+        bykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_if122.f.a(TTServerBiddingCore.java:14)
+        com.bytedance.msdk.core.corelogic.d.a(Unknown Source:60)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:500)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$f.run(TTAdHeaderBidingRequestCore.java:193)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:504)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$f.run(TTAdHeaderBidingRequestCore.java:193)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:504)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$f.run(TTAdHeaderBidingRequestCore.java:193)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:504)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$f.run(TTAdHeaderBidingRequestCore.java:193)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:504)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$f.run(TTAdHeaderBidingRequestCore.java:193)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:504)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$f.run(TTAdHeaderBidingRequestCore.java:193)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:504)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$f.run(TTAdHeaderBidingRequestCore.java:193)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:504)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$f.run(TTAdHeaderBidingRequestCore.java:193)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:504)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$f.run(TTAdHeaderBidingRequestCore.java:193)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.d$a.a(TTADBidingRequestCore.java:57)\n\tbykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_if122.f$a.a(TTServerBiddingCore.java:111)\n\tbykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_char12.a$c.run(ServerBiddingHelper.java:2)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.d$a.a(TTADBidingRequestCore.java:57)
+        bykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_if122.f$a.a(TTServerBiddingCore.java:111)
+        bykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_char12.a$c.run(ServerBiddingHelper.java:2)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.d$a.a(TTADBidingRequestCore.java:57)\n\tbykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_if122.f$a.a(TTServerBiddingCore.java:111)\n\tbykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_char12.a$c.run(ServerBiddingHelper.java:2)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.d$a.a(TTADBidingRequestCore.java:57)
+        bykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_if122.f$a.a(TTServerBiddingCore.java:111)
+        bykvm_19do.bykvm_19do.bykvm_if122.bykvm_19do.bykvm_char12.a$c.run(ServerBiddingHelper.java:2)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:68)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$e.handleMessage(TTAdHeaderBidingRequestCore.java:1)\n\tandroid.os.Handler.dispatchMessage(Handler.java:106)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:68)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$e.handleMessage(TTAdHeaderBidingRequestCore.java:1)
+        android.os.Handler.dispatchMessage(Handler.java:106)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:68)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$e.handleMessage(TTAdHeaderBidingRequestCore.java:1)\n\tandroid.os.Handler.dispatchMessage(Handler.java:106)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:68)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$e.handleMessage(TTAdHeaderBidingRequestCore.java:1)
+        android.os.Handler.dispatchMessage(Handler.java:106)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:68)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$e.handleMessage(TTAdHeaderBidingRequestCore.java:1)\n\tandroid.os.Handler.dispatchMessage(Handler.java:106)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:68)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$e.handleMessage(TTAdHeaderBidingRequestCore.java:1)
+        android.os.Handler.dispatchMessage(Handler.java:106)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:68)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$e.handleMessage(TTAdHeaderBidingRequestCore.java:1)\n\tandroid.os.Handler.dispatchMessage(Handler.java:106)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:68)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore$e.handleMessage(TTAdHeaderBidingRequestCore.java:1)
+        android.os.Handler.dispatchMessage(Handler.java:106)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31mcom.bytedance.sdk.openadsdk.AdSlot$1\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot(com.bytedance.sdk.openadsdk.AdSlot$1)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mArguments \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m(none)\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Arguments com.bytedance.sdk.openadsdk.AdSlot.AdSlot((none))
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mCalled \u001b[32mcom.bytedance.sdk.openadsdk.AdSlot\u001b[39m.\u001b[92mAdSlot\u001b[39m(\u001b[31m\u001b[39m)",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Called com.bytedance.sdk.openadsdk.AdSlot.AdSlot()
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mBacktrace:\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)\n\tcom.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)\n\tcom.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)\n\tcom.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)\n\tcom.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)\n\tcom.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)\n\tandroid.os.Handler.handleCallback(Handler.java:938)\n\tandroid.os.Handler.dispatchMessage(Handler.java:99)\n\tandroid.os.Looper.loopOnce(Looper.java:201)\n\tandroid.os.Looper.loop(Looper.java:288)\n\tandroid.os.HandlerThread.run(HandlerThread.java:67)\n\t",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Backtrace:
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(AdSlot.java:12)
+        com.bytedance.sdk.openadsdk.AdSlot.<init>(Native Method)
+        com.bytedance.sdk.openadsdk.AdSlot$Builder.build(AdSlot.java:486)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.c(Unknown Source:125)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter$PangleRewardVideo.a(Unknown Source:0)
+        com.bytedance.msdk.adapter.pangle.PangleRewardVideoAdapter.loadAd(Unknown Source:13)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter.loadAdInter(TTAbsAdLoaderAdapter.java:67)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:141)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:623)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.c(Unknown Source:266)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.a(Unknown Source:525)
+        com.bytedance.msdk.core.corelogic.TTAdHeaderBidingRequestCore.onAdFailed(Unknown Source:438)
+        com.bytedance.msdk.adapter.TTAbsAdLoaderAdapter$CallBackRunnable.run(TTAbsAdLoaderAdapter.java:110)
+        android.os.Handler.handleCallback(Handler.java:938)
+        android.os.Handler.dispatchMessage(Handler.java:99)
+        android.os.Looper.loopOnce(Looper.java:201)
+        android.os.Looper.loop(Looper.java:288)
+        android.os.HandlerThread.run(HandlerThread.java:67)
+
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+- [incoming message] ------------------
+{
+  "payload": "\u001b[90m[345688] \u001b[39mReturn Value: \u001b[31m(none)\u001b[39m",
+  "type": "send"
+}
+- [./incoming message] ----------------
+(agent) [345688] Return Value: (none)
+com.cccs.xxjz on (google: 12) [usb] #
