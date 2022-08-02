@@ -1,4 +1,12 @@
 import { log } from "./logger";
+//import "frida-il2cpp-bridge";
+//frida -U 修仙家族模拟器 --no-pause -l _agent.js
+//objection -d -g 修仙家族模拟器 explore
+//adb shell dumpsys activity top | grep ACTIVITY 获取当前页面
+//com.cccs.xxjz/com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity
+//广告页面
+//com.cccs.xxjz
+///data/app/~~tY1G0Z1a6CFufpL3mJwo8Q==/com.cccs.xxjz-adVy4RSt2fxHwZOePDWgrQ==
 //
 
 function test(){
@@ -40,8 +48,8 @@ function test1(){
     =function(a:any,b:any){
       log("init:"+a+"-"+b);
       var b= this.$init(a,b);
-  var ba=Module.findExportByName("libil2cpp.so","JNI_OnLoad");
-  var ad=ba?.sub(0x003790EC);
+  var lm=Process.getModuleByName("libil2cpp.so");
+  var ad=lm.base;
   function interc(par2:string,name:string){
     var po1=<NativePointerValue>ad?.add(par2);
     Interceptor.attach(po1,{
@@ -99,11 +107,11 @@ function test1(){
     Interceptor.replace(po1, new NativeCallback(int1
       ,'pointer', ['int', 'int','pointer']));
   }*/
-  //rinterc("0x0051A4FC","ChangeMerits");//加功德
-  rinterc("0x005643d0","AddMoney")//页面加灵石
-  rinterc("0x006d1abc","AddSuperAccelerationLastTime");//加加速时间
-  rinterc2("0x0055b90c","ChangeShopRefreshTimes");//加刷新次数
-  
+  //rinterc("0x0051f6b0","ChangeMerits");//加功德
+  rinterc("0x00585404","AddMoney")//页面加灵石
+  rinterc("0x006b9f88","AddSuperAccelerationLastTime");//加加速时间
+  rinterc2("0x0057c940","ChangeShopRefreshTimes");//加刷新次数
+  rinterc("0x008ee56c","AddNewItem");//加商品数量
   /*interc("0x00c935a8","ChangeMoney");
   interc("0x005127d8","UpdateMoney");
   interc("0x00bf0ca8","set_money");
