@@ -1,0 +1,730 @@
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to M2007J22C (id=192.168.2.189:5555)
+Spawning `com.whatsapp.w4b`...
+Spawned `com.whatsapp.w4b`. Resuming main thread!
+[M2007J22C::com.whatsapp.w4b ]-> end
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb4000070b979f400,x1:0xb4000070b409e8c0,x2:0x100000,x3:0xffffffffffffffff,x4:0xffffffffffffffff,x5:0xb4000070b409e8c0,x6:0x70bd2ddeb8,x7:0x70bd2ddeb0,x8:0x100000
+
+ThrowException:access violation accessing 0x100000
+RegisterNatives full called from:\n0x70e11ca79c libwhatsapp.so!0x76e79c\n0x70e0d99314 libwhatsapp.so!0x33d314\n0x70e11cace4 libwhatsapp.so!0x76ece4\n0x70e0d98e58 libwhatsapp.so!0x33ce58\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb4000070b979f400,x1:0xb4000070b409ec00,x2:0x100000,x3:0xffffffffffffffff,x4:0xffffffffffffffff,x5:0xb4000070b409ec00,x6:0x70bd2de048,x7:0x70bd2de040,x8:0x100000
+
+ThrowException:access violation accessing 0x100000
+RegisterNatives full called from:\n0x70e11ca79c libwhatsapp.so!0x76e79c\n0x70e0d99314 libwhatsapp.so!0x33d314\n0x70e11cace4 libwhatsapp.so!0x76ece4\n0x70e0d98e58 libwhatsapp.so!0x33ce58\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb4000070b979f400,x1:0xb4000070b409e940,x2:0x100000,x3:0xffffffffffffffff,x4:0xffffffffffffffff,x5:0xb4000070b409e940,x6:0x70bd2de048,x7:0x70bd2de040,x8:0x100000
+
+ThrowException:access violation accessing 0x100000
+RegisterNatives full called from:\n0x70e11ca79c libwhatsapp.so!0x76e79c\n0x70e0d99314 libwhatsapp.so!0x33d314\n0x70e11cace4 libwhatsapp.so!0x76ece4\n0x70e0d98e58 libwhatsapp.so!0x33ce58\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb4000070b979f400,x1:0xb4000070b409eec0,x2:0x100000,x3:0xffffffffffffffff,x4:0xffffffffffffffff,x5:0xb4000070b409eec0,x6:0x70bd2de048,x7:0x70bd2de040,x8:0x100000
+
+ThrowException:access violation accessing 0x100000
+RegisterNatives full called from:\n0x70e11ca79c libwhatsapp.so!0x76e79c\n0x70e0d99314 libwhatsapp.so!0x33d314\n0x70e11cace4 libwhatsapp.so!0x76ece4\n0x70e0d98e58 libwhatsapp.so!0x33ce58\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb4000070b979f400,x1:0xb4000070b409eb00,x2:0x100000,x3:0xffffffffffffffff,x4:0xffffffffffffffff,x5:0xb4000070b409eb00,x6:0x70bd2de048,x7:0x70bd2de040,x8:0x100000
+
+ThrowException:access violation accessing 0x100000
+RegisterNatives full called from:\n0x70e11ca79c libwhatsapp.so!0x76e79c\n0x70e0d99314 libwhatsapp.so!0x33d314\n0x70e11cace4 libwhatsapp.so!0x76ece4\n0x70e0d98e58 libwhatsapp.so!0x33ce58\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb4000070b979f400,x1:0xb4000070b409ea80,x2:0x100000,x3:0xffffffffffffffff,x4:0xffffffffffffffff,x5:0xb4000070b409ea80,x6:0x70bd2de048,x7:0x70bd2de040,x8:0x100000
+
+ThrowException:access violation accessing 0x100000
+RegisterNatives full called from:\n0x70e11ca79c libwhatsapp.so!0x76e79c\n0x70e0d99314 libwhatsapp.so!0x33d314\n0x70e11cace4 libwhatsapp.so!0x76ece4\n0x70e0d98e58 libwhatsapp.so!0x33ce58\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb4000070b979f400,x1:0xb4000070b409e680,x2:0x100000,x3:0xffffffffffffffff,x4:0xffffffffffffffff,x5:0xb4000070b409e680,x6:0x0,x7:0x1000,x8:0x100000
+
+ThrowException:access violation accessing 0x100000
+RegisterNatives full called from:\n0x70e11ca79c libwhatsapp.so!0x76e79c\n0x70e0d99314 libwhatsapp.so!0x33d314\n0x70e11cace4 libwhatsapp.so!0x76ece4\n0x70e0d98e58 libwhatsapp.so!0x33ce58\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb4000070b979f400,x1:0xb4000070b409eec0,x2:0x100000,x3:0xffffffffffffffff,x4:0xffffffffffffffff,x5:0xb4000070b409eec0,x6:0x0,x7:0x1000,x8:0x100000
+
+ThrowException:access violation accessing 0x100000
+RegisterNatives full called from:\n0x70e11ca79c libwhatsapp.so!0x76e79c\n0x70e0d99314 libwhatsapp.so!0x33d314\n0x70e11cace4 libwhatsapp.so!0x76ece4\n0x70e0d98e58 libwhatsapp.so!0x33ce58\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb4000070b979f400,x1:0xb4000070b409e500,x2:0x100000,x3:0xffffffffffffffff,x4:0xffffffffffffffff,x5:0xb4000070b409e500,x6:0x0,x7:0x1000,x8:0x100000
+
+ThrowException:access violation accessing 0x100000
+RegisterNatives full called from:\n0x70e11ca79c libwhatsapp.so!0x76e79c\n0x70e0d99314 libwhatsapp.so!0x33d314\n0x70e11cace4 libwhatsapp.so!0x76ece4\n0x70e0d98e58 libwhatsapp.so!0x33ce58\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb4000070b979f400,x1:0xb4000070b409e300,x2:0x100000,x3:0xffffffffffffffff,x4:0xffffffffffffffff,x5:0xb4000070b409e300,x6:0x70bd2de048,x7:0x70bd2de040,x8:0x100000
+
+ThrowException:access violation accessing 0x100000
+RegisterNatives full called from:\n0x70e11ca79c libwhatsapp.so!0x76e79c\n0x70e0d99314 libwhatsapp.so!0x33d314\n0x70e11cace4 libwhatsapp.so!0x76ece4\n0x70e0d98e58 libwhatsapp.so!0x33ce58\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+entered HookFunc 33d438-EncryptedAES256CBC加密方法:
+	x0:0xb40000715251ec60,x1:0xb4000070df96d240,x2:0x1f76,x3:0x0,x4:0x1f76,x5:0x0,x6:0x0,x7:0xb40000715264d910,x8:0x6431e3b483f7d104
+x0 length:44 str:
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  88 ec 51 52 71 00 00 b4 73 34 46 6d 66 61 6b 67  ..QRq...s4Fmfakg
+00000010  67 64 55 4f 79 48 58 30 6b 50 68 35 75 65 59 2b  gdUOyHX0kPh5ueY+
+00000020  30 33 32 4e 77 71 44 2f 4a 65 4b 70              032NwqD/JeKp
+x1+0x28 NativePointer:b4000070df96d268x1 length:224 str:
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  7b 22 63 65 72 74 22 3a 22 4f 4b 44 33 31 51 58  {"cert":"OKD31QX
+00000010  2b 47 50 37 47 54 37 38 30 50 73 71 71 38 78 44  +GP7GT780Psqq8xD
+00000020  62 31 35 6b 3d 22 2c 22 70 61 63 6b 61 67 65 4e  b15k=","packageN
+00000030  61 6d 65 22 3a 22 63 6f 6d 2e 77 68 61 74 73 61  ame":"com.whatsa
+00000040  70 70 2e 77 34 62 22 2c 22 73 68 61 32 35 36 22  pp.w4b","sha256"
+00000050  3a 22 56 78 4c 31 4a 34 4f 59 53 79 4c 49 63 70  :"VxL1J4OYSyLIcp
+00000060  34 50 32 42 58 58 65 32 35 74 51 66 51 4a 54 44  4P2BXXe25tQfQJTD
+00000070  58 48 4e 30 58 51 61 6d 4d 5c 2f 79 35 38 3d 22  XHN0XQamM\/y58="
+00000080  2c 22 73 68 61 74 72 22 3a 22 39 73 4b 43 69 6c  ,"shatr":"9sKCil
+00000090  4d 4f 53 45 78 78 4b 5c 2f 73 53 4a 51 62 70 5c  MOSExxK\/sSJQbp\
+000000a0  2f 66 59 5c 2f 59 5c 2f 48 74 33 70 5c 2f 58 47  /fY\/Y\/Ht3p\/XG
+000000b0  63 78 44 43 73 31 44 6d 6a 45 3d 22 2c 22 73 69  cxDCs1DmjE=","si
+000000c0  7a 65 49 6e 42 79 74 65 73 22 3a 22 35 39 36 33  zeInBytes":"5963
+000000d0  32 30 38 32 22 2c 22 63 6f 64 65 22 3a 2d 32 7d  2082","code":-2}
+
+RegisterNatives full called from:\n0x70e0d98ee8 libwhatsapp.so!0x33cee8\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n0x717de18618 libart.so!_ZN3art35InvokeVirtualOrInterfaceWithJValuesIPNS_9ArtMethodEEENS_6JValueERKNS_33ScopedObjectAccessAlreadyRunnableEP8_jobjectT_PK6jvalue+0x1d0\n0x717de66b24 libart.so!_ZN3art6Thread14CreateCallbackEPv+0x490\n0x722b94f034 libc.so!_ZL15__pthread_startPv+0xd0\n
+exiting HookFunc 33d438-EncryptedAES256CBC加密方法;
+entered HookFunc 7ed068-设置结构中的字节数据上级方法:
+	x0:0xb4000070b9a2a700,x1:0xb4000070b9a4e100,x2:0xe000000000,x3:0xb4000070b9a4e600,x4:0x70bd2de4e0,x5:0xb4000070b9a2a760,x6:0x7ff33e73b2110a97,x7:0x7a41de96f3b80680,x8:0xb4
+
+RegisterNatives full called from:\n0x70e1248fa8 libwhatsapp.so!0x7ecfa8\n0x70e0d99540 libwhatsapp.so!0x33d540\n0x70e0d98ee8 libwhatsapp.so!0x33cee8\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n0x717de18618 libart.so!_ZN3art35InvokeVirtualOrInterfaceWithJValuesIPNS_9ArtMethodEEENS_6JValueERKNS_33ScopedObjectAccessAlreadyRunnableEP8_jobjectT_PK6jvalue+0x1d0\n
+exiting HookFunc 7ed068-设置结构中的字节数据上级方法;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0xb4000070b9a2a718,x1:0xb4000070b9a4e100,x2:0xe0,x3:0xb4000070b9a4e600,x4:0x70bd2de4e0,x5:0xb4000070b9a2a760,x6:0x7ff33e73b2110a97,x7:0x7a41de96f3b80680,x8:0xe0
+
+ThrowException:access violation accessing 0xe0
+RegisterNatives full called from:\n0x70e1249084 libwhatsapp.so!0x7ed084\n0x70e1248fa8 libwhatsapp.so!0x7ecfa8\n0x70e0d99540 libwhatsapp.so!0x33d540\n0x70e0d98ee8 libwhatsapp.so!0x33cee8\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb4000070b979fbc0,x1:0xb4000070b99c4980,x2:0x10,x3:0x0,x4:0xb4000070b979fc00,x5:0x1,x6:0x0,x7:0xb40000715264d8e0,x8:0x2
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e0d99580 libwhatsapp.so!0x33d580\n0x70e0d98ee8 libwhatsapp.so!0x33cee8\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n0x717de18618 libart.so!_ZN3art35InvokeVirtualOrInterfaceWithJValuesIPNS_9ArtMethodEEENS_6JValueERKNS_33ScopedObjectAccessAlreadyRunnableEP8_jobjectT_PK6jvalue+0x1d0\n0x717de66b24 libart.so!_ZN3art6Thread14CreateCallbackEPv+0x490\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb4000070b979fbc0,x1:0xb4000070b9a4e600,x2:0xe0,x3:0x10,x4:0xb4000070b99c4990,x5:0xb4000070b9a4e710,x6:0x7ff33e73b2110a97,x7:0x7a41de96f3b80680,x8:0xb4000070b9a4e700
+
+ThrowException:access violation accessing 0xe0
+RegisterNatives full called from:\n0x70e0d99590 libwhatsapp.so!0x33d590\n0x70e0d98ee8 libwhatsapp.so!0x33cee8\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n0x717de18618 libart.so!_ZN3art35InvokeVirtualOrInterfaceWithJValuesIPNS_9ArtMethodEEENS_6JValueERKNS_33ScopedObjectAccessAlreadyRunnableEP8_jobjectT_PK6jvalue+0x1d0\n0x717de66b24 libart.so!_ZN3art6Thread14CreateCallbackEPv+0x490\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb4000070b979fbc0,x1:0xb4000070b99c4990,x2:0x10,x3:0xb4000070b9a4e790,x4:0xb4000070b9a4e6e0,x5:0xb4000070b9a4e7f0,x6:0x87e81586cc58ab93,x7:0xe5c535d3ec4bfb32,x8:0x552eb3cf68caa753
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e0d995a0 libwhatsapp.so!0x33d5a0\n0x70e0d98ee8 libwhatsapp.so!0x33cee8\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n0x717de18618 libart.so!_ZN3art35InvokeVirtualOrInterfaceWithJValuesIPNS_9ArtMethodEEENS_6JValueERKNS_33ScopedObjectAccessAlreadyRunnableEP8_jobjectT_PK6jvalue+0x1d0\n0x717de66b24 libart.so!_ZN3art6Thread14CreateCallbackEPv+0x490\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+entered HookFunc 3357c4-gpia数据由C++转Java:
+	x0:0xb4000070a6c5fe00,x1:0xb4000070df746d80,x2:0x20,x3:0x5,x4:0x70b9a46120,x5:0x70b9a46140,x6:0x70b979f400,x7:0x70b979f580,x8:0x6431e3b483f7d104
+x0 str:\ufffd,\ufffdp
+x1 str:lwoRsnM+83+ABrjzlt5Bevs8fN+pHhsADBwFfNEkRurB/HLSEdbBH9bTDDf7S7cAgdtlys/0MOfVKabrCsX3anGryRbuAf1H30KjMoDqN4GQ6S+XFJmerkDP1WqfweA4JWM6LoltVCzxfVTbWoHDLnq3RzALCSN5F76h2lArGdvpDL6VeZuRntTsdxVE6juIvdemnNNLBbJaOM1BormlKeM6Y826/WotnivxvmV6+slM76jrug0A92LIvpDGh9jvk6tYzIYV6Icy+0vs0zXF5VOnymjPsy5VFNGyB0R17PumqZkvUyOfodtH/VK9aT94kNAPUrXSrYAUCXCW5NxVGg==
+x2 str:0x20
+RegisterNatives full called from:\n0x70e0d98f38 libwhatsapp.so!0x33cf38\n0x70e127131c libwhatsapp.so!0x81531c\n0x70e0d884d4 libwhatsapp.so!0x32c4d4\n0x70e0d88294 libwhatsapp.so!0x32c294\n0x70e0d7f6b4 libwhatsapp.so!0x3236b4\n0x715f4f4f60 libc++_shared.so!_ZNSt6__ndk15mutex6unlockEv+0x10\n0x70e0d8884c libwhatsapp.so!0x32c84c\n0x70ef009f34 base.odex!0x1ecf34\n0x70ef56c994 base.odex!0x74f994\n0x71430a70 boot.oat!0x1c3a70\n0x717da18968 libart.so!art_quick_invoke_stub+0x228\n0x717da84064 libart.so!_ZN3art9ArtMethod6InvokeEPNS_6ThreadEPjjPNS_6JValueEPKc+0xbc\n0x717de8b680 libart.so!_ZN3art10ThreadList13AllocThreadIdEPNS_6ThreadE+0xe0\n0x717de18618 libart.so!_ZN3art35InvokeVirtualOrInterfaceWithJValuesIPNS_9ArtMethodEEENS_6JValueERKNS_33ScopedObjectAccessAlreadyRunnableEP8_jobjectT_PK6jvalue+0x1d0\n0x717de66b24 libart.so!_ZN3art6Thread14CreateCallbackEPv+0x490\n0x722b94f034 libc.so!_ZL15__pthread_startPv+0xd0\n
+exiting HookFunc 3357c4-gpia数据由C++转Java;
+entered HookFunc 7ed068-设置结构中的字节数据上级方法:
+	x0:0xb4000071608cb780,x1:0x70e0bf3504,x2:0x1000000000,x3:0x70bd3e7d80,x4:0x70bd3e7d10,x5:0x30,x6:0x70bd3e7d7c,x7:0xb4000071608cb798,x8:0x7ffffff0
+
+RegisterNatives full called from:\n0x70e1249134 libwhatsapp.so!0x7ed134\n0x70e11ebe7c libwhatsapp.so!0x78fe7c\n0x70e11ebc18 libwhatsapp.so!0x78fc18\n0x70e11e9fdc libwhatsapp.so!0x78dfdc\n0x70e11f0b4c libwhatsapp.so!0x794b4c\n0x70e11ea5d8 libwhatsapp.so!0x78e5d8\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n0x715ee310 boot.oat!0x381310\n
+exiting HookFunc 7ed068-设置结构中的字节数据上级方法;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0xb4000071608cb798,x1:0x70e0bf3504,x2:0x10,x3:0x70bd3e7d80,x4:0x70bd3e7d10,x5:0x30,x6:0x70bd3e7d7c,x7:0xb4000071608cb798,x8:0x10
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e1249084 libwhatsapp.so!0x7ed084\n0x70e1249134 libwhatsapp.so!0x7ed134\n0x70e11ebe7c libwhatsapp.so!0x78fe7c\n0x70e11ebc18 libwhatsapp.so!0x78fc18\n0x70e11e9fdc libwhatsapp.so!0x78dfdc\n0x70e11f0b4c libwhatsapp.so!0x794b4c\n0x70e11ea5d8 libwhatsapp.so!0x78e5d8\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 7ed068-设置结构中的字节数据上级方法:
+	x0:0xb4000071608cb780,x1:0x70e0bf3504,x2:0x1000000010,x3:0x70bd3e7d90,x4:0x70bd3e7d10,x5:0x20,x6:0x70bd3e7d7c,x7:0x61,x8:0x7ffffff0
+
+RegisterNatives full called from:\n0x70e1249134 libwhatsapp.so!0x7ed134\n0x70e11ebe7c libwhatsapp.so!0x78fe7c\n0x70e11ebc18 libwhatsapp.so!0x78fc18\n0x70e11e9fdc libwhatsapp.so!0x78dfdc\n0x70e11f0b4c libwhatsapp.so!0x794b4c\n0x70e11ea5d8 libwhatsapp.so!0x78e5d8\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n0x715ee310 boot.oat!0x381310\n
+exiting HookFunc 7ed068-设置结构中的字节数据上级方法;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0xb4000071608cb798,x1:0x70e0bf3514,x2:0x10,x3:0x70bd3e7d90,x4:0x70bd3e7d10,x5:0x20,x6:0x70bd3e7d7c,x7:0x61,x8:0x10
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e1249084 libwhatsapp.so!0x7ed084\n0x70e1249134 libwhatsapp.so!0x7ed134\n0x70e11ebe7c libwhatsapp.so!0x78fe7c\n0x70e11ebc18 libwhatsapp.so!0x78fc18\n0x70e11e9fdc libwhatsapp.so!0x78dfdc\n0x70e11f0b4c libwhatsapp.so!0x794b4c\n0x70e11ea5d8 libwhatsapp.so!0x78e5d8\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 7ed068-设置结构中的字节数据上级方法:
+	x0:0xb4000071608cb780,x1:0x70e0bf3594,x2:0x1000000000,x3:0x70bd3e7d80,x4:0x70bd3e7d10,x5:0x20,x6:0x70bd3e7d7c,x7:0xb4000071608cb798,x8:0x7ffffff0
+
+RegisterNatives full called from:\n0x70e1249134 libwhatsapp.so!0x7ed134\n0x70e11ebe7c libwhatsapp.so!0x78fe7c\n0x70e11ebc18 libwhatsapp.so!0x78fc18\n0x70e11e9fe8 libwhatsapp.so!0x78dfe8\n0x70e11f0b4c libwhatsapp.so!0x794b4c\n0x70e11ea5d8 libwhatsapp.so!0x78e5d8\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n0x715ee310 boot.oat!0x381310\n
+exiting HookFunc 7ed068-设置结构中的字节数据上级方法;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0xb4000071608cb798,x1:0x70e0bf3594,x2:0x10,x3:0x70bd3e7d80,x4:0x70bd3e7d10,x5:0x20,x6:0x70bd3e7d7c,x7:0xb4000071608cb798,x8:0x10
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e1249084 libwhatsapp.so!0x7ed084\n0x70e1249134 libwhatsapp.so!0x7ed134\n0x70e11ebe7c libwhatsapp.so!0x78fe7c\n0x70e11ebc18 libwhatsapp.so!0x78fc18\n0x70e11e9fe8 libwhatsapp.so!0x78dfe8\n0x70e11f0b4c libwhatsapp.so!0x794b4c\n0x70e11ea5d8 libwhatsapp.so!0x78e5d8\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e7f08,x2:0x10,x3:0x70bd3e7f08,x4:0x70bd3e7f00,x5:0x4,x6:0x0,x7:0xb40000715264d8e0,x8:0x6431e3b483f7d104
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3658 libwhatsapp.so!0x847658\n0x70e12516e0 libwhatsapp.so!0x7f56e0\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n0x715ee310 boot.oat!0x381310\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e80e8,x4:0x70bd3e7eb0,x5:0x0,x6:0x0,x7:0xb4000070a6c5d428,x8:0x0
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a39a4 libwhatsapp.so!0x8479a4\n0x70e12a3f84 libwhatsapp.so!0x847f84\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a41ce3,x6:0x31b71ce3,x7:0xc1272c8e,x8:0x2
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4bc70,x6:0x8395bc70,x7:0xc19aeb08,x8:0x3
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4eea5,x6:0x4f18eea5,x7:0xc13143f2,x8:0x4
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a43add,x6:0xe7b83add,x7:0xc14d4cfe,x8:0x5
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a44199,x6:0x2c24199,x7:0xc185e49f,x8:0x6
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4c945,x6:0xb9abc945,x7:0xc17dcd36,x8:0x7
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a433c3,x6:0xcf3d33c3,x7:0xc19e6cea,x8:0x8
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4f906,x6:0xcdb7f906,x7:0xc15becac,x8:0x9
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a40c65,x6:0x668d0c65,x7:0xc1e86614,x8:0xa
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a45be1,x6:0xbdf55be1,x7:0xc119273a,x8:0xb
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a42b6f,x6:0x830f2b6f,x7:0xc121eb1f,x8:0xc
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a40f81,x6:0x78050f81,x7:0xc10217df,x8:0xd
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a46bc2,x6:0x84766bc2,x7:0xc1da5029,x8:0xe
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a46628,x6:0x1df06628,x7:0xc191455f,x8:0xf
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a485d6,x6:0xac2485d6,x7:0xc1f855a8,x8:0x10
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4cfdd,x6:0x325ecfdd,x7:0xc17fc886,x8:0x11
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4d931,x6:0xca81d931,x7:0xc16b6264,x8:0x12
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a47978,x6:0xec817978,x7:0xc1135802,x8:0x13
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4ca0d,x6:0x8d09ca0d,x7:0xc18f23f3,x8:0x14
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a42a8f,x6:0x26a62a8f,x7:0xc16102ef,x8:0x15
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a41f78,x6:0xe2d31f78,x7:0xc19f4b84,x8:0x16
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4d50b,x6:0xb572d50b,x7:0xc1589624,x8:0x17
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4b0e3,x6:0x2369b0e3,x7:0xc1559881,x8:0x18
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a45cf8,x6:0xc60a5cf8,x7:0xc1d4d3a9,x8:0x19
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a43e88,x6:0x9d593e88,x7:0xc1b2f6a5,x8:0x1a
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4250c,x6:0x109a250c,x7:0xc12c1b60,x8:0x1b
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a475ab,x6:0xf00375ab,x7:0xc10a59ca,x8:0x1c
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a44d2a,x6:0x76d64d2a,x7:0xc1307255,x8:0x1d
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a425cf,x6:0x775a25cf,x7:0xc19fd2d3,x8:0x1e
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4d4d4,x6:0x904cd4d4,x7:0xc10b2c6e,x8:0x1f
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a40926,x6:0x65240926,x7:0xc13d0791,x8:0x20
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a46deb,x6:0x7b846deb,x7:0xc1c418f8,x8:0x21
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4cc80,x6:0xa82fcc80,x7:0xc17897ba,x8:0x22
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a422d3,x6:0x9b6722d3,x7:0xc18d2175,x8:0x23
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4ec90,x6:0xa38eec90,x7:0xc178df60,x8:0x24
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a42c96,x6:0x79f72c96,x7:0xc11933f2,x8:0x25
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a492b2,x6:0x97bc92b2,x7:0xc1bf557e,x8:0x26
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4c1b3,x6:0x5ee0c1b3,x7:0xc1cb946e,x8:0x27
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a459c2,x6:0x39bc59c2,x7:0xc1c5afcc,x8:0x28
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a40541,x6:0x3f0541,x7:0xc1e7695f,x8:0x29
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4750f,x6:0xc93c750f,x7:0xc1b2df74,x8:0x2a
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4d10b,x6:0x6fb0d10b,x7:0xc1a8ecd3,x8:0x2b
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4340c,x6:0x685340c,x7:0xc1dc6ee7,x8:0x2c
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4d9d6,x6:0xcf08d9d6,x7:0xc1cb8242,x8:0x2d
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4772b,x6:0x2c98772b,x7:0xc147c05f,x8:0x2e
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4d1e9,x6:0xdecdd1e9,x7:0xc140cdbd,x8:0x2f
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a49963,x6:0x51429963,x7:0xc13b2c58,x8:0x30
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a426d2,x6:0xc0fc26d2,x7:0xc1f6a750,x8:0x31
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a46554,x6:0xfa106554,x7:0xc1b8b407,x8:0x32
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4042a,x6:0x4507042a,x7:0xc118ac6e,x8:0x33
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4d95f,x6:0x9c02d95f,x7:0xc12fa8f5,x8:0x34
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4b05e,x6:0x6649b05e,x7:0xc17ca651,x8:0x35
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4305f,x6:0xe9e1305f,x7:0xc1a5046a,x8:0x36
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4f165,x6:0x6bc4f165,x7:0xc10d43a6,x8:0x37
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a423f6,x6:0x30a523f6,x7:0xc16da438,x8:0x38
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4e363,x6:0xad1de363,x7:0xc13cd453,x8:0x39
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a44ffd,x6:0xcdef4ffd,x7:0xc19b5db6,x8:0x3a
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a41c79,x6:0xdefd1c79,x7:0xc13e9cb0,x8:0x3b
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4a091,x6:0xb208a091,x7:0xc1bd66bc,x8:0x3c
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a45256,x6:0xa4dc5256,x7:0xc1404131,x8:0x3d
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4ba0d,x6:0x9118ba0d,x7:0xc1a09661,x8:0x3e
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4ddb6,x6:0x18e7ddb6,x7:0xc1c0facb,x8:0x3f
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a438cc,x6:0xb41038cc,x7:0xc17aecc5,x8:0x40
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4c410,x6:0x6bc1c410,x7:0xc1b76cef,x8:0x41
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4d9da,x6:0x817dd9da,x7:0xc1a2b9c6,x8:0x42
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4601e,x6:0x2aeb601e,x7:0xc1c42e4b,x8:0x43
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4505c,x6:0x240b505c,x7:0xc16aad84,x8:0x44
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4245e,x6:0xa97e245e,x7:0xc1d18069,x8:0x45
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4a377,x6:0x5ca6a377,x7:0xc191318c,x8:0x46
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4b92f,x6:0xaa80b92f,x7:0xc1c05ca5,x8:0x47
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a43f12,x6:0x5afc3f12,x7:0xc1773369,x8:0x48
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a49007,x6:0xa67d9007,x7:0xc1c57eee,x8:0x49
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a46043,x6:0x2f776043,x7:0xc1b33179,x8:0x4a
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4f51d,x6:0xbc19f51d,x7:0xc18a5a12,x8:0x4b
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4719b,x6:0x858a719b,x7:0xc1b5b397,x8:0x4c
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a402c3,x6:0xc8f02c3,x7:0xc1082f72,x8:0x4d
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a42900,x6:0xa4492900,x7:0xc1831765,x8:0x4e
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a49c5a,x6:0x58b89c5a,x7:0xc19efc71,x8:0x4f
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a48482,x6:0xd1a08482,x7:0xc17ae828,x8:0x50
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a48b06,x6:0xb3da8b06,x7:0xc16234be,x8:0x51
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4fc3b,x6:0xc87fc3b,x7:0xc13eae53,x8:0x52
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a447af,x6:0x38ac47af,x7:0xc1d97e0f,x8:0x53
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a48c90,x6:0xf51b8c90,x7:0xc1e38eb0,x8:0x54
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4f0a6,x6:0xb42ef0a6,x7:0xc144666a,x8:0x55
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a43d19,x6:0x5443d19,x7:0xc189c52e,x8:0x56
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a45fe7,x6:0xab155fe7,x7:0xc11eb56c,x8:0x57
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4482c,x6:0xafb482c,x7:0xc116aa07,x8:0x58
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a4ef31,x6:0x60f9ef31,x7:0xc17a0450,x8:0x59
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 843bc8-设置结构中的字节数据:
+	x0:0x70bd3e7f80,x1:0x70bd3e80f8,x2:0x10,x3:0x70bd3e7ea8,x4:0x70bd3e7ea0,x5:0x81a42aa4,x6:0xdfcc2aa4,x7:0xc1fc9666,x8:0x5a
+
+ThrowException:access violation accessing 0x10
+RegisterNatives full called from:\n0x70e12a3cec libwhatsapp.so!0x847cec\n0x70e12a3f9c libwhatsapp.so!0x847f9c\n0x70e1251794 libwhatsapp.so!0x7f5794\n0x70e12515e8 libwhatsapp.so!0x7f55e8\n0x70e11ead38 libwhatsapp.so!0x78ed38\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n
+exiting HookFunc 843bc8-设置结构中的字节数据;
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb40000716091e580,x1:0xb400007160824331,x2:0x20,x3:0x0,x4:0xb40000716091e5c0,x5:0x1,x6:0x0,x7:0xb40000715264d8e0,x8:0xb400007160824330
+
+ThrowException:access violation accessing 0x20
+RegisterNatives full called from:\n0x70e11ead6c libwhatsapp.so!0x78ed6c\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n0x715ee310 boot.oat!0x381310\n0x715e7b38 boot.oat!0x37ab38\n0x70ef22e37c base.odex!0x41137c\n0x722b815d4c libbase.so!_ZN7android4base17WriteStringToFileERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_b+0x10c\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+entered HookFunc 80c8e4-处理数据加密的方法:
+	x0:0xb40000716091e580,x1:0xb4000070a6c5da40,x2:0x59b,x3:0x20,x4:0xb400007160824351,x5:0xb400007160910320,x6:0x90ae9f9db395455e,x7:0xd465df7e5e3ce1a0,x8:0xb400007160910300
+
+ThrowException:access violation accessing 0x59b
+RegisterNatives full called from:\n0x70e11ead7c libwhatsapp.so!0x78ed7c\n0x70e11ea288 libwhatsapp.so!0x78e288\n0x70e11ea610 libwhatsapp.so!0x78e610\n0x70e0d9b088 libwhatsapp.so!0x33f088\n0x70e0d95b30 libwhatsapp.so!0x339b30\n0x70ef00d9c8 base.odex!0x1f09c8\n0x70ef43b068 base.odex!0x61e068\n0x70ef43a320 base.odex!0x61d320\n0x70ef42abd8 base.odex!0x60dbd8\n0x70ef40effc base.odex!0x5f1ffc\n0x72fea400 boot-framework.oat!0x63c400\n0x71568260 boot.oat!0x2fb260\n0x715ee310 boot.oat!0x381310\n0x715e7b38 boot.oat!0x37ab38\n0x70ef22e37c base.odex!0x41137c\n0x722b815d4c libbase.so!_ZN7android4base17WriteStringToFileERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_b+0x10c\n
+exiting HookFunc 80c8e4-处理数据加密的方法;
+exit
+
+Thank you for using Frida!
