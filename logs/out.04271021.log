@@ -1,0 +1,363 @@
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to M2007J22C (id=192.168.2.234:5555)
+Spawning `com.whatsapp.w4b`...
+Error: java.lang.ClassNotFoundException: com.whatsapp.wamsys.JniBridge
+0x79a5c46014
+0x79a5c460b8
+Spawned `com.whatsapp.w4b`. Resuming main thread!
+[M2007J22C::com.whatsapp.w4b ]-> Tracing com.whatsapp.wamsys.JniBridge.jvidispatchIIOOOOO [1 overload(s)]
+Tracing com.whatsapp.wamsys.JniBridge.jvidispatchO [1 overload(s)]
+Tracing com.whatsapp.wamsys.JniBridge.jvidispatchIOO [1 overload(s)]
+libwhatsapp base:0x788c275000
+DevInfo Point:0x788cb1a808
+DevInfo Point Point0x0
+DevInfo Point+0x18:0x18
+DevInfo err:Error: access violation accessing 0x0
+end
+threadId:22755-returnAddress:0x79a25edeec-r:0x3523b81b531a0cfd
+
+***71066407-undefined: entered com.whatsapp.wamsys.JniBridge.jvidispatchO
+
+71066407-undefined:arg[0]: 0,class:,json:,base:
+	71066407-undefined:type: class java.lang.Object
+------------startFlag:71066407,objectHash:undefined,thread(id:2,name:main),timestamp:1714205535134---------------
+com.whatsapp.wamsys.JniBridge.jvidispatchO
+java.lang.Exception
+	at com.whatsapp.wamsys.JniBridge.jvidispatchO(Native Method)
+	at X.0ux.A01(:92)
+	at com.whatsapp.AbstractAppShellDelegate.onCreate(:1498)
+	at com.whatsapp.AbstractSmbAppShellDelegate.onCreate(:0)
+	at X.0lf.onCreate(:11)
+	at X.2Bc.onCreate(:3)
+	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1211)
+	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7093)
+	at android.app.ActivityThread.handleBindApplication(Native Method)
+	at android.app.ActivityThread.access$1700(ActivityThread.java:275)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2167)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loopOnce(Looper.java:210)
+	at android.os.Looper.loop(Looper.java:299)
+	at android.app.ActivityThread.main(ActivityThread.java:8273)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:576)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1073)
+
+------------endFlag:71066407,usedtime:10---------------
+
+
+***71066407-undefined: exiting com.whatsapp.wamsys.JniBridge.jvidispatchO
+
+***61492427-undefined: entered com.whatsapp.wamsys.JniBridge.jvidispatchIOO
+
+61492427-undefined:arg[0]: 0,class:,json:,base:
+61492427-undefined:arg[1]: com.facebook.msys.mci.NetworkSession@b7883c6,class:java.lang.Object,json:,base:
+61492427-undefined:arg[2]: com.facebook.simplejni.NativeHolder@bacbadd,class:java.lang.Object,json:,base:
+	61492427-undefined:type: undefined
+------------startFlag:61492427,objectHash:undefined,thread(id:60,name:WhatsApp Worker #2),timestamp:1714205535565---------------
+com.whatsapp.wamsys.JniBridge.jvidispatchIOO
+java.lang.Exception
+	at com.whatsapp.wamsys.JniBridge.jvidispatchIOO(Native Method)
+	at X.0ux.A03(:54)
+	at X.6sG.A0H(:24)
+	at X.7LX.run(:157)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at X.1nK.run(:1233)
+	at java.lang.Thread.run(Thread.java:920)
+
+------------endFlag:61492427,usedtime:34---------------
+
+
+***61492427-undefined: exiting com.whatsapp.wamsys.JniBridge.jvidispatchIOO
+
+***64761453-undefined: entered com.whatsapp.wamsys.JniBridge.jvidispatchIIOOOOO
+
+64761453-undefined:arg[0]: 0,class:,json:,base:
+64761453-undefined:arg[1]: zh,class:java.lang.Object,json:,base:
+64761453-undefined:arg[2]: CN,class:java.lang.Object,json:,base:
+64761453-undefined:arg[3]: 739d6947-4a04-4123-a6fb-38bdad2850b2,class:java.lang.Object,json:,base:
+64761453-undefined:arg[4]: bac6b5fb-c655-4a01-8263-4c8425989862,class:java.lang.Object,json:,base:
+64761453-undefined:arg[5]: com.facebook.simplejni.NativeHolder@bacbadd,class:java.lang.Object,json:,base:
+	64761453-undefined:type: undefined
+------------startFlag:64761453,objectHash:undefined,thread(id:60,name:WhatsApp Worker #2),timestamp:1714205535600---------------
+com.whatsapp.wamsys.JniBridge.jvidispatchIIOOOOO
+java.lang.Exception
+	at com.whatsapp.wamsys.JniBridge.jvidispatchIIOOOOO(Native Method)
+	at X.0ux.A03(:89)
+	at X.6sG.A0H(:24)
+	at X.7LX.run(:157)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at X.1nK.run(:1233)
+	at java.lang.Thread.run(Thread.java:920)
+
+------------endFlag:64761453,usedtime:11---------------
+
+
+***64761453-undefined: exiting com.whatsapp.wamsys.JniBridge.jvidispatchIIOOOOO
+
+***55475772-undefined: entered com.whatsapp.wamsys.JniBridge.jvidispatchIOO
+
+55475772-undefined:arg[0]: 6,class:,json:,base:
+55475772-undefined:arg[1]: com.whatsapp.SmbAppShell@6096a5a,class:java.lang.Object,json:,base:
+55475772-undefined:arg[2]: com.facebook.simplejni.NativeHolder@bacbadd,class:java.lang.Object,json:,base:
+	55475772-undefined:type: undefined
+------------startFlag:55475772,objectHash:undefined,thread(id:60,name:WhatsApp Worker #2),timestamp:1714205535612---------------
+com.whatsapp.wamsys.JniBridge.jvidispatchIOO
+java.lang.Exception
+	at com.whatsapp.wamsys.JniBridge.jvidispatchIOO(Native Method)
+	at X.0ux.A03(:105)
+	at X.6sG.A0H(:24)
+	at X.7LX.run(:157)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at X.1nK.run(:1233)
+	at java.lang.Thread.run(Thread.java:920)
+
+------------endFlag:55475772,usedtime:7---------------
+
+
+***55475772-undefined: exiting com.whatsapp.wamsys.JniBridge.jvidispatchIOO
+
+***96112895-undefined: entered com.whatsapp.wamsys.JniBridge.jvidispatchIOO
+
+96112895-undefined:arg[0]: 1,class:,json:,base:
+96112895-undefined:arg[1]: com.facebook.simplejni.NativeHolder@bacbadd,class:java.lang.Object,json:,base:
+96112895-undefined:arg[2]: [B@eae6337,class:java.lang.Object,json:,base:
+	96112895-undefined:type: undefined
+------------startFlag:96112895,objectHash:undefined,thread(id:50,name:High Pri Worker #1),timestamp:1714205538496---------------
+com.whatsapp.wamsys.JniBridge.jvidispatchIOO
+java.lang.Exception
+	at com.whatsapp.wamsys.JniBridge.jvidispatchIOO(Native Method)
+	at X.1nK.run(:380)
+	at X.0s4.run(:2)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at X.1nK.run(:1233)
+	at java.lang.Thread.run(Thread.java:920)
+
+------------endFlag:96112895,usedtime:4---------------
+
+
+***96112895-undefined: exiting com.whatsapp.wamsys.JniBridge.jvidispatchIOO
+DevInfo Point:0x788cb1a808
+DevInfo Point Point0xb400007893bc69e0
+DevInfo Point+0x18:0xb400007893bc69f8
+DevInfo Point+0x18 Point:0x788cad3418
+x0:0xb4000079bb839180-mp:68 91 83 bb 79 00 00 b4
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4
+x0:0xb4000079bb839180-mp:98 91 83 bb 79 00 00 b4
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cb1a5fa-6
+a:0x788cb1a5fa-mp:fa a5 b1 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cb1a602-6
+a:0x788cb1a602-mp:02 a6 b1 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cb1a5fa-6
+a:0x788cb1a5fa-mp:fa a5 b1 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cb1a602-6
+a:0x788cb1a602-mp:02 a6 b1 8c 78 00 00 00
+x0:0xb4000079bb839180-mp:68 91 83 bb 79 00 00 b4-Complete
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd80392-6
+a:0x788cd80392-mp:92 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd8039a-6
+a:0x788cd8039a-mp:9a 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd80392-6
+a:0x788cd80392-mp:92 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd8039a-6
+a:0x788cd8039a-mp:9a 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803a2-6
+a:0x788cd803a2-mp:a2 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803aa-6
+a:0x788cd803aa-mp:aa 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803b2-6
+a:0x788cd803b2-mp:b2 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803ba-6
+a:0x788cd803ba-mp:ba 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803c2-6
+a:0x788cd803c2-mp:c2 03 d8 8c 78 00 00 00   
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803ca-6
+a:0x788cd803ca-mp:ca 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803d2-6
+a:0x788cd803d2-mp:d2 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803da-6
+a:0x788cd803da-mp:da 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803e2-6
+a:0x788cd803e2-mp:e2 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803ea-6
+a:0x788cd803ea-mp:ea 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803f2-6
+a:0x788cd803f2-mp:f2 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803fa-6
+a:0x788cd803fa-mp:fa 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd80402-6
+a:0x788cd80402-mp:02 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd8040a-6
+a:0x788cd8040a-mp:0a 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd80412-6
+a:0x788cd80412-mp:12 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd8041a-6
+a:0x788cd8041a-mp:1a 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd80422-6
+a:0x788cd80422-mp:22 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd8042a-6
+a:0x788cd8042a-mp:2a 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd80432-6
+a:0x788cd80432-mp:32 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd8043a-6
+a:0x788cd8043a-mp:3a 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd80442-6
+a:0x788cd80442-mp:42 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd8044a-6
+a:0x788cd8044a-mp:4a 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd80452-6
+a:0x788cd80452-mp:52 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803a2-6
+a:0x788cd803a2-mp:a2 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803aa-6
+a:0x788cd803aa-mp:aa 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803b2-6
+a:0x788cd803b2-mp:b2 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803ba-6
+a:0x788cd803ba-mp:ba 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803c2-6
+a:0x788cd803c2-mp:c2 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803ca-6
+a:0x788cd803ca-mp:ca 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803d2-6
+a:0x788cd803d2-mp:d2 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803da-6
+a:0x788cd803da-mp:da 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803e2-6
+a:0x788cd803e2-mp:e2 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803ea-6
+a:0x788cd803ea-mp:ea 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803f2-6
+a:0x788cd803f2-mp:f2 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd803fa-6
+a:0x788cd803fa-mp:fa 03 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd80402-6
+a:0x788cd80402-mp:02 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd8040a-6
+a:0x788cd8040a-mp:0a 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd80412-6
+a:0x788cd80412-mp:12 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd8041a-6
+a:0x788cd8041a-mp:1a 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd80422-6
+a:0x788cd80422-mp:22 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd8042a-6
+a:0x788cd8042a-mp:2a 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd80432-6
+a:0x788cd80432-mp:32 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd8043a-6
+a:0x788cd8043a-mp:3a 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd80442-6
+a:0x788cd80442-mp:42 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd8044a-6
+a:0x788cd8044a-mp:4a 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Memory Scan Match:0x788cd80452-6
+a:0x788cd80452-mp:52 04 d8 8c 78 00 00 00
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Complete
+x0:0xb4000079bb839180-mp: 83 bb 79 00 00 b4-Complete
+x0:0xb4000079bb839180-mp:98 91 83 bb 79 00 00 b4-Complete
+a:0x788cb1a602-mp:02 a6 b1 8c 78 00 00 00-Complete
+a:0x788cb1a5fa-mp:fa a5 b1 8c 78 00 00 00-Complete
+a:0x788cb1a5fa-mp:fa a5 b1 8c 78 00 00 00-Complete
+a:0x788cb1a602-mp:02 a6 b1 8c 78 00 00 00-Complete
+a:0x788cd80392-mp:92 03 d8 8c 78 00 00 00-Complete
+a:0x788cd8039a-mp:9a 03 d8 8c 78 00 00 00-Complete
+a:0x788cd80392-mp:92 03 d8 8c 78 00 00 00-Complete
+a:0x788cd8039a-mp:9a 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803a2-mp:a2 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803aa-mp:aa 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803b2-mp:b2 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803ba-mp:ba 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803c2-mp:c2 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803ca-mp:ca 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803e2-mp:e2 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803da-mp:da 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803d2-mp:d2 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803f2-mp:f2 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803ea-mp:ea 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803fa-mp:fa 03 d8 8c 78 00 00 00-Complete
+a:0x788cd80402-mp:02 04 d8 8c 78 00 00 00-Complete
+a:0x788cd80412-mp:12 04 d8 8c 78 00 00 00-Complete
+a:0x788cd8040a-mp:0a 04 d8 8c 78 00 00 00-Complete
+a:0x788cd80422-mp:22 04 d8 8c 78 00 00 00-Complete
+a:0x788cd8041a-mp:1a 04 d8 8c 78 00 00 00-Complete
+a:0x788cd8042a-mp:2a 04 d8 8c 78 00 00 00-Complete
+a:0x788cd8043a-mp:3a 04 d8 8c 78 00 00 00-Complete
+a:0x788cd80442-mp:42 04 d8 8c 78 00 00 00-Complete
+a:0x788cd80432-mp:32 04 d8 8c 78 00 00 00-Complete
+a:0x788cd80452-mp:52 04 d8 8c 78 00 00 00-Complete
+a:0x788cd8044a-mp:4a 04 d8 8c 78 00 00 00-Complete
+a:0x788cd803aa-mp:aa 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803a2-mp:a2 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803b2-mp:b2 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803d2-mp:d2 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803ca-mp:ca 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803ba-mp:ba 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803c2-mp:c2 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803da-mp:da 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803e2-mp:e2 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803ea-mp:ea 03 d8 8c 78 00 00 00-Complete
+a:0x788cd80402-mp:02 04 d8 8c 78 00 00 00-Complete
+a:0x788cd803f2-mp:f2 03 d8 8c 78 00 00 00-Complete
+a:0x788cd803fa-mp:fa 03 d8 8c 78 00 00 00-Complete
+a:0x788cd8040a-mp:0a 04 d8 8c 78 00 00 00-Complete
+a:0x788cd80412-mp:12 04 d8 8c 78 00 00 00-Complete
+a:0x788cd8042a-mp:2a 04 d8 8c 78 00 00 00-Complete
+a:0x788cd80432-mp:32 04 d8 8c 78 00 00 00-Complete
+a:0x788cd8041a-mp:1a 04 d8 8c 78 00 00 00-Complete
+a:0x788cd80422-mp:22 04 d8 8c 78 00 00 00-Complete
+a:0x788cd8043a-mp:3a 04 d8 8c 78 00 00 00-Complete
+a:0x788cd80442-mp:42 04 d8 8c 78 00 00 00-Complete
+a:0x788cd8044a-mp:4a 04 d8 8c 78 00 00 00-Complete
+a:0x788cd80452-mp:52 04 d8 8c 78 00 00 00-Complete
+entered HookFunc 78e58c-WCRRegisterPhoneNumber×¢²áÕËºÅÇëÇó:
+	x0:0xb4000079bb839180,x1:0xb400007902301d10,x2:0xb400007902250900,x3:0xb40000790224aa80,x4:0xb40000790224ab40,x5:0xb4000079023010b0,x6:0x0,x7:0x0,x8:0x788c53b6d4
+x0:AuthEncData length:160 str:
+           0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+00000000  30 82 05 1c 30 82 03 04 a0 03 02 01 02 02 09 00  0...0...........
+00000010  d5 0f f2 5b a3 f2 d6 b3 30 0d 06 09 2a 86 48 86  ...[....0...*.H.
+00000020  f7 0d 01 01 0b 05 00 30 1b 31 19 30 17 06 03 55  .......0.1.0...U
+00000030  04 05 13 10 66 39 32 30 30 39 65 38 35 33 62 36  ....f92009e853b6
+00000040  62 30 34 35 30 1e 17 0d 31 39 31 31 32 32 32 30  b0450...19112220
+00000050  33 37 35 38 5a 17 0d 33 34 31 31 31 38 32 30 33  3758Z..341118203
+00000060  37 35 38 5a 30 1b 31 19 30 17 06 03 55 04 05 13  758Z0.1.0...U...
+00000070  10 66 39 32 30 30 39 65 38 35 33 62 36 62 30 34  .f92009e853b6b04
+00000080  35 30 82 02 22 30 0d 06 09 2a 86 48 86 f7 0d 01  50.."0...*.H....
+00000090  01 01 05 00 03 82 02 0f 00 30 82 02 0a 02 82 02  .........0......
+Ê¡ÂÔÒÔÏÂ3200×Ö½Ú
+
+RegisterNatives full called from:
+0x788c5b4088 libwhatsapp.so!0x33f088
+	0x788c5aeb30 libwhatsapp.so!0x339b30
+	0x789a26f9c8 base.odex!0x1cc9c8
+	0x789a683998 base.odex!0x5e0998
+	0x789a682c50 base.odex!0x5dfc50
+	0x791841160c libart.so!nterp_helper+0x9c
+	0x789a65d2ac base.odex!0x5ba2ac
+	0x7184c400 boot-framework.oat!0x63c400
+	0x6fdca260 boot.oat!0x2fb260
+	0x6fe50310 boot.oat!0x381310
+	0x6fe49b38 boot.oat!0x37ab38
+	0x789a497b8c base.odex!0x3f4b8c
+	0x791888a648 libart.so!_ZN3art10ThreadList8RegisterEPNS_6ThreadE+0x170
+	0x799ecec15c libc.so!je_arena_tcache_fill_small+0x224
+	0x6fc92a70 boot.oat!0x1c3a70
+	0x7918418968 libart.so!art_quick_invoke_stub+0x228
+
+exiting HookFunc 78e58c-WCRRegisterPhoneNumber×¢²áÕËºÅÇëÇó;
+exit
+
+Thank you for using Frida!

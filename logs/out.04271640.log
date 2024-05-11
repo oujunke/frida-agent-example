@@ -1,0 +1,47 @@
+     ____
+    / _  |   Frida 16.2.1 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to M2007J22C (id=192.168.2.234:5555)
+Spawning `com.whatsapp.w4b`...
+0x79a5c46014
+0x79a5c460b8
+Spawned `com.whatsapp.w4b`. Resuming main thread!
+[M2007J22C::com.whatsapp.w4b ]-> libwhatsapp base:0x788862d000
+DevInfo Point:0x7888ed2808
+DevInfo Point Point0x0
+DevInfo Point+0x18:0x18
+DevInfo err:Error: access violation accessing 0x0
+end
+threadId:1197-returnAddress:0x79a25edeec-r:0x25c2b9415c1739cd
+entered HookFunc 33f084-≤‚ ‘Hook÷∏¡Ó:
+	x0:0xb40000790224aba0,x1:0xb40000784d1ac5f0,x2:0xb40000784cfd4b30,x3:0xb40000784cf707a0,x4:0xb40000784cf70860,x5:0xb40000784d1ac3b0,x6:0x0,x7:0x0,x8:0x78888f36d4
+
+RegisterNatives full called from:
+0x788896c04c libwhatsapp.so!0x33f04c
+	0x7888966b30 libwhatsapp.so!0x339b30
+	0x78984569c8 base.odex!0x1cc9c8
+	0x789886a998 base.odex!0x5e0998
+	0x7898869c50 base.odex!0x5dfc50
+	0x791841160c libart.so!nterp_helper+0x9c
+	0x78988442ac base.odex!0x5ba2ac
+	0x7184c400 boot-framework.oat!0x63c400
+	0x6fdca260 boot.oat!0x2fb260
+	0x6fe50310 boot.oat!0x381310
+	0x6fe49b38 boot.oat!0x37ab38
+	0x789867eb8c base.odex!0x3f4b8c
+	0x79b0153d4c libbase.so!_ZN7android4base17WriteStringToFileERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES9_b+0x10c
+	0x79b01538d4 libbase.so!_ZN7android4base15WriteStringToFdERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS0_11borrowed_fdE+0x4c
+	0x799ecec15c libc.so!je_arena_tcache_fill_small+0x224
+	0x6fc92a70 boot.oat!0x1c3a70
+
+exiting HookFunc 33f084-≤‚ ‘Hook÷∏¡Ó;
+exit
+
+Thank you for using Frida!
