@@ -4,9 +4,6 @@ import {getFullNativeTrace,soStart} from "./utils.js"
 import {findRegisterNatives} from "./findRegisterNatives.js"
 import {trace,traceClass,traceMethod,traceModule,setEnteredCallback,setExitingCallback} from "./traceAllClass.js"
 import { start } from "./hookHttp.js";
-import { cwd } from "process";
-import { debug } from "util";
-import { runInThisContext } from "vm";
 import { Base64 } from "./base64.js";
 //printModuleName();
 //dumpModule("libwhatsapp.so","com.whatsapp")
@@ -74,9 +71,9 @@ function testGpia(libdemoBase:Module){
     var pat84FAA8:any;
     var pat84FAA8X1:any;
     hookFunc(libdemoBase,0x84FAA8,"gpia--生成Key:enc__sub_84FAA8",(c,l)=>{
-        var base=Base64.decode("LAAAAAAAAABn5glqha5nu3Lzbjw69U+lf1IOUYxoBZur2YMfGc3gW1I0Nlh6cTFoVmJldVh3T0ZiOGhzaFVOSHJNMlZ1UHhSeWZNYnNaMWNzVnc9gAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAAAA==");
-        c.x0.writeByteArray(base);
-        c.x1.writeByteArray(Base64.decode("UjQ2WHpxMWhWYmV1WHdPRmI4aHNoVU5Ick0yVnVQeFI="));
+        // var base=Base64.decode("LAAAAAAAAABn5glqha5nu3Lzbjw69U+lf1IOUYxoBZur2YMfGc3gW1I0Nlh6cTFoVmJldVh3T0ZiOGhzaFVOSHJNMlZ1UHhSeWZNYnNaMWNzVnc9gAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAAAA==");
+        // c.x0.writeByteArray(base);
+        // c.x1.writeByteArray(Base64.decode("UjQ2WHpxMWhWYmV1WHdPRmI4aHNoVU5Ick0yVnVQeFI="));
         pat84FAA8=c.x0;
         pat84FAA8X1=c.x1;
         l=logLengthData(c.x0,0x88,"a1内容",l);
@@ -90,6 +87,24 @@ function testGpia(libdemoBase:Module){
     });
     hookFunc(libdemoBase,0x80C800,"gpia--生成Key后",(c,l)=>{
         l=logLengthData(c.x0,32,"加密后key",l);
+        return l;
+    });
+}
+function hookGpiaKey(libdemoBase:Module){
+    var pat85060C1:any;
+    var pat85060C2:any;
+    hookFunc(libdemoBase,0x85060C,"gpia--生成Key:enc__sub_85060C",(c,l)=>{
+        // var base=Base64.decode("LAAAAAAAAABn5glqha5nu3Lzbjw69U+lf1IOUYxoBZur2YMfGc3gW1I0Nlh6cTFoVmJldVh3T0ZiOGhzaFVOSHJNMlZ1UHhSeWZNYnNaMWNzVnc9gAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAAAA==");
+        // c.x0.writeByteArray(base);
+        // c.x1.writeByteArray(Base64.decode("UjQ2WHpxMWhWYmV1WHdPRmI4aHNoVU5Ick0yVnVQeFI="));
+        pat85060C1=c.x0;
+        pat85060C2=c.x1;
+        l=logLengthData(c.x0,0x70,"a1内容",l);
+        l=logLengthData(c.x1,32,"a2内容",l);
+        return l;
+    },(c,l)=>{
+        l=logLengthData(pat85060C1,0x70,"a1内容",l);
+        l=logLengthData(pat85060C2,32,"a2内容",l);
         return l;
     });
 }
@@ -356,10 +371,12 @@ function testCpp(){
         try{
             //testCode(libdemoBase);
             //gpia(libdemoBase);
-            testGpia(libdemoBase);
+            //testGpia(libdemoBase);
             //Enc(libdemoBase);
             //authorization(libdemoBase);
             //testMem(libdemoBase);
+            hookGpiaKey(libdemoBase);
+            //EncStr();
         }catch(err:any) {
             console.log(err);
         }

@@ -6,7 +6,7 @@ $ cd frida-agent-example/
 $ npm install
 $ frida -U -f com.example.android --no-pause -l _agent.js
 $ frida -U -f com.whatsapp -l _agent.js
-$ frida -U -f com.whatsapp.w4b -l _agent.js >>logs/out.05091120.log
+$ frida -U -f com.whatsapp.w4b -l _agent.js >>logs/out.05121000.log
 adb forward tcp:27042 tcp:27042
 adb forward tcp:27043 tcp:27043
 $ jnitrace -l libwhatsapp.so com.whatsapp.w4b >>out.03292251.log
