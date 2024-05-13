@@ -90,23 +90,73 @@ function testGpia(libdemoBase:Module){
         return l;
     });
 }
+var tid:ThreadId;
 function hookGpiaKey(libdemoBase:Module){
     var pat85060C1:any;
     var pat85060C2:any;
-    hookFunc(libdemoBase,0x85060C,"gpia--生成Key:enc__sub_85060C",(c,l)=>{
-        // var base=Base64.decode("LAAAAAAAAABn5glqha5nu3Lzbjw69U+lf1IOUYxoBZur2YMfGc3gW1I0Nlh6cTFoVmJldVh3T0ZiOGhzaFVOSHJNMlZ1UHhSeWZNYnNaMWNzVnc9gAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAAAA==");
-        // c.x0.writeByteArray(base);
-        // c.x1.writeByteArray(Base64.decode("UjQ2WHpxMWhWYmV1WHdPRmI4aHNoVU5Ick0yVnVQeFI="));
-        pat85060C1=c.x0;
-        pat85060C2=c.x1;
-        l=logLengthData(c.x0,0x70,"a1内容",l);
-        l=logLengthData(c.x1,32,"a2内容",l);
-        return l;
-    },(c,l)=>{
-        l=logLengthData(pat85060C1,0x70,"a1内容",l);
-        l=logLengthData(pat85060C2,32,"a2内容",l);
-        return l;
-    });
+    var pat84FAA8:any;
+    var pat84FAA8X1:any;
+    var hk84FAA8:InvocationListener;
+    var hk85060C:InvocationListener;
+    var hkTest:InvocationListener;
+    hookFunc(libdemoBase,0x33D438,"EncryptedAES256CBC加密方法",function(contextArm,l)
+        {
+            tid=this.threadId;
+            hkTest=hookFunc(libdemoBase,0x84FACC,"测试HookCode",(c,l)=>{
+                // var base=Base64.decode("LAAAAAAAAABn5glqha5nu3Lzbjw69U+lf1IOUYxoBZur2YMfGc3gW1I0Nlh6cTFoVmJldVh3T0ZiOGhzaFVOSHJNMlZ1UHhSeWZNYnNaMWNzVnc9gAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAAAA==");
+                // c.x0.writeByteArray(base);
+                // c.x1.writeByteArray(Base64.decode("UjQ2WHpxMWhWYmV1WHdPRmI4aHNoVU5Ick0yVnVQeFI="));
+                l+=`\r\nX9:${c.x9},sp:${c.sp}:sv:${c.x9.sub(c.sp)}--${c.x9.add(-0x1c).readU32().toString(16)}\r\n`;
+                return l;
+            },null,function(){
+                return this.threadId!=tid;
+            });
+            hk84FAA8=hookFunc(libdemoBase,0x84FAA8,"gpia--转换的方法",(c,l)=>{
+                // var base=Base64.decode("LAAAAAAAAABn5glqha5nu3Lzbjw69U+lf1IOUYxoBZur2YMfGc3gW1I0Nlh6cTFoVmJldVh3T0ZiOGhzaFVOSHJNMlZ1UHhSeWZNYnNaMWNzVnc9gAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAAAA==");
+                // c.x0.writeByteArray(base);
+                // c.x1.writeByteArray(Base64.decode("UjQ2WHpxMWhWYmV1WHdPRmI4aHNoVU5Ick0yVnVQeFI="));
+                pat84FAA8=c.x0;
+                pat84FAA8X1=c.x1;
+                l=logLengthData(c.x0,0x88,"a1内容",l);
+                l=logLengthData(c.x1,32,"a2内容",l);
+                return l;
+            },(c,l)=>{
+                l=logLengthData(pat84FAA8,0x88,"a1内容",l);
+                l=logLengthData(pat84FAA8X1,32,"a2内容",l);
+                return l;
+            },function(){
+                return this.threadId!=tid;
+            });
+            hk85060C=hookFunc(libdemoBase,0x85060C,"gpia--生成Key:enc__sub_85060C",(c,l)=>{
+                var base=Base64.decode("LAAAAAAAAABn5glqha5nu3Lzbjw69U+lf1IOUYxoBZur2YMfGc3gW3EwNDI3VUpvMWVvV1VLR2cxZzVUSUNZSVNwTHpPQUswaDgvZFFxWHBGQjg9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==");
+                c.x0.writeByteArray(base);
+                c.x1.writeByteArray(Base64.decode("AAAAAAAAAAAAAAAAAAAAAAMAIAAAAAAAYAeOUXwAALQ="));
+                pat85060C1=c.x0;
+                pat85060C2=c.x1;
+                l=logLengthData(c.x0,0x70,"a1内容",l);
+                l=logLengthData(c.x1,32,"a2内容",l);
+                return l;
+            },(c,l)=>{
+                l=logLengthData(pat85060C1,0x70,"a1内容",l);
+                l=logLengthData(pat85060C2,32,"a2内容",l);
+                return l;
+            },function(){
+                return this.threadId!=tid;
+            });
+            l=logOffsetData(contextArm.x0,0x18,0x20,"x0",l);
+            l+=`x1+0x28 NativePointer:${contextArm.x1.add(0x28).toString(16)}`;
+            //l=logOffsetData(contextArm.x0,0x18,0x28,"x1",l);
+            l=logLengthData(contextArm.x1.add(0x28).readPointer(),contextArm.x1.add(0x18).readU32(),"x1",l);
+            //testGpia(libdemoBase);
+            return l;
+        },(c,l)=>{
+            tid=0;
+            hk84FAA8.detach();
+            hk85060C.detach();
+            return l;
+        });
+    
+   
 }
 function gpia(libdemoBase:Module){
     hookFunc(libdemoBase,0x80C8E4,"处理数据加密的方法",(c,l)=>{
@@ -510,16 +560,20 @@ function readwritebreak(addr:NativePointer, size:number, pattern:number){
  * @param callback 回调函数
  */
 function hookFunc(libdemoBase:Module,add:number,label:string,
-    callback: (context: Arm64CpuContext, log: string) => string,
-    leaveCallback: ((context: Arm64CpuContext, log: string) => string)|null=null){
+    callback: (this: InvocationContext,context: Arm64CpuContext, log: string) => string,
+    leaveCallback: ((this: InvocationContext,context: Arm64CpuContext, log: string) => string)|null=null
+    ,isIgnore:((this: InvocationContext)=>boolean)|null=null):InvocationListener{
     const hookAddress = libdemoBase.base.add(add);
-    Interceptor.attach(hookAddress, {
+    var ins=Interceptor.attach(hookAddress, {
         onEnter: function (args) {
+            if(isIgnore&&isIgnore.apply(this)){
+                return;
+            }
             let contextArm=this.context as  Arm64CpuContext;
             let log=`entered HookFunc ${add.toString(16)}-${label}-${this.threadId}:`;//+args.length;
             try{
                 log+=`\r\n\tx0:${contextArm.x0},x1:${contextArm.x1},x2:${contextArm.x2},x3:${contextArm.x3},x4:${contextArm.x4},x5:${contextArm.x5},x6:${contextArm.x6},x7:${contextArm.x7},x8:${contextArm.x8}\r\n`;
-                log=callback(contextArm,log);
+                log=callback.apply(this,[contextArm,log]);
             }catch(ex:any){
                 log+=`\r\nThrowException:${ex.message}`;
             }
@@ -527,12 +581,15 @@ function hookFunc(libdemoBase:Module,add:number,label:string,
             console.log(log);
         },
         onLeave: function (retval) {
+            if(isIgnore&&isIgnore.apply(this)){
+                return;
+            }
             if(leaveCallback!=null){
                 let contextArm=this.context as  Arm64CpuContext;
                 let log=`entered Leave HookFunc ${add.toString(16)}-${label}-${this.threadId}:`;//+args.length;
                 try{
                     log+=`\r\n\tx0:${contextArm.x0},x1:${contextArm.x1},x2:${contextArm.x2},x3:${contextArm.x3},x4:${contextArm.x4},x5:${contextArm.x5},x6:${contextArm.x6},x7:${contextArm.x7},x8:${contextArm.x8}\r\n`;
-                    log=leaveCallback(contextArm,log);
+                    log=leaveCallback.apply(this,[contextArm,log]);
                 }catch(ex:any){
                     log+=`\r\nThrowException:${ex.message}`;
                 }
@@ -541,6 +598,7 @@ function hookFunc(libdemoBase:Module,add:number,label:string,
             }
         }
     });
+    return ins;
 }
 
 /**
