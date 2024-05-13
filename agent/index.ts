@@ -106,7 +106,9 @@ function hookGpiaKey(libdemoBase:Module){
                 // var base=Base64.decode("LAAAAAAAAABn5glqha5nu3Lzbjw69U+lf1IOUYxoBZur2YMfGc3gW1I0Nlh6cTFoVmJldVh3T0ZiOGhzaFVOSHJNMlZ1UHhSeWZNYnNaMWNzVnc9gAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAAAA==");
                 // c.x0.writeByteArray(base);
                 // c.x1.writeByteArray(Base64.decode("UjQ2WHpxMWhWYmV1WHdPRmI4aHNoVU5Ick0yVnVQeFI="));
-                l+=`\r\nX9:${c.x9},sp:${c.sp}:sv:${c.x9.sub(c.sp)}--${c.x9.add(-0x1c).readU32().toString(16)}\r\n`;
+                //l+=`\r\nX9:${c.x9},sp:${c.sp},pc:${c.pc},sv:${c.x9.sub(c.sp)}--${c.x9.add(-0x1c).readU32().toString(16)}\r\n`;
+                l=logAllRegister(c,l);
+                //l+=`\r\nX8:${c.x8},X9:${c.x9},X19:${c.x19},sp:${c.sp},pc:${c.pc}}\r\n`;
                 return l;
             },null,function(){
                 return this.threadId!=tid;
@@ -325,7 +327,13 @@ function authorization(libdemoBase:Module){
     //     return l;
     // });
 }
-
+function logAllRegister(c: Arm64CpuContext,l:string):string{
+    return `${l}
+    \r\nfp:${c.fp},lr:${c.lr},nzcv:${c.nzcv},pc:${c.pc},sp:${c.sp}\r\n
+    x0:${c.x0},x1:${c.x1},x2:${c.x2},x3:${c.x3},x4:${c.x4},x5:${c.x5},x6:${c.x6},x7:${c.x7},x8:${c.x8},x9:${c.x9},x10:${c.x10},x11:${c.x11},x12:${c.x12},x13:${c.x13},x14:${c.x14},x15:${c.x15},x16:${c.x16},x17:${c.x17},x18:${c.x18},x19:${c.x19},x20:${c.x20},x21:${c.x21},x22:${c.x22},x23:${c.x23},x24:${c.x24},x25:${c.x25},x26:${c.x26},x27:${c.x27},x28:${c.x28}\r\n
+    d0:${c.d0},d1:${c.d1},d2:${c.d2},d3:${c.d3},d4:${c.d4},d5:${c.d5},d6:${c.d6},d7:${c.d7},d8:${c.d8},d9:${c.d9},d10:${c.d10},d11:${c.d11},d12:${c.d12},d13:${c.d13},d14:${c.d14},d15:${c.d15},d16:${c.d16},d17:${c.d17},d18:${c.d18},d19:${c.d19},d20:${c.d20},d21:${c.d21},d22:${c.d22},d23:${c.d23},d24:${c.d24},d25:${c.d25},d26:${c.d26},d27:${c.d27},d28:${c.d28},d29:${c.d29},d30:${c.d30},d31:${c.d31}\r\n
+    s0:${c.s0},s1:${c.s1},s2:${c.s2},s3:${c.s3},s4:${c.s4},s5:${c.s5},s6:${c.s6},s7:${c.s7},s8:${c.s8},s9:${c.s9},s10:${c.s10},s11:${c.s11},s12:${c.s12},s13:${c.s13},s14:${c.s14},s15:${c.s15},s16:${c.s16},s17:${c.s17},s18:${c.s18},s19:${c.s19},s20:${c.s20},s21:${c.s21},s22:${c.s22},s23:${c.s23},s24:${c.s24},s25:${c.s25},s26:${c.s26},s27:${c.s27},s28:${c.s28},s29:${c.s29},s30:${c.s30},s31:${c.s31}`;
+}
 function logGDevInfoAuthData(libdemoBase:Module,l:string):string{
     try{
         var gDevInfo=libdemoBase.base.add(0x8A5808).readPointer();
