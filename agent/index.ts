@@ -102,11 +102,25 @@ function hookGpiaKey(libdemoBase:Module){
     hookFunc(libdemoBase,0x33D438,"EncryptedAES256CBC加密方法",function(contextArm,l)
         {
             tid=this.threadId;
-            hkTest=hookFunc(libdemoBase,0x84FACC,"测试HookCode",(c,l)=>{
+            //
+            hkTest=hookFunc(libdemoBase,0x84FEF0,"测试HookCode",(c,l)=>{
                 // var base=Base64.decode("LAAAAAAAAABn5glqha5nu3Lzbjw69U+lf1IOUYxoBZur2YMfGc3gW1I0Nlh6cTFoVmJldVh3T0ZiOGhzaFVOSHJNMlZ1UHhSeWZNYnNaMWNzVnc9gAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAAAA==");
                 // c.x0.writeByteArray(base);
                 // c.x1.writeByteArray(Base64.decode("UjQ2WHpxMWhWYmV1WHdPRmI4aHNoVU5Ick0yVnVQeFI="));
                 //l+=`\r\nX9:${c.x9},sp:${c.sp},pc:${c.pc},sv:${c.x9.sub(c.sp)}--${c.x9.add(-0x1c).readU32().toString(16)}\r\n`;
+                l=logLengthData(c.x9,0x32,"x9-data",l);
+                l=logAllRegister(c,l);
+                //l+=`\r\nX8:${c.x8},X9:${c.x9},X19:${c.x19},sp:${c.sp},pc:${c.pc}}\r\n`;
+                return l;
+            },null,function(){
+                return this.threadId!=tid;
+            });
+            hkTest=hookFunc(libdemoBase,0x84FF6C,"测试HookCode",(c,l)=>{
+                // var base=Base64.decode("LAAAAAAAAABn5glqha5nu3Lzbjw69U+lf1IOUYxoBZur2YMfGc3gW1I0Nlh6cTFoVmJldVh3T0ZiOGhzaFVOSHJNMlZ1UHhSeWZNYnNaMWNzVnc9gAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAAAA==");
+                // c.x0.writeByteArray(base);
+                // c.x1.writeByteArray(Base64.decode("UjQ2WHpxMWhWYmV1WHdPRmI4aHNoVU5Ick0yVnVQeFI="));
+                //l+=`\r\nX9:${c.x9},sp:${c.sp},pc:${c.pc},sv:${c.x9.sub(c.sp)}--${c.x9.add(-0x1c).readU32().toString(16)}\r\n`;
+                l=logLengthData(c.x9,0x32,"x9-data",l);
                 l=logAllRegister(c,l);
                 //l+=`\r\nX8:${c.x8},X9:${c.x9},X19:${c.x19},sp:${c.sp},pc:${c.pc}}\r\n`;
                 return l;
