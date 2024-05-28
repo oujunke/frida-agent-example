@@ -195,14 +195,18 @@ function gpia(libdemoBase:Module){
         l+=`x1+0x28 NativePointer:${contextArm.x1.add(0x28).toString(16)}`;
         //l=logOffsetData(contextArm.x0,0x18,0x28,"x1",l);
         l=logLengthData(contextArm.x1.add(0x28).readPointer(),contextArm.x1.add(0x18).readU32(),"x1",l);
-        testGpia(libdemoBase);
+        //testGpia(libdemoBase);
         return l;
     });
-    hookFunc(libdemoBase,0x7F5B0C,"AesEnc加密key,iv",(c,l)=>{
-        l=logData(c.x3,c.x4,"key",l);
-        l=logData(c.x5,c.x6,"iv",l);
-        return l;
-    });
+    // hookFunc(libdemoBase,0x809EEC,"设置Data方法",(c,l)=>{
+    //     l=logLengthData(c.x1,0xf,"key:",l);
+    //     return l;
+    // });
+    // hookFunc(libdemoBase,0x7F5B0C,"AesEnc加密key,iv",(c,l)=>{
+    //     l=logData(c.x3,c.x4,"key",l);
+    //     l=logData(c.x5,c.x6,"iv",l);
+    //     return l;
+    // });
     
 }
 function Enc(libdemoBase:Module){
@@ -442,13 +446,13 @@ function testCpp(){
         console.log("libwhatsapp base:"+libdemoBase.base);
         try{
             //testCode(libdemoBase);
-            //gpia(libdemoBase);
+            gpia(libdemoBase);
             //testGpia(libdemoBase);
-            //Enc(libdemoBase);
-            //authorization(libdemoBase);
+            Enc(libdemoBase);
+            authorization(libdemoBase);
             //testMem(libdemoBase);
             hookGpiaKey(libdemoBase);
-            //EncStr();
+            EncStr();
         }catch(err:any) {
             console.log(err);
         }
@@ -656,7 +660,7 @@ function logByteData(byteData:NativePointer,head:string,log:string):string{
 /**
  * 最大显示字节
  */
-var maxShowByte=160;
+var maxShowByte=0xff;
 /**
  * 使用Log记录字节数据
  * @param dataPointer 字节数据指针
@@ -808,7 +812,7 @@ function hookJava(){
 //"X.3TP.$init"
 "com.facebook.msys.mci.Execution",
 //"com.facebook.msys.mci.Execution.startExecutorThread"
-"java.lang.Thread.$init",
+//"java.lang.Thread.$init",
 "com.whatsapp.util.Log",
 "com.whatsapp.registration.integritysignals.GpiaRegClient"
         ];
@@ -1011,13 +1015,17 @@ function javaMethodInit(){
     }
 }
 function javaInit(){
+    getToken();
+    hookAuth();
+    hookJava();
+}
+function hookKeyStore(){
     try{
         var array:string[]=[
             // 'X.0oF',
             // "X.0qC",
             // "X.0v6",
             // "X.0uY",
-            "java.security.KeyPairGenerator",
             "android.security.keystore.KeyGenParameterSpec.Builder",
             "java.security.KeyStore",
             //"java.nio.ByteBuffer",
@@ -1072,8 +1080,10 @@ function exceptionHandler(){
     );
 }
 exceptionHandler();
-//javaInit();
-//hookAuth();
+hookHttp();
+
+javaInit();
+
 soInit();
 
 //javaPerformInit();
