@@ -22,7 +22,8 @@ function EncStr(){
             // 计算 Hook 地址
             //抓取http加密报文
             //const hookAddress = libdemoBase.base.add(0x35021C);
-            const hookAddress = libdemoBase.base.add(0x847F48);
+            //const hookAddress = libdemoBase.base.add(0x847F48);
+            const hookAddress = libdemoBase.base.add(0x848098);
             console.log("1")
             // 附加一个 Hook 到指定地址
             Interceptor.attach(hookAddress, {
@@ -175,23 +176,24 @@ function hookGpiaKey(libdemoBase:Module){
    
 }
 function gpia(libdemoBase:Module){
-    hookFunc(libdemoBase,0x80C8E4,"处理数据加密的方法",(c,l)=>{
-        //l=logOffsetData(c.x0,0x18,0x28,"x0",l);
-        l=logLengthData(c.x0.add(0x28).readPointer(),c.x0.add(0x18).readU32(),"x0",l);
-        l=logData(c.x1,c.x2,"x1",l);
-        return l;
-    });
-    hookFunc(libdemoBase,0x81423C,"字节数组转Base64",(c,l)=>{
-        //l=logOffsetData(c.x0,0x18,0x28,"x0",l);
-        l=logLengthData(c.x0.add(0x28).readPointer(),c.x0.add(0x18).readU32(),"x0",l);
-        return l;
-    });
-    hookFunc(libdemoBase,0x843BC8,"设置结构中的字节数据",(c,l)=>logData(c.x1,c.x2,"x1",l));
-    hookFunc(libdemoBase,0x3357C4,"gpia数据由C++转Java",(contextArm,l)=>l+=`x0 str:${readData2(contextArm.x0,0x20)}\r\nx1 str:${readData2(contextArm.x1,0x20)}\r\nx2 str:${readData2(contextArm.x2,0x20)}`);
-    //hookFunc(libdemoBase,0x7ED068,"设置结构中的字节数据上级方法",(c,l)=>l);
-    hookFunc(libdemoBase,0x33D438,"EncryptedAES256CBC加密方法",(contextArm,l)=>
+    // hookFunc(libdemoBase,0x80C8E4,"处理数据加密的方法",(c,l)=>{
+    //     //l=logOffsetData(c.x0,0x18,0x28,"x0",l);
+    //     l=logLengthData(c.x0.add(0x28).readPointer(),c.x0.add(0x18).readU32(),"x0",l);
+    //     l=logData(c.x1,c.x2,"x1",l);
+    //     return l;
+    // });
+    // hookFunc(libdemoBase,0x81423C,"字节数组转Base64",(c,l)=>{
+    //     //l=logOffsetData(c.x0,0x18,0x28,"x0",l);
+    //     l=logLengthData(c.x0.add(0x28).readPointer(),c.x0.add(0x18).readU32(),"x0",l);
+    //     return l;
+    // });
+    // hookFunc(libdemoBase,0x843BC8,"设置结构中的字节数据",(c,l)=>logData(c.x1,c.x2,"x1",l));
+    // hookFunc(libdemoBase,0x3357C4,"gpia数据由C++转Java",(contextArm,l)=>l+=`x0 str:${readData2(contextArm.x0,0x20)}\r\nx1 str:${readData2(contextArm.x1,0x20)}\r\nx2 str:${readData2(contextArm.x2,0x20)}`);
+    // //hookFunc(libdemoBase,0x7ED068,"设置结构中的字节数据上级方法",(c,l)=>l);
+    //0x33D438
+    hookFunc(libdemoBase,0x33D588,"EncryptedAES256CBC加密方法",(contextArm,l)=>
     {
-        l=logOffsetData(contextArm.x0,0x18,0x20,"x0",l);
+        l=logOffsetData(contextArm.x0,0x18,0x30,"x0",l);
         l+=`x1+0x28 NativePointer:${contextArm.x1.add(0x28).toString(16)}`;
         //l=logOffsetData(contextArm.x0,0x18,0x28,"x1",l);
         l=logLengthData(contextArm.x1.add(0x28).readPointer(),contextArm.x1.add(0x18).readU32(),"x1",l);
@@ -202,11 +204,12 @@ function gpia(libdemoBase:Module){
     //     l=logLengthData(c.x1,0xf,"key:",l);
     //     return l;
     // });
-    // hookFunc(libdemoBase,0x7F5B0C,"AesEnc加密key,iv",(c,l)=>{
-    //     l=logData(c.x3,c.x4,"key",l);
-    //     l=logData(c.x5,c.x6,"iv",l);
-    //     return l;
-    // });
+    //0x7F5B0C
+    hookFunc(libdemoBase,0x7F5C5C,"AesEnc加密key,iv",(c,l)=>{
+        l=logData(c.x3,c.x4,"key",l);
+        l=logData(c.x5,c.x6,"iv",l);
+        return l;
+    });
     
 }
 function Enc(libdemoBase:Module){
@@ -448,10 +451,10 @@ function testCpp(){
             //testCode(libdemoBase);
             gpia(libdemoBase);
             //testGpia(libdemoBase);
-            Enc(libdemoBase);
-            authorization(libdemoBase);
+            //Enc(libdemoBase);
+            //authorization(libdemoBase);
             //testMem(libdemoBase);
-            hookGpiaKey(libdemoBase);
+            //hookGpiaKey(libdemoBase);
             EncStr();
         }catch(err:any) {
             console.log(err);
@@ -660,7 +663,7 @@ function logByteData(byteData:NativePointer,head:string,log:string):string{
 /**
  * 最大显示字节
  */
-var maxShowByte=0xff;
+var maxShowByte=0x400;
 /**
  * 使用Log记录字节数据
  * @param dataPointer 字节数据指针
@@ -1016,8 +1019,8 @@ function javaMethodInit(){
 }
 function javaInit(){
     getToken();
-    hookAuth();
-    hookJava();
+    //hookAuth();
+    //hookJava();
 }
 function hookKeyStore(){
     try{
