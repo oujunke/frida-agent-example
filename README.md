@@ -10,9 +10,9 @@ $ frida -U -f com.whatsapp.w4b -l _agent.js >>logs/out.05121000.log
 $ adb forward tcp:27042 tcp:27042
 $ adb forward tcp:27043 tcp:27043
 $ jnitrace -l libwhatsapp.so com.whatsapp.w4b >>out.03292251.log
-$ ssh -L 0.0.0.0:27042:192.168.2.186:27042 root@192.168.2.186
-$ ssh -L 27042:localhost:27042 root@192.168.2.186
-$ ssh -L 27043:localhost:27043 root@192.168.2.186
+
+$ ssh -CfNg -L 27042:127.0.0.1:27042 root@192.168.101.223
+$ ssh -CfNg -L 27043:127.0.0.1:27043 root@192.168.101.223
 $ frida-ps  -Rai
 $ frida -R -f net.whatsapp.WhatsApp -l ios/index.js >>ioslogs/out.06132000.log
 $ frida-compile ios/index.ts -o _ios_agent.js -w
