@@ -13,10 +13,14 @@ $ jnitrace -l libwhatsapp.so com.whatsapp.w4b >>out.03292251.log
 
 $ ssh -CfNg -L 27042:127.0.0.1:27042 root@192.168.101.223
 $ ssh -CfNg -L 27043:127.0.0.1:27043 root@192.168.101.223
+$ ssh -CfNg -L 27042:127.0.0.1:27042 root@192.168.2.186
+$ ssh -CfNg -L 27043:127.0.0.1:27043 root@192.168.2.186
 $ frida-ps  -Rai
 $ frida -R -f net.whatsapp.WhatsApp -l ios/index.js >>ioslogs/out.06132000.log
 $ frida-compile ios/index.ts -o _ios_agent.js -w
 $ frida -R -f net.whatsapp.WhatsApp -l _ios_agent.js >>logs/out.06132000.log
+
+$ frida -R -f net.whatsapp.WhatsApp -l index.js >>logs/out.06142300.log
 
 $ objection -N -g net.whatsapp.WhatsApp explore
 ```
