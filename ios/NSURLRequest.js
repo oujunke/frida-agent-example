@@ -1,4 +1,4 @@
-function hook(){
+export function hook(){
 	if(ObjC.available) {
 		for(var className in ObjC.classes) {
 			if (ObjC.classes.hasOwnProperty(className)) {

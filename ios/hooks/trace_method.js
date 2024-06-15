@@ -7,7 +7,7 @@ Search for methods
 * If one or more strings are specified in "search_method" and "search_class" array, the script will print only the classes and methods that meet with the search criteria.
 */
 
-function hook(search_class,search_method){
+export function hook(search_class,search_method){
 //var search_class = [''];
 //var search_method = [''];
 
@@ -50,6 +50,7 @@ if (ObjC.available)
             print_methods(className);
         }
     }
+    console.log('print end');
 }
 else {
     console.log('Objective-C Runtime is not available!');

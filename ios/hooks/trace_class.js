@@ -28,3 +28,4 @@ function hook(search_class){
         console.log('Objective-C Runtime is not available!');
     }
 }
+export {hook}
