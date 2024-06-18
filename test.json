@@ -1,0 +1,4136 @@
+[
+  {
+    "name": "WhatsApp",
+    "base": "0x104dd4000",
+    "size": 51445760,
+    "path": "/private/var/containers/Bundle/Application/19016FF0-2840-4025-AC55-4C56F8FD33BA/WhatsApp.app/WhatsApp"
+  },
+  {
+    "name": "substitute-inserter.dylib",
+    "base": "0x109324000",
+    "size": 4374528,
+    "path": "/usr/lib/substitute-inserter.dylib"
+  },
+  {
+    "name": "LinkPresentation",
+    "base": "0x1b86e2000",
+    "size": 917504,
+    "path": "/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation"
+  },
+  {
+    "name": "libSystem.B.dylib",
+    "base": "0x1d4406000",
+    "size": 8192,
+    "path": "/usr/lib/libSystem.B.dylib"
+  },
+  {
+    "name": "libswiftCoreGraphics.dylib",
+    "base": "0x1abdcc000",
+    "size": 45056,
+    "path": "/usr/lib/swift/libswiftCoreGraphics.dylib"
+  },
+  {
+    "name": "libz.1.dylib",
+    "base": "0x1edc99000",
+    "size": 73728,
+    "path": "/usr/lib/libz.1.dylib"
+  },
+  {
+    "name": "libsqlite3.dylib",
+    "base": "0x1be213000",
+    "size": 1613824,
+    "path": "/usr/lib/libsqlite3.dylib"
+  },
+  {
+    "name": "libxml2.2.dylib",
+    "base": "0x1edb7f000",
+    "size": 966656,
+    "path": "/usr/lib/libxml2.2.dylib"
+  },
+  {
+    "name": "Speech",
+    "base": "0x1d8372000",
+    "size": 65536,
+    "path": "/System/Library/Frameworks/Speech.framework/Speech"
+  },
+  {
+    "name": "MetalKit",
+    "base": "0x1d6782000",
+    "size": 106496,
+    "path": "/System/Library/Frameworks/MetalKit.framework/MetalKit"
+  },
+  {
+    "name": "Intents",
+    "base": "0x1ac7df000",
+    "size": 5926912,
+    "path": "/System/Library/Frameworks/Intents.framework/Intents"
+  },
+  {
+    "name": "MetricKit",
+    "base": "0x1d6c58000",
+    "size": 77824,
+    "path": "/System/Library/Frameworks/MetricKit.framework/MetricKit"
+  },
+  {
+    "name": "EventKit",
+    "base": "0x1afceb000",
+    "size": 1335296,
+    "path": "/System/Library/Frameworks/EventKit.framework/EventKit"
+  },
+  {
+    "name": "libcompression.dylib",
+    "base": "0x1ed140000",
+    "size": 98304,
+    "path": "/usr/lib/libcompression.dylib"
+  },
+  {
+    "name": "PushKit",
+    "base": "0x1cdded000",
+    "size": 32768,
+    "path": "/System/Library/Frameworks/PushKit.framework/PushKit"
+  },
+  {
+    "name": "BackgroundTasks",
+    "base": "0x1ba6e1000",
+    "size": 36864,
+    "path": "/System/Library/Frameworks/BackgroundTasks.framework/BackgroundTasks"
+  },
+  {
+    "name": "EventKitUI",
+    "base": "0x1bec7f000",
+    "size": 1990656,
+    "path": "/System/Library/Frameworks/EventKitUI.framework/EventKitUI"
+  },
+  {
+    "name": "SafariServices",
+    "base": "0x1bf224000",
+    "size": 2023424,
+    "path": "/System/Library/Frameworks/SafariServices.framework/SafariServices"
+  },
+  {
+    "name": "VideoToolbox",
+    "base": "0x1b6e52000",
+    "size": 1040384,
+    "path": "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox"
+  },
+  {
+    "name": "CoreBluetooth",
+    "base": "0x1bdcaf000",
+    "size": 561152,
+    "path": "/System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth"
+  },
+  {
+    "name": "SharedModules",
+    "base": "0x1097d8000",
+    "size": 27983872,
+    "path": "/private/var/containers/Bundle/Application/19016FF0-2840-4025-AC55-4C56F8FD33BA/WhatsApp.app/Frameworks/SharedModules.framework/SharedModules"
+  },
+  {
+    "name": "Foundation",
+    "base": "0x1a5e75000",
+    "size": 2867200,
+    "path": "/System/Library/Frameworks/Foundation.framework/Foundation"
+  },
+  {
+    "name": "libobjc.A.dylib",
+    "base": "0x1b91ac000",
+    "size": 225280,
+    "path": "/usr/lib/libobjc.A.dylib"
+  },
+  {
+    "name": "AVFoundation",
+    "base": "0x1d5416000",
+    "size": 4096,
+    "path": "/System/Library/Frameworks/AVFoundation.framework/AVFoundation"
+  },
+  {
+    "name": "AVKit",
+    "base": "0x1ba5d4000",
+    "size": 1101824,
+    "path": "/System/Library/Frameworks/AVKit.framework/AVKit"
+  },
+  {
+    "name": "AudioToolbox",
+    "base": "0x1adabe000",
+    "size": 2535424,
+    "path": "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox"
+  },
+  {
+    "name": "AuthenticationServices",
+    "base": "0x1d5d6a000",
+    "size": 122880,
+    "path": "/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices"
+  },
+  {
+    "name": "CallKit",
+    "base": "0x1c3798000",
+    "size": 438272,
+    "path": "/System/Library/Frameworks/CallKit.framework/CallKit"
+  },
+  {
+    "name": "Combine",
+    "base": "0x1b87c2000",
+    "size": 1196032,
+    "path": "/System/Library/Frameworks/Combine.framework/Combine"
+  },
+  {
+    "name": "Contacts",
+    "base": "0x1a947e000",
+    "size": 1454080,
+    "path": "/System/Library/Frameworks/Contacts.framework/Contacts"
+  },
+  {
+    "name": "ContactsUI",
+    "base": "0x1a8dbd000",
+    "size": 2260992,
+    "path": "/System/Library/Frameworks/ContactsUI.framework/ContactsUI"
+  },
+  {
+    "name": "CoreData",
+    "base": "0x1aad63000",
+    "size": 3665920,
+    "path": "/System/Library/Frameworks/CoreData.framework/CoreData"
+  },
+  {
+    "name": "CoreFoundation",
+    "base": "0x1a4b37000",
+    "size": 3907584,
+    "path": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+  },
+  {
+    "name": "CoreGraphics",
+    "base": "0x1a64aa000",
+    "size": 5869568,
+    "path": "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics"
+  },
+  {
+    "name": "CoreImage",
+    "base": "0x1acdd5000",
+    "size": 3244032,
+    "path": "/System/Library/Frameworks/CoreImage.framework/CoreImage"
+  },
+  {
+    "name": "CoreLocation",
+    "base": "0x1aab2a000",
+    "size": 565248,
+    "path": "/System/Library/Frameworks/CoreLocation.framework/CoreLocation"
+  },
+  {
+    "name": "CoreMedia",
+    "base": "0x1ad9bd000",
+    "size": 1052672,
+    "path": "/System/Library/Frameworks/CoreMedia.framework/CoreMedia"
+  },
+  {
+    "name": "CoreMotion",
+    "base": "0x1afa85000",
+    "size": 2514944,
+    "path": "/System/Library/Frameworks/CoreMotion.framework/CoreMotion"
+  },
+  {
+    "name": "CoreServices",
+    "base": "0x1a4ef1000",
+    "size": 1748992,
+    "path": "/System/Library/Frameworks/CoreServices.framework/CoreServices"
+  },
+  {
+    "name": "CoreSpotlight",
+    "base": "0x1b07e2000",
+    "size": 462848,
+    "path": "/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight"
+  },
+  {
+    "name": "CoreText",
+    "base": "0x1a8fe5000",
+    "size": 1802240,
+    "path": "/System/Library/Frameworks/CoreText.framework/CoreText"
+  },
+  {
+    "name": "CoreVideo",
+    "base": "0x1ad1ab000",
+    "size": 245760,
+    "path": "/System/Library/Frameworks/CoreVideo.framework/CoreVideo"
+  },
+  {
+    "name": "CryptoKit",
+    "base": "0x1ce097000",
+    "size": 303104,
+    "path": "/System/Library/Frameworks/CryptoKit.framework/CryptoKit"
+  },
+  {
+    "name": "DeviceCheck",
+    "base": "0x1d6415000",
+    "size": 20480,
+    "path": "/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck"
+  },
+  {
+    "name": "ImageIO",
+    "base": "0x1a6131000",
+    "size": 3538944,
+    "path": "/System/Library/Frameworks/ImageIO.framework/ImageIO"
+  },
+  {
+    "name": "LocalAuthentication",
+    "base": "0x1d1284000",
+    "size": 106496,
+    "path": "/System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication"
+  },
+  {
+    "name": "MapKit",
+    "base": "0x1b400c000",
+    "size": 2998272,
+    "path": "/System/Library/Frameworks/MapKit.framework/MapKit"
+  },
+  {
+    "name": "MediaPlayer",
+    "base": "0x1ac210000",
+    "size": 4284416,
+    "path": "/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer"
+  },
+  {
+    "name": "MessageUI",
+    "base": "0x1bb6fd000",
+    "size": 1306624,
+    "path": "/System/Library/Frameworks/MessageUI.framework/MessageUI"
+  },
+  {
+    "name": "Metal",
+    "base": "0x1ba8e0000",
+    "size": 921600,
+    "path": "/System/Library/Frameworks/Metal.framework/Metal"
+  },
+  {
+    "name": "NaturalLanguage",
+    "base": "0x1cf071000",
+    "size": 270336,
+    "path": "/System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage"
+  },
+  {
+    "name": "PassKit",
+    "base": "0x1d7b09000",
+    "size": 61440,
+    "path": "/System/Library/Frameworks/PassKit.framework/PassKit"
+  },
+  {
+    "name": "Photos",
+    "base": "0x1b55a1000",
+    "size": 2428928,
+    "path": "/System/Library/Frameworks/Photos.framework/Photos"
+  },
+  {
+    "name": "PhotosUI",
+    "base": "0x1b70ac000",
+    "size": 6090752,
+    "path": "/System/Library/Frameworks/PhotosUI.framework/PhotosUI"
+  },
+  {
+    "name": "QuartzCore",
+    "base": "0x1a7f0f000",
+    "size": 2641920,
+    "path": "/System/Library/Frameworks/QuartzCore.framework/QuartzCore"
+  },
+  {
+    "name": "ReplayKit",
+    "base": "0x1d7dbe000",
+    "size": 196608,
+    "path": "/System/Library/Frameworks/ReplayKit.framework/ReplayKit"
+  },
+  {
+    "name": "Security",
+    "base": "0x1ac0c4000",
+    "size": 1359872,
+    "path": "/System/Library/Frameworks/Security.framework/Security"
+  },
+  {
+    "name": "StoreKit",
+    "base": "0x1c2334000",
+    "size": 294912,
+    "path": "/System/Library/Frameworks/StoreKit.framework/StoreKit"
+  },
+  {
+    "name": "SwiftUI",
+    "base": "0x1ab175000",
+    "size": 12939264,
+    "path": "/System/Library/Frameworks/SwiftUI.framework/SwiftUI"
+  },
+  {
+    "name": "UIKit",
+    "base": "0x1d84a5000",
+    "size": 4096,
+    "path": "/System/Library/Frameworks/UIKit.framework/UIKit"
+  },
+  {
+    "name": "UniformTypeIdentifiers",
+    "base": "0x1b8974000",
+    "size": 73728,
+    "path": "/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers"
+  },
+  {
+    "name": "UserNotifications",
+    "base": "0x1b3f27000",
+    "size": 212992,
+    "path": "/System/Library/Frameworks/UserNotifications.framework/UserNotifications"
+  },
+  {
+    "name": "VisionKit",
+    "base": "0x1d916d000",
+    "size": 4096,
+    "path": "/System/Library/Frameworks/VisionKit.framework/VisionKit"
+  },
+  {
+    "name": "WebKit",
+    "base": "0x1b0f13000",
+    "size": 7823360,
+    "path": "/System/Library/Frameworks/WebKit.framework/WebKit"
+  },
+  {
+    "name": "libc++.1.dylib",
+    "base": "0x1b9246000",
+    "size": 389120,
+    "path": "/usr/lib/libc++.1.dylib"
+  },
+  {
+    "name": "libswiftCompression.dylib",
+    "base": "0x1edd83000",
+    "size": 28672,
+    "path": "/usr/lib/swift/libswiftCompression.dylib"
+  },
+  {
+    "name": "libswiftCoreMIDI.dylib",
+    "base": "0x1edda0000",
+    "size": 40960,
+    "path": "/usr/lib/swift/libswiftCoreMIDI.dylib"
+  },
+  {
+    "name": "libswiftCoreML.dylib",
+    "base": "0x1eddaa000",
+    "size": 16384,
+    "path": "/usr/lib/swift/libswiftCoreML.dylib"
+  },
+  {
+    "name": "libswiftMetricKit.dylib",
+    "base": "0x1ede24000",
+    "size": 8192,
+    "path": "/usr/lib/swift/libswiftMetricKit.dylib"
+  },
+  {
+    "name": "libswiftUniformTypeIdentifiers.dylib",
+    "base": "0x1c3d84000",
+    "size": 73728,
+    "path": "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib"
+  },
+  {
+    "name": "libswiftWebKit.dylib",
+    "base": "0x1eded2000",
+    "size": 12288,
+    "path": "/usr/lib/swift/libswiftWebKit.dylib"
+  },
+  {
+    "name": "libswiftAVFoundation.dylib",
+    "base": "0x1edcef000",
+    "size": 32768,
+    "path": "/usr/lib/swift/libswiftAVFoundation.dylib"
+  },
+  {
+    "name": "libswiftAccelerate.dylib",
+    "base": "0x1edcf7000",
+    "size": 446464,
+    "path": "/usr/lib/swift/libswiftAccelerate.dylib"
+  },
+  {
+    "name": "libswiftCallKit.dylib",
+    "base": "0x1edd7f000",
+    "size": 16384,
+    "path": "/usr/lib/swift/libswiftCallKit.dylib"
+  },
+  {
+    "name": "libswiftCore.dylib",
+    "base": "0x1a881e000",
+    "size": 4390912,
+    "path": "/usr/lib/swift/libswiftCore.dylib"
+  },
+  {
+    "name": "libswiftCoreAudio.dylib",
+    "base": "0x1edd8d000",
+    "size": 36864,
+    "path": "/usr/lib/swift/libswiftCoreAudio.dylib"
+  },
+  {
+    "name": "libswiftCoreFoundation.dylib",
+    "base": "0x1edd9b000",
+    "size": 4096,
+    "path": "/usr/lib/swift/libswiftCoreFoundation.dylib"
+  },
+  {
+    "name": "libswiftCoreImage.dylib",
+    "base": "0x1edd9c000",
+    "size": 4096,
+    "path": "/usr/lib/swift/libswiftCoreImage.dylib"
+  },
+  {
+    "name": "libswiftCoreLocation.dylib",
+    "base": "0x1edd9d000",
+    "size": 12288,
+    "path": "/usr/lib/swift/libswiftCoreLocation.dylib"
+  },
+  {
+    "name": "libswiftCoreMedia.dylib",
+    "base": "0x1eddae000",
+    "size": 241664,
+    "path": "/usr/lib/swift/libswiftCoreMedia.dylib"
+  },
+  {
+    "name": "libswiftDarwin.dylib",
+    "base": "0x1eddf5000",
+    "size": 40960,
+    "path": "/usr/lib/swift/libswiftDarwin.dylib"
+  },
+  {
+    "name": "libswiftDispatch.dylib",
+    "base": "0x1b9cde000",
+    "size": 102400,
+    "path": "/usr/lib/swift/libswiftDispatch.dylib"
+  },
+  {
+    "name": "libswiftIntents.dylib",
+    "base": "0x1ede05000",
+    "size": 45056,
+    "path": "/usr/lib/swift/libswiftIntents.dylib"
+  },
+  {
+    "name": "libswiftMapKit.dylib",
+    "base": "0x1ede16000",
+    "size": 12288,
+    "path": "/usr/lib/swift/libswiftMapKit.dylib"
+  },
+  {
+    "name": "libswiftMetal.dylib",
+    "base": "0x1ede1d000",
+    "size": 20480,
+    "path": "/usr/lib/swift/libswiftMetal.dylib"
+  },
+  {
+    "name": "libswiftNaturalLanguage.dylib",
+    "base": "0x1ede29000",
+    "size": 32768,
+    "path": "/usr/lib/swift/libswiftNaturalLanguage.dylib"
+  },
+  {
+    "name": "libswiftObjectiveC.dylib",
+    "base": "0x1ca1f9000",
+    "size": 12288,
+    "path": "/usr/lib/swift/libswiftObjectiveC.dylib"
+  },
+  {
+    "name": "libswiftQuartzCore.dylib",
+    "base": "0x1ede94000",
+    "size": 8192,
+    "path": "/usr/lib/swift/libswiftQuartzCore.dylib"
+  },
+  {
+    "name": "libswiftVision.dylib",
+    "base": "0x1edece000",
+    "size": 8192,
+    "path": "/usr/lib/swift/libswiftVision.dylib"
+  },
+  {
+    "name": "libswift_Concurrency.dylib",
+    "base": "0x108f44000",
+    "size": 278528,
+    "path": "/private/var/containers/Bundle/Application/19016FF0-2840-4025-AC55-4C56F8FD33BA/WhatsApp.app/Frameworks/libswift_Concurrency.dylib"
+  },
+  {
+    "name": "libswiftos.dylib",
+    "base": "0x1eded5000",
+    "size": 77824,
+    "path": "/usr/lib/swift/libswiftos.dylib"
+  },
+  {
+    "name": "libswiftsimd.dylib",
+    "base": "0x1edee8000",
+    "size": 81920,
+    "path": "/usr/lib/swift/libswiftsimd.dylib"
+  },
+  {
+    "name": "libswiftCoreData.dylib",
+    "base": "0x1edd96000",
+    "size": 20480,
+    "path": "/usr/lib/swift/libswiftCoreData.dylib"
+  },
+  {
+    "name": "libswiftFoundation.dylib",
+    "base": "0x1a86a2000",
+    "size": 1556480,
+    "path": "/usr/lib/swift/libswiftFoundation.dylib"
+  },
+  {
+    "name": "libswiftNetwork.dylib",
+    "base": "0x1ede32000",
+    "size": 331776,
+    "path": "/usr/lib/swift/libswiftNetwork.dylib"
+  },
+  {
+    "name": "libswiftPhotosUI.dylib",
+    "base": "0x1ede8f000",
+    "size": 20480,
+    "path": "/usr/lib/swift/libswiftPhotosUI.dylib"
+  },
+  {
+    "name": "libswiftUIKit.dylib",
+    "base": "0x1b848b000",
+    "size": 270336,
+    "path": "/usr/lib/swift/libswiftUIKit.dylib"
+  },
+  {
+    "name": "URLFormatting",
+    "base": "0x1e6f05000",
+    "size": 32768,
+    "path": "/System/Library/PrivateFrameworks/URLFormatting.framework/URLFormatting"
+  },
+  {
+    "name": "IconServices",
+    "base": "0x1bff38000",
+    "size": 184320,
+    "path": "/System/Library/PrivateFrameworks/IconServices.framework/IconServices"
+  },
+  {
+    "name": "SoftLinking",
+    "base": "0x1e5d2b000",
+    "size": 4096,
+    "path": "/System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking"
+  },
+  {
+    "name": "Accelerate",
+    "base": "0x1d5417000",
+    "size": 4096,
+    "path": "/System/Library/Frameworks/Accelerate.framework/Accelerate"
+  },
+  {
+    "name": "AggregateDictionary",
+    "base": "0x1da309000",
+    "size": 24576,
+    "path": "/System/Library/PrivateFrameworks/AggregateDictionary.framework/AggregateDictionary"
+  },
+  {
+    "name": "AppleMediaServices",
+    "base": "0x1a82f7000",
+    "size": 3846144,
+    "path": "/System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices"
+  },
+  {
+    "name": "AssertionServices",
+    "base": "0x1ba854000",
+    "size": 65536,
+    "path": "/System/Library/PrivateFrameworks/AssertionServices.framework/AssertionServices"
+  },
+  {
+    "name": "Celestial",
+    "base": "0x1c1fe0000",
+    "size": 61440,
+    "path": "/System/Library/PrivateFrameworks/Celestial.framework/Celestial"
+  },
+  {
+    "name": "CloudKit",
+    "base": "0x1aabb4000",
+    "size": 1765376,
+    "path": "/System/Library/Frameworks/CloudKit.framework/CloudKit"
+  },
+  {
+    "name": "MediaExperience",
+    "base": "0x1ba9c1000",
+    "size": 1359872,
+    "path": "/System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience"
+  },
+  {
+    "name": "MediaRemote",
+    "base": "0x1b038e000",
+    "size": 2703360,
+    "path": "/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote"
+  },
+  {
+    "name": "QuickLookThumbnailing",
+    "base": "0x1d7b18000",
+    "size": 258048,
+    "path": "/System/Library/Frameworks/QuickLookThumbnailing.framework/QuickLookThumbnailing"
+  },
+  {
+    "name": "TCC",
+    "base": "0x1e630b000",
+    "size": 69632,
+    "path": "/System/Library/PrivateFrameworks/TCC.framework/TCC"
+  },
+  {
+    "name": "libMobileGestalt.dylib",
+    "base": "0x1b3aee000",
+    "size": 389120,
+    "path": "/usr/lib/libMobileGestalt.dylib"
+  },
+  {
+    "name": "CFNetwork",
+    "base": "0x1a5258000",
+    "size": 4816896,
+    "path": "/System/Library/Frameworks/CFNetwork.framework/CFNetwork"
+  },
+  {
+    "name": "libicucore.A.dylib",
+    "base": "0x1a48cb000",
+    "size": 2539520,
+    "path": "/usr/lib/libicucore.A.dylib"
+  },
+  {
+    "name": "IOKit",
+    "base": "0x1af957000",
+    "size": 704512,
+    "path": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit"
+  },
+  {
+    "name": "SystemConfiguration",
+    "base": "0x1a50e5000",
+    "size": 503808,
+    "path": "/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration"
+  },
+  {
+    "name": "libapple_nghttp2.dylib",
+    "base": "0x1ecfd5000",
+    "size": 94208,
+    "path": "/usr/lib/libapple_nghttp2.dylib"
+  },
+  {
+    "name": "libnetwork.dylib",
+    "base": "0x1a56f0000",
+    "size": 7397376,
+    "path": "/usr/lib/libnetwork.dylib"
+  },
+  {
+    "name": "libc++abi.dylib",
+    "base": "0x1b92a5000",
+    "size": 106496,
+    "path": "/usr/lib/libc++abi.dylib"
+  },
+  {
+    "name": "libcache.dylib",
+    "base": "0x1edefc000",
+    "size": 24576,
+    "path": "/usr/lib/system/libcache.dylib"
+  },
+  {
+    "name": "libcommonCrypto.dylib",
+    "base": "0x1edf02000",
+    "size": 57344,
+    "path": "/usr/lib/system/libcommonCrypto.dylib"
+  },
+  {
+    "name": "libcompiler_rt.dylib",
+    "base": "0x1edf10000",
+    "size": 16384,
+    "path": "/usr/lib/system/libcompiler_rt.dylib"
+  },
+  {
+    "name": "libcopyfile.dylib",
+    "base": "0x1edf14000",
+    "size": 36864,
+    "path": "/usr/lib/system/libcopyfile.dylib"
+  },
+  {
+    "name": "libcorecrypto.dylib",
+    "base": "0x1bf058000",
+    "size": 462848,
+    "path": "/usr/lib/system/libcorecrypto.dylib"
+  },
+  {
+    "name": "libdispatch.dylib",
+    "base": "0x1a484d000",
+    "size": 274432,
+    "path": "/usr/lib/system/libdispatch.dylib"
+  },
+  {
+    "name": "libdyld.dylib",
+    "base": "0x1a4890000",
+    "size": 241664,
+    "path": "/usr/lib/system/libdyld.dylib"
+  },
+  {
+    "name": "liblaunch.dylib",
+    "base": "0x1edffc000",
+    "size": 4096,
+    "path": "/usr/lib/system/liblaunch.dylib"
+  },
+  {
+    "name": "libmacho.dylib",
+    "base": "0x1edffd000",
+    "size": 24576,
+    "path": "/usr/lib/system/libmacho.dylib"
+  },
+  {
+    "name": "libremovefile.dylib",
+    "base": "0x1ee003000",
+    "size": 12288,
+    "path": "/usr/lib/system/libremovefile.dylib"
+  },
+  {
+    "name": "libsystem_asl.dylib",
+    "base": "0x1bf1ca000",
+    "size": 94208,
+    "path": "/usr/lib/system/libsystem_asl.dylib"
+  },
+  {
+    "name": "libsystem_blocks.dylib",
+    "base": "0x1ee006000",
+    "size": 8192,
+    "path": "/usr/lib/system/libsystem_blocks.dylib"
+  },
+  {
+    "name": "libsystem_c.dylib",
+    "base": "0x1adf0a000",
+    "size": 520192,
+    "path": "/usr/lib/system/libsystem_c.dylib"
+  },
+  {
+    "name": "libsystem_collections.dylib",
+    "base": "0x1ee008000",
+    "size": 12288,
+    "path": "/usr/lib/system/libsystem_collections.dylib"
+  },
+  {
+    "name": "libsystem_configuration.dylib",
+    "base": "0x1ee00b000",
+    "size": 20480,
+    "path": "/usr/lib/system/libsystem_configuration.dylib"
+  },
+  {
+    "name": "libsystem_containermanager.dylib",
+    "base": "0x1ee010000",
+    "size": 77824,
+    "path": "/usr/lib/system/libsystem_containermanager.dylib"
+  },
+  {
+    "name": "libsystem_coreservices.dylib",
+    "base": "0x1ee023000",
+    "size": 8192,
+    "path": "/usr/lib/system/libsystem_coreservices.dylib"
+  },
+  {
+    "name": "libsystem_darwin.dylib",
+    "base": "0x1ee025000",
+    "size": 40960,
+    "path": "/usr/lib/system/libsystem_darwin.dylib"
+  },
+  {
+    "name": "libsystem_dnssd.dylib",
+    "base": "0x1ee02f000",
+    "size": 36864,
+    "path": "/usr/lib/system/libsystem_dnssd.dylib"
+  },
+  {
+    "name": "libsystem_featureflags.dylib",
+    "base": "0x1ee038000",
+    "size": 12288,
+    "path": "/usr/lib/system/libsystem_featureflags.dylib"
+  },
+  {
+    "name": "libsystem_info.dylib",
+    "base": "0x1adee4000",
+    "size": 155648,
+    "path": "/usr/lib/system/libsystem_info.dylib"
+  },
+  {
+    "name": "libsystem_m.dylib",
+    "base": "0x1ee03b000",
+    "size": 188416,
+    "path": "/usr/lib/system/libsystem_m.dylib"
+  },
+  {
+    "name": "libsystem_malloc.dylib",
+    "base": "0x1b3fe8000",
+    "size": 147456,
+    "path": "/usr/lib/system/libsystem_malloc.dylib"
+  },
+  {
+    "name": "libsystem_networkextension.dylib",
+    "base": "0x1b6074000",
+    "size": 65536,
+    "path": "/usr/lib/system/libsystem_networkextension.dylib"
+  },
+  {
+    "name": "libsystem_notify.dylib",
+    "base": "0x1bef9a000",
+    "size": 45056,
+    "path": "/usr/lib/system/libsystem_notify.dylib"
+  },
+  {
+    "name": "libsystem_product_info_filter.dylib",
+    "base": "0x1ee070000",
+    "size": 4096,
+    "path": "/usr/lib/system/libsystem_product_info_filter.dylib"
+  },
+  {
+    "name": "libsystem_sandbox.dylib",
+    "base": "0x1ee07d000",
+    "size": 16384,
+    "path": "/usr/lib/system/libsystem_sandbox.dylib"
+  },
+  {
+    "name": "libsystem_kernel.dylib",
+    "base": "0x1d1b33000",
+    "size": 204800,
+    "path": "/usr/lib/system/libsystem_kernel.dylib"
+  },
+  {
+    "name": "libsystem_platform.dylib",
+    "base": "0x1ee069000",
+    "size": 28672,
+    "path": "/usr/lib/system/libsystem_platform.dylib"
+  },
+  {
+    "name": "libsystem_pthread.dylib",
+    "base": "0x1ee071000",
+    "size": 49152,
+    "path": "/usr/lib/system/libsystem_pthread.dylib"
+  },
+  {
+    "name": "libsystem_symptoms.dylib",
+    "base": "0x1c6634000",
+    "size": 32768,
+    "path": "/usr/lib/system/libsystem_symptoms.dylib"
+  },
+  {
+    "name": "libsystem_trace.dylib",
+    "base": "0x1baf19000",
+    "size": 94208,
+    "path": "/usr/lib/system/libsystem_trace.dylib"
+  },
+  {
+    "name": "libunwind.dylib",
+    "base": "0x1ee081000",
+    "size": 45056,
+    "path": "/usr/lib/system/libunwind.dylib"
+  },
+  {
+    "name": "libxpc.dylib",
+    "base": "0x1ee08c000",
+    "size": 225280,
+    "path": "/usr/lib/system/libxpc.dylib"
+  },
+  {
+    "name": "libenergytrace.dylib",
+    "base": "0x1ed1c2000",
+    "size": 4096,
+    "path": "/usr/lib/libenergytrace.dylib"
+  },
+  {
+    "name": "libbsm.0.dylib",
+    "base": "0x1ed10f000",
+    "size": 69632,
+    "path": "/usr/lib/libbsm.0.dylib"
+  },
+  {
+    "name": "libcoretls.dylib",
+    "base": "0x1ed158000",
+    "size": 94208,
+    "path": "/usr/lib/libcoretls.dylib"
+  },
+  {
+    "name": "libcoretls_cfhelpers.dylib",
+    "base": "0x1ed16f000",
+    "size": 8192,
+    "path": "/usr/lib/libcoretls_cfhelpers.dylib"
+  },
+  {
+    "name": "CoreAutoLayout",
+    "base": "0x1b9442000",
+    "size": 278528,
+    "path": "/System/Library/PrivateFrameworks/CoreAutoLayout.framework/CoreAutoLayout"
+  },
+  {
+    "name": "libarchive.2.dylib",
+    "base": "0x1d4875000",
+    "size": 462848,
+    "path": "/usr/lib/libarchive.2.dylib"
+  },
+  {
+    "name": "liblangid.dylib",
+    "base": "0x1ed326000",
+    "size": 8192,
+    "path": "/usr/lib/liblangid.dylib"
+  },
+  {
+    "name": "libCRFSuite.dylib",
+    "base": "0x1ec8ce000",
+    "size": 212992,
+    "path": "/usr/lib/libCRFSuite.dylib"
+  },
+  {
+    "name": "liblzma.5.dylib",
+    "base": "0x1ed334000",
+    "size": 102400,
+    "path": "/usr/lib/liblzma.5.dylib"
+  },
+  {
+    "name": "libbz2.1.0.dylib",
+    "base": "0x1ed120000",
+    "size": 53248,
+    "path": "/usr/lib/libbz2.1.0.dylib"
+  },
+  {
+    "name": "libiconv.2.dylib",
+    "base": "0x1ed212000",
+    "size": 1007616,
+    "path": "/usr/lib/libiconv.2.dylib"
+  },
+  {
+    "name": "libcharset.1.dylib",
+    "base": "0x1ed12d000",
+    "size": 4096,
+    "path": "/usr/lib/libcharset.1.dylib"
+  },
+  {
+    "name": "IOMobileFramebuffer",
+    "base": "0x1c320c000",
+    "size": 45056,
+    "path": "/System/Library/PrivateFrameworks/IOMobileFramebuffer.framework/IOMobileFramebuffer"
+  },
+  {
+    "name": "libpcap.A.dylib",
+    "base": "0x1ed9dc000",
+    "size": 241664,
+    "path": "/usr/lib/libpcap.A.dylib"
+  },
+  {
+    "name": "libdns_services.dylib",
+    "base": "0x1ed19c000",
+    "size": 32768,
+    "path": "/usr/lib/libdns_services.dylib"
+  },
+  {
+    "name": "IOSurface",
+    "base": "0x1c5fd4000",
+    "size": 77824,
+    "path": "/System/Library/Frameworks/IOSurface.framework/IOSurface"
+  },
+  {
+    "name": "AddressBookLegacy",
+    "base": "0x1b3e88000",
+    "size": 651264,
+    "path": "/System/Library/PrivateFrameworks/AddressBookLegacy.framework/AddressBookLegacy"
+  },
+  {
+    "name": "AppSupport",
+    "base": "0x1abdd7000",
+    "size": 262144,
+    "path": "/System/Library/PrivateFrameworks/AppSupport.framework/AppSupport"
+  },
+  {
+    "name": "ManagedConfiguration",
+    "base": "0x1abe17000",
+    "size": 1220608,
+    "path": "/System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration"
+  },
+  {
+    "name": "MobileCoreServices",
+    "base": "0x1d6c6b000",
+    "size": 4096,
+    "path": "/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices"
+  },
+  {
+    "name": "libCTGreenTeaLogger.dylib",
+    "base": "0x1ec902000",
+    "size": 8192,
+    "path": "/usr/lib/libCTGreenTeaLogger.dylib"
+  },
+  {
+    "name": "CellularPlanManager",
+    "base": "0x1dca84000",
+    "size": 155648,
+    "path": "/System/Library/PrivateFrameworks/CellularPlanManager.framework/CellularPlanManager"
+  },
+  {
+    "name": "ClassKit",
+    "base": "0x1c22bc000",
+    "size": 491520,
+    "path": "/System/Library/Frameworks/ClassKit.framework/ClassKit"
+  },
+  {
+    "name": "CoreSuggestions",
+    "base": "0x1b3ddd000",
+    "size": 700416,
+    "path": "/System/Library/PrivateFrameworks/CoreSuggestions.framework/CoreSuggestions"
+  },
+  {
+    "name": "Accounts",
+    "base": "0x1a5dfe000",
+    "size": 487424,
+    "path": "/System/Library/Frameworks/Accounts.framework/Accounts"
+  },
+  {
+    "name": "ContactsFoundation",
+    "base": "0x1af552000",
+    "size": 598016,
+    "path": "/System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation"
+  },
+  {
+    "name": "PhoneNumbers",
+    "base": "0x1e2d26000",
+    "size": 4096,
+    "path": "/System/Library/PrivateFrameworks/PhoneNumbers.framework/PhoneNumbers"
+  },
+  {
+    "name": "vCard",
+    "base": "0x1eb844000",
+    "size": 204800,
+    "path": "/System/Library/PrivateFrameworks/vCard.framework/vCard"
+  },
+  {
+    "name": "DataAccessExpress",
+    "base": "0x1bf468000",
+    "size": 233472,
+    "path": "/System/Library/PrivateFrameworks/DataAccessExpress.framework/DataAccessExpress"
+  },
+  {
+    "name": "CorePhoneNumbers",
+    "base": "0x1ddb0b000",
+    "size": 36864,
+    "path": "/System/Library/PrivateFrameworks/CorePhoneNumbers.framework/CorePhoneNumbers"
+  },
+  {
+    "name": "BaseBoard",
+    "base": "0x1a91cd000",
+    "size": 544768,
+    "path": "/System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard"
+  },
+  {
+    "name": "RunningBoardServices",
+    "base": "0x1adf89000",
+    "size": 311296,
+    "path": "/System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices"
+  },
+  {
+    "name": "PersistentConnection",
+    "base": "0x1c38ca000",
+    "size": 188416,
+    "path": "/System/Library/PrivateFrameworks/PersistentConnection.framework/PersistentConnection"
+  },
+  {
+    "name": "ProtocolBuffer",
+    "base": "0x1ba5bc000",
+    "size": 98304,
+    "path": "/System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer"
+  },
+  {
+    "name": "CoreTelephony",
+    "base": "0x1a5160000",
+    "size": 1015808,
+    "path": "/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony"
+  },
+  {
+    "name": "CommonUtilities",
+    "base": "0x1b3b4d000",
+    "size": 118784,
+    "path": "/System/Library/PrivateFrameworks/CommonUtilities.framework/CommonUtilities"
+  },
+  {
+    "name": "libcupolicy.dylib",
+    "base": "0x1ed194000",
+    "size": 32768,
+    "path": "/usr/lib/libcupolicy.dylib"
+  },
+  {
+    "name": "libTelephonyUtilDynamic.dylib",
+    "base": "0x1bdf9d000",
+    "size": 585728,
+    "path": "/usr/lib/libTelephonyUtilDynamic.dylib"
+  },
+  {
+    "name": "MSUDataAccessor",
+    "base": "0x1b6038000",
+    "size": 86016,
+    "path": "/System/Library/PrivateFrameworks/MSUDataAccessor.framework/MSUDataAccessor"
+  },
+  {
+    "name": "APFS",
+    "base": "0x1d9a1d000",
+    "size": 778240,
+    "path": "/System/Library/PrivateFrameworks/APFS.framework/APFS"
+  },
+  {
+    "name": "libutil.dylib",
+    "base": "0x1edb7b000",
+    "size": 16384,
+    "path": "/usr/lib/libutil.dylib"
+  },
+  {
+    "name": "MobileWiFi",
+    "base": "0x1c5fe7000",
+    "size": 401408,
+    "path": "/System/Library/PrivateFrameworks/MobileWiFi.framework/MobileWiFi"
+  },
+  {
+    "name": "Bom",
+    "base": "0x1cdd88000",
+    "size": 208896,
+    "path": "/System/Library/PrivateFrameworks/Bom.framework/Bom"
+  },
+  {
+    "name": "MobileKeyBag",
+    "base": "0x1b95e5000",
+    "size": 225280,
+    "path": "/System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag"
+  },
+  {
+    "name": "CaptiveNetwork",
+    "base": "0x1dc8ed000",
+    "size": 49152,
+    "path": "/System/Library/PrivateFrameworks/CaptiveNetwork.framework/CaptiveNetwork"
+  },
+  {
+    "name": "EAP8021X",
+    "base": "0x1debeb000",
+    "size": 204800,
+    "path": "/System/Library/PrivateFrameworks/EAP8021X.framework/EAP8021X"
+  },
+  {
+    "name": "CoreAnalytics",
+    "base": "0x1bf4d9000",
+    "size": 155648,
+    "path": "/System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics"
+  },
+  {
+    "name": "AppleSauce",
+    "base": "0x1dbd05000",
+    "size": 151552,
+    "path": "/System/Library/PrivateFrameworks/AppleSauce.framework/AppleSauce"
+  },
+  {
+    "name": "AppleFSCompression",
+    "base": "0x1dbbf2000",
+    "size": 65536,
+    "path": "/System/Library/PrivateFrameworks/AppleFSCompression.framework/AppleFSCompression"
+  },
+  {
+    "name": "libFontParser.dylib",
+    "base": "0x1df537000",
+    "size": 1323008,
+    "path": "/System/Library/PrivateFrameworks/FontServices.framework/libFontParser.dylib"
+  },
+  {
+    "name": "libhvf.dylib",
+    "base": "0x1df728000",
+    "size": 57344,
+    "path": "/System/Library/PrivateFrameworks/FontServices.framework/libhvf.dylib"
+  },
+  {
+    "name": "vImage",
+    "base": "0x1c0a0a000",
+    "size": 2916352,
+    "path": "/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage"
+  },
+  {
+    "name": "vecLib",
+    "base": "0x1d5c06000",
+    "size": 4096,
+    "path": "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib"
+  },
+  {
+    "name": "libvMisc.dylib",
+    "base": "0x1d5bad000",
+    "size": 364544,
+    "path": "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib"
+  },
+  {
+    "name": "libvDSP.dylib",
+    "base": "0x1b9872000",
+    "size": 733184,
+    "path": "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib"
+  },
+  {
+    "name": "libBLAS.dylib",
+    "base": "0x1d5418000",
+    "size": 2469888,
+    "path": "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib"
+  },
+  {
+    "name": "libLAPACK.dylib",
+    "base": "0x1d5673000",
+    "size": 4894720,
+    "path": "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib"
+  },
+  {
+    "name": "libLinearAlgebra.dylib",
+    "base": "0x1d5b1e000",
+    "size": 86016,
+    "path": "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib"
+  },
+  {
+    "name": "libSparseBLAS.dylib",
+    "base": "0x1d5b9b000",
+    "size": 73728,
+    "path": "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib"
+  },
+  {
+    "name": "libQuadrature.dylib",
+    "base": "0x1d5b33000",
+    "size": 20480,
+    "path": "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib"
+  },
+  {
+    "name": "libBNNS.dylib",
+    "base": "0x1d490b000",
+    "size": 4935680,
+    "path": "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib"
+  },
+  {
+    "name": "libSparse.dylib",
+    "base": "0x1d5b38000",
+    "size": 405504,
+    "path": "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib"
+  },
+  {
+    "name": "ColorSync",
+    "base": "0x1ad0ed000",
+    "size": 778240,
+    "path": "/System/Library/PrivateFrameworks/ColorSync.framework/ColorSync"
+  },
+  {
+    "name": "IOSurfaceAccelerator",
+    "base": "0x1e0e33000",
+    "size": 12288,
+    "path": "/System/Library/PrivateFrameworks/IOSurfaceAccelerator.framework/IOSurfaceAccelerator"
+  },
+  {
+    "name": "libate.dylib",
+    "base": "0x1ecfec000",
+    "size": 598016,
+    "path": "/usr/lib/libate.dylib"
+  },
+  {
+    "name": "libexpat.1.dylib",
+    "base": "0x1ed1c3000",
+    "size": 106496,
+    "path": "/usr/lib/libexpat.1.dylib"
+  },
+  {
+    "name": "AppleJPEG",
+    "base": "0x1dbc1d000",
+    "size": 286720,
+    "path": "/System/Library/PrivateFrameworks/AppleJPEG.framework/AppleJPEG"
+  },
+  {
+    "name": "IOAccelerator",
+    "base": "0x1d129e000",
+    "size": 28672,
+    "path": "/System/Library/PrivateFrameworks/IOAccelerator.framework/IOAccelerator"
+  },
+  {
+    "name": "libCoreFSCache.dylib",
+    "base": "0x1d7870000",
+    "size": 28672,
+    "path": "/System/Library/Frameworks/OpenGLES.framework/libCoreFSCache.dylib"
+  },
+  {
+    "name": "UserManagement",
+    "base": "0x1bf0c9000",
+    "size": 151552,
+    "path": "/System/Library/PrivateFrameworks/UserManagement.framework/UserManagement"
+  },
+  {
+    "name": "MobileInstallation",
+    "base": "0x1bdf67000",
+    "size": 221184,
+    "path": "/System/Library/PrivateFrameworks/MobileInstallation.framework/MobileInstallation"
+  },
+  {
+    "name": "CoreServicesStore",
+    "base": "0x1bf4a1000",
+    "size": 229376,
+    "path": "/System/Library/PrivateFrameworks/CoreServicesStore.framework/CoreServicesStore"
+  },
+  {
+    "name": "MobileSystemServices",
+    "base": "0x1e2078000",
+    "size": 28672,
+    "path": "/System/Library/PrivateFrameworks/MobileSystemServices.framework/MobileSystemServices"
+  },
+  {
+    "name": "DataDetectorsCore",
+    "base": "0x1b9cf7000",
+    "size": 225280,
+    "path": "/System/Library/PrivateFrameworks/DataDetectorsCore.framework/DataDetectorsCore"
+  },
+  {
+    "name": "CoreNLP",
+    "base": "0x1b9b25000",
+    "size": 577536,
+    "path": "/System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP"
+  },
+  {
+    "name": "libmecab.dylib",
+    "base": "0x1ed37b000",
+    "size": 352256,
+    "path": "/usr/lib/libmecab.dylib"
+  },
+  {
+    "name": "MLCompute",
+    "base": "0x1d6606000",
+    "size": 1392640,
+    "path": "/System/Library/Frameworks/MLCompute.framework/MLCompute"
+  },
+  {
+    "name": "libgermantok.dylib",
+    "base": "0x1ed207000",
+    "size": 20480,
+    "path": "/usr/lib/libgermantok.dylib"
+  },
+  {
+    "name": "libThaiTokenizer.dylib",
+    "base": "0x1ecd5c000",
+    "size": 8192,
+    "path": "/usr/lib/libThaiTokenizer.dylib"
+  },
+  {
+    "name": "libChineseTokenizer.dylib",
+    "base": "0x1ec904000",
+    "size": 45056,
+    "path": "/usr/lib/libChineseTokenizer.dylib"
+  },
+  {
+    "name": "MetalPerformanceShaders",
+    "base": "0x1d68ce000",
+    "size": 4096,
+    "path": "/System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders"
+  },
+  {
+    "name": "AppleNeuralEngine",
+    "base": "0x1dbce7000",
+    "size": 86016,
+    "path": "/System/Library/PrivateFrameworks/AppleNeuralEngine.framework/AppleNeuralEngine"
+  },
+  {
+    "name": "ANECompiler",
+    "base": "0x1d977c000",
+    "size": 2654208,
+    "path": "/System/Library/PrivateFrameworks/ANECompiler.framework/ANECompiler"
+  },
+  {
+    "name": "MPSCore",
+    "base": "0x1ba113000",
+    "size": 352256,
+    "path": "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore"
+  },
+  {
+    "name": "MPSImage",
+    "base": "0x1d679c000",
+    "size": 552960,
+    "path": "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage"
+  },
+  {
+    "name": "MPSNeuralNetwork",
+    "base": "0x1b9f27000",
+    "size": 2015232,
+    "path": "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork"
+  },
+  {
+    "name": "MPSMatrix",
+    "base": "0x1d6823000",
+    "size": 159744,
+    "path": "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix"
+  },
+  {
+    "name": "MPSRayIntersector",
+    "base": "0x1d6885000",
+    "size": 299008,
+    "path": "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector"
+  },
+  {
+    "name": "MPSNDArray",
+    "base": "0x1d684a000",
+    "size": 241664,
+    "path": "/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/MPSNDArray"
+  },
+  {
+    "name": "MetalTools",
+    "base": "0x1e1e84000",
+    "size": 864256,
+    "path": "/System/Library/PrivateFrameworks/MetalTools.framework/MetalTools"
+  },
+  {
+    "name": "ANEServices",
+    "base": "0x1d9a04000",
+    "size": 86016,
+    "path": "/System/Library/PrivateFrameworks/ANEServices.framework/ANEServices"
+  },
+  {
+    "name": "libsandbox.1.dylib",
+    "base": "0x1edb2f000",
+    "size": 12288,
+    "path": "/usr/lib/libsandbox.1.dylib"
+  },
+  {
+    "name": "OpenGLES",
+    "base": "0x1d7865000",
+    "size": 36864,
+    "path": "/System/Library/Frameworks/OpenGLES.framework/OpenGLES"
+  },
+  {
+    "name": "libGFXShared.dylib",
+    "base": "0x1d787d000",
+    "size": 40960,
+    "path": "/System/Library/Frameworks/OpenGLES.framework/libGFXShared.dylib"
+  },
+  {
+    "name": "libGLImage.dylib",
+    "base": "0x1c65f8000",
+    "size": 245760,
+    "path": "/System/Library/Frameworks/OpenGLES.framework/libGLImage.dylib"
+  },
+  {
+    "name": "libCVMSPluginSupport.dylib",
+    "base": "0x1d786e000",
+    "size": 8192,
+    "path": "/System/Library/Frameworks/OpenGLES.framework/libCVMSPluginSupport.dylib"
+  },
+  {
+    "name": "libCoreVMClient.dylib",
+    "base": "0x1d7877000",
+    "size": 24576,
+    "path": "/System/Library/Frameworks/OpenGLES.framework/libCoreVMClient.dylib"
+  },
+  {
+    "name": "libMatch.1.dylib",
+    "base": "0x1ecc43000",
+    "size": 32768,
+    "path": "/usr/lib/libMatch.1.dylib"
+  },
+  {
+    "name": "LanguageModeling",
+    "base": "0x1b8118000",
+    "size": 1134592,
+    "path": "/System/Library/PrivateFrameworks/LanguageModeling.framework/LanguageModeling"
+  },
+  {
+    "name": "CoreEmoji",
+    "base": "0x1dd40a000",
+    "size": 77824,
+    "path": "/System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji"
+  },
+  {
+    "name": "LinguisticData",
+    "base": "0x1e11fb000",
+    "size": 32768,
+    "path": "/System/Library/PrivateFrameworks/LinguisticData.framework/LinguisticData"
+  },
+  {
+    "name": "Lexicon",
+    "base": "0x1af84d000",
+    "size": 307200,
+    "path": "/System/Library/PrivateFrameworks/Lexicon.framework/Lexicon"
+  },
+  {
+    "name": "libcmph.dylib",
+    "base": "0x1ed12e000",
+    "size": 73728,
+    "path": "/usr/lib/libcmph.dylib"
+  },
+  {
+    "name": "liblockdown.dylib",
+    "base": "0x1ed328000",
+    "size": 49152,
+    "path": "/usr/lib/liblockdown.dylib"
+  },
+  {
+    "name": "libmis.dylib",
+    "base": "0x1ed609000",
+    "size": 77824,
+    "path": "/usr/lib/libmis.dylib"
+  },
+  {
+    "name": "DataMigration",
+    "base": "0x1afa03000",
+    "size": 69632,
+    "path": "/System/Library/PrivateFrameworks/DataMigration.framework/DataMigration"
+  },
+  {
+    "name": "CloudDocs",
+    "base": "0x1b8986000",
+    "size": 536576,
+    "path": "/System/Library/PrivateFrameworks/CloudDocs.framework/CloudDocs"
+  },
+  {
+    "name": "AppleAccount",
+    "base": "0x1b4b4d000",
+    "size": 610304,
+    "path": "/System/Library/PrivateFrameworks/AppleAccount.framework/AppleAccount"
+  },
+  {
+    "name": "CrashReporterSupport",
+    "base": "0x1b9dbf000",
+    "size": 122880,
+    "path": "/System/Library/PrivateFrameworks/CrashReporterSupport.framework/CrashReporterSupport"
+  },
+  {
+    "name": "SymptomDiagnosticReporter",
+    "base": "0x1e6273000",
+    "size": 45056,
+    "path": "/System/Library/PrivateFrameworks/SymptomDiagnosticReporter.framework/SymptomDiagnosticReporter"
+  },
+  {
+    "name": "ApplePushService",
+    "base": "0x1bda79000",
+    "size": 131072,
+    "path": "/System/Library/PrivateFrameworks/ApplePushService.framework/ApplePushService"
+  },
+  {
+    "name": "C2",
+    "base": "0x1c4c2b000",
+    "size": 233472,
+    "path": "/System/Library/PrivateFrameworks/C2.framework/C2"
+  },
+  {
+    "name": "ProtectedCloudStorage",
+    "base": "0x1c4bd0000",
+    "size": 372736,
+    "path": "/System/Library/PrivateFrameworks/ProtectedCloudStorage.framework/ProtectedCloudStorage"
+  },
+  {
+    "name": "CoreUtils",
+    "base": "0x1b0622000",
+    "size": 1740800,
+    "path": "/System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils"
+  },
+  {
+    "name": "OSAnalytics",
+    "base": "0x1bdc60000",
+    "size": 323584,
+    "path": "/System/Library/PrivateFrameworks/OSAnalytics.framework/OSAnalytics"
+  },
+  {
+    "name": "Symbolication",
+    "base": "0x1b9d2e000",
+    "size": 593920,
+    "path": "/System/Library/PrivateFrameworks/Symbolication.framework/Symbolication"
+  },
+  {
+    "name": "CoreSymbolication",
+    "base": "0x1c578c000",
+    "size": 745472,
+    "path": "/System/Library/PrivateFrameworks/CoreSymbolication.framework/CoreSymbolication"
+  },
+  {
+    "name": "OSAServicesClient",
+    "base": "0x1c4bca000",
+    "size": 12288,
+    "path": "/System/Library/PrivateFrameworks/OSAServicesClient.framework/OSAServicesClient"
+  },
+  {
+    "name": "MallocStackLogging",
+    "base": "0x1cd155000",
+    "size": 45056,
+    "path": "/System/Library/PrivateFrameworks/MallocStackLogging.framework/MallocStackLogging"
+  },
+  {
+    "name": "CoreTime",
+    "base": "0x1c9521000",
+    "size": 40960,
+    "path": "/System/Library/PrivateFrameworks/CoreTime.framework/CoreTime"
+  },
+  {
+    "name": "AuthKit",
+    "base": "0x1b4aba000",
+    "size": 602112,
+    "path": "/System/Library/PrivateFrameworks/AuthKit.framework/AuthKit"
+  },
+  {
+    "name": "DeviceIdentity",
+    "base": "0x1de812000",
+    "size": 176128,
+    "path": "/System/Library/PrivateFrameworks/DeviceIdentity.framework/DeviceIdentity"
+  },
+  {
+    "name": "NanoRegistry",
+    "base": "0x1be02c000",
+    "size": 458752,
+    "path": "/System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry"
+  },
+  {
+    "name": "AppleIDAuthSupport",
+    "base": "0x1d1269000",
+    "size": 49152,
+    "path": "/System/Library/PrivateFrameworks/AppleIDAuthSupport.framework/AppleIDAuthSupport"
+  },
+  {
+    "name": "Network",
+    "base": "0x1b9486000",
+    "size": 1437696,
+    "path": "/System/Library/Frameworks/Network.framework/Network"
+  },
+  {
+    "name": "SpringBoardServices",
+    "base": "0x1afa14000",
+    "size": 385024,
+    "path": "/System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices"
+  },
+  {
+    "name": "SharedUtils",
+    "base": "0x1d4dc0000",
+    "size": 274432,
+    "path": "/System/Library/Frameworks/LocalAuthentication.framework/Support/SharedUtils.framework/SharedUtils"
+  },
+  {
+    "name": "IdleTimerServices",
+    "base": "0x1e0e60000",
+    "size": 32768,
+    "path": "/System/Library/PrivateFrameworks/IdleTimerServices.framework/IdleTimerServices"
+  },
+  {
+    "name": "BoardServices",
+    "base": "0x1bda99000",
+    "size": 172032,
+    "path": "/System/Library/PrivateFrameworks/BoardServices.framework/BoardServices"
+  },
+  {
+    "name": "FrontBoardServices",
+    "base": "0x1b3f5b000",
+    "size": 577536,
+    "path": "/System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices"
+  },
+  {
+    "name": "BackBoardServices",
+    "base": "0x1a8194000",
+    "size": 442368,
+    "path": "/System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices"
+  },
+  {
+    "name": "GraphicsServices",
+    "base": "0x1bbc4d000",
+    "size": 36864,
+    "path": "/System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices"
+  },
+  {
+    "name": "libGSFont.dylib",
+    "base": "0x1df67a000",
+    "size": 36864,
+    "path": "/System/Library/PrivateFrameworks/FontServices.framework/libGSFont.dylib"
+  },
+  {
+    "name": "FontServices",
+    "base": "0x1d2523000",
+    "size": 57344,
+    "path": "/System/Library/PrivateFrameworks/FontServices.framework/FontServices"
+  },
+  {
+    "name": "libGSFontCache.dylib",
+    "base": "0x1df683000",
+    "size": 253952,
+    "path": "/System/Library/PrivateFrameworks/FontServices.framework/libGSFontCache.dylib"
+  },
+  {
+    "name": "libAccessibility.dylib",
+    "base": "0x1a7eef000",
+    "size": 131072,
+    "path": "/usr/lib/libAccessibility.dylib"
+  },
+  {
+    "name": "OTSVG",
+    "base": "0x1e25f6000",
+    "size": 270336,
+    "path": "/System/Library/PrivateFrameworks/OTSVG.framework/OTSVG"
+  },
+  {
+    "name": "AXCoreUtilities",
+    "base": "0x1b709a000",
+    "size": 73728,
+    "path": "/System/Library/PrivateFrameworks/AXCoreUtilities.framework/AXCoreUtilities"
+  },
+  {
+    "name": "MediaAccessibility",
+    "base": "0x1d26de000",
+    "size": 53248,
+    "path": "/System/Library/Frameworks/MediaAccessibility.framework/MediaAccessibility"
+  },
+  {
+    "name": "libperfcheck.dylib",
+    "base": "0x1eda17000",
+    "size": 61440,
+    "path": "/usr/lib/libperfcheck.dylib"
+  },
+  {
+    "name": "perfdata",
+    "base": "0x1eb832000",
+    "size": 73728,
+    "path": "/System/Library/PrivateFrameworks/perfdata.framework/perfdata"
+  },
+  {
+    "name": "libIOReport.dylib",
+    "base": "0x1ecbc5000",
+    "size": 32768,
+    "path": "/usr/lib/libIOReport.dylib"
+  },
+  {
+    "name": "GeoServices",
+    "base": "0x1a95e1000",
+    "size": 22319104,
+    "path": "/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices"
+  },
+  {
+    "name": "LocationSupport",
+    "base": "0x1c482c000",
+    "size": 163840,
+    "path": "/System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport"
+  },
+  {
+    "name": "CoreLocationProtobuf",
+    "base": "0x1cdb14000",
+    "size": 393216,
+    "path": "/System/Library/PrivateFrameworks/CoreLocationProtobuf.framework/CoreLocationProtobuf"
+  },
+  {
+    "name": "PowerLog",
+    "base": "0x1bbe26000",
+    "size": 90112,
+    "path": "/System/Library/PrivateFrameworks/PowerLog.framework/PowerLog"
+  },
+  {
+    "name": "libheimdal-asn1.dylib",
+    "base": "0x1ed20c000",
+    "size": 24576,
+    "path": "/usr/lib/libheimdal-asn1.dylib"
+  },
+  {
+    "name": "FileProvider",
+    "base": "0x1b9bb2000",
+    "size": 1159168,
+    "path": "/System/Library/Frameworks/FileProvider.framework/FileProvider"
+  },
+  {
+    "name": "MobileSpotlightIndex",
+    "base": "0x1be910000",
+    "size": 2486272,
+    "path": "/System/Library/PrivateFrameworks/MobileSpotlightIndex.framework/MobileSpotlightIndex"
+  },
+  {
+    "name": "GenerationalStorage",
+    "base": "0x1e03f7000",
+    "size": 131072,
+    "path": "/System/Library/PrivateFrameworks/GenerationalStorage.framework/GenerationalStorage"
+  },
+  {
+    "name": "ChunkingLibrary",
+    "base": "0x1dcad3000",
+    "size": 331776,
+    "path": "/System/Library/PrivateFrameworks/ChunkingLibrary.framework/ChunkingLibrary"
+  },
+  {
+    "name": "SpotlightLinguistics",
+    "base": "0x1ef9a2000",
+    "size": 77824,
+    "path": "/System/Library/PrivateFrameworks/SpotlightLinguistics.framework/SpotlightLinguistics"
+  },
+  {
+    "name": "MetadataUtilities",
+    "base": "0x1cd39c000",
+    "size": 311296,
+    "path": "/System/Library/PrivateFrameworks/MetadataUtilities.framework/MetadataUtilities"
+  },
+  {
+    "name": "libprequelite.dylib",
+    "base": "0x1eda2d000",
+    "size": 77824,
+    "path": "/usr/lib/libprequelite.dylib"
+  },
+  {
+    "name": "MobileIcons",
+    "base": "0x1cba57000",
+    "size": 65536,
+    "path": "/System/Library/PrivateFrameworks/MobileIcons.framework/MobileIcons"
+  },
+  {
+    "name": "CoreUI",
+    "base": "0x1b0e00000",
+    "size": 815104,
+    "path": "/System/Library/PrivateFrameworks/CoreUI.framework/CoreUI"
+  },
+  {
+    "name": "GraphVisualizer",
+    "base": "0x1e0417000",
+    "size": 57344,
+    "path": "/System/Library/PrivateFrameworks/GraphVisualizer.framework/GraphVisualizer"
+  },
+  {
+    "name": "FaceCore",
+    "base": "0x1def68000",
+    "size": 4280320,
+    "path": "/System/Library/PrivateFrameworks/FaceCore.framework/FaceCore"
+  },
+  {
+    "name": "CMCaptureCore",
+    "base": "0x1dc592000",
+    "size": 45056,
+    "path": "/System/Library/PrivateFrameworks/CMCaptureCore.framework/CMCaptureCore"
+  },
+  {
+    "name": "WatchdogClient",
+    "base": "0x1e81de000",
+    "size": 8192,
+    "path": "/System/Library/PrivateFrameworks/WatchdogClient.framework/WatchdogClient"
+  },
+  {
+    "name": "CoreAudio",
+    "base": "0x1c6681000",
+    "size": 5640192,
+    "path": "/System/Library/Frameworks/CoreAudio.framework/CoreAudio"
+  },
+  {
+    "name": "HangTracer",
+    "base": "0x1d40a1000",
+    "size": 73728,
+    "path": "/System/Library/PrivateFrameworks/HangTracer.framework/HangTracer"
+  },
+  {
+    "name": "ASEProcessing",
+    "base": "0x1d9adb000",
+    "size": 28672,
+    "path": "/System/Library/PrivateFrameworks/ASEProcessing.framework/ASEProcessing"
+  },
+  {
+    "name": "libtailspin.dylib",
+    "base": "0x1d48e6000",
+    "size": 151552,
+    "path": "/usr/lib/libtailspin.dylib"
+  },
+  {
+    "name": "libEDR",
+    "base": "0x1eb803000",
+    "size": 94208,
+    "path": "/System/Library/PrivateFrameworks/libEDR.framework/libEDR"
+  },
+  {
+    "name": "libapp_launch_measurement.dylib",
+    "base": "0x1ecfd2000",
+    "size": 12288,
+    "path": "/usr/lib/libapp_launch_measurement.dylib"
+  },
+  {
+    "name": "SignpostCollection",
+    "base": "0x1e5262000",
+    "size": 45056,
+    "path": "/System/Library/PrivateFrameworks/SignpostCollection.framework/SignpostCollection"
+  },
+  {
+    "name": "ktrace",
+    "base": "0x1c1c6b000",
+    "size": 368640,
+    "path": "/System/Library/PrivateFrameworks/ktrace.framework/ktrace"
+  },
+  {
+    "name": "SampleAnalysis",
+    "base": "0x1d426f000",
+    "size": 782336,
+    "path": "/System/Library/PrivateFrameworks/SampleAnalysis.framework/SampleAnalysis"
+  },
+  {
+    "name": "kperfdata",
+    "base": "0x1eb7fa000",
+    "size": 36864,
+    "path": "/System/Library/PrivateFrameworks/kperfdata.framework/kperfdata"
+  },
+  {
+    "name": "libdscsym.dylib",
+    "base": "0x1d4090000",
+    "size": 69632,
+    "path": "/usr/lib/libdscsym.dylib"
+  },
+  {
+    "name": "SignpostSupport",
+    "base": "0x1e526f000",
+    "size": 266240,
+    "path": "/System/Library/PrivateFrameworks/SignpostSupport.framework/SignpostSupport"
+  },
+  {
+    "name": "LoggingSupport",
+    "base": "0x1b91e3000",
+    "size": 405504,
+    "path": "/System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport"
+  },
+  {
+    "name": "kperf",
+    "base": "0x1eb7f4000",
+    "size": 24576,
+    "path": "/System/Library/PrivateFrameworks/kperf.framework/kperf"
+  },
+  {
+    "name": "CoreBrightness",
+    "base": "0x1dd283000",
+    "size": 1011712,
+    "path": "/System/Library/PrivateFrameworks/CoreBrightness.framework/CoreBrightness"
+  },
+  {
+    "name": "AFKUser",
+    "base": "0x1d96b4000",
+    "size": 16384,
+    "path": "/System/Library/PrivateFrameworks/AFKUser.framework/AFKUser"
+  },
+  {
+    "name": "CPMS",
+    "base": "0x1dc5b7000",
+    "size": 65536,
+    "path": "/System/Library/PrivateFrameworks/CPMS.framework/CPMS"
+  },
+  {
+    "name": "HID",
+    "base": "0x1e0451000",
+    "size": 53248,
+    "path": "/System/Library/PrivateFrameworks/HID.framework/HID"
+  },
+  {
+    "name": "AudioToolboxCore",
+    "base": "0x1b4ce5000",
+    "size": 2539520,
+    "path": "/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore"
+  },
+  {
+    "name": "caulk",
+    "base": "0x1e9260000",
+    "size": 131072,
+    "path": "/System/Library/PrivateFrameworks/caulk.framework/caulk"
+  },
+  {
+    "name": "ExtensionKit",
+    "base": "0x1a919d000",
+    "size": 106496,
+    "path": "/System/Library/PrivateFrameworks/ExtensionKit.framework/ExtensionKit"
+  },
+  {
+    "name": "libAudioToolboxUtility.dylib",
+    "base": "0x1b9925000",
+    "size": 212992,
+    "path": "/usr/lib/libAudioToolboxUtility.dylib"
+  },
+  {
+    "name": "PlugInKit",
+    "base": "0x1d432e000",
+    "size": 196608,
+    "path": "/System/Library/PrivateFrameworks/PlugInKit.framework/PlugInKit"
+  },
+  {
+    "name": "ExtensionFoundation",
+    "base": "0x1deda1000",
+    "size": 32768,
+    "path": "/System/Library/PrivateFrameworks/ExtensionFoundation.framework/ExtensionFoundation"
+  },
+  {
+    "name": "TextureIO",
+    "base": "0x1e6c24000",
+    "size": 741376,
+    "path": "/System/Library/PrivateFrameworks/TextureIO.framework/TextureIO"
+  },
+  {
+    "name": "CoreSVG",
+    "base": "0x1de53f000",
+    "size": 176128,
+    "path": "/System/Library/PrivateFrameworks/CoreSVG.framework/CoreSVG"
+  },
+  {
+    "name": "InternationalSupport",
+    "base": "0x1b822d000",
+    "size": 36864,
+    "path": "/System/Library/PrivateFrameworks/InternationalSupport.framework/InternationalSupport"
+  },
+  {
+    "name": "SetupAssistant",
+    "base": "0x1b92bf000",
+    "size": 274432,
+    "path": "/System/Library/PrivateFrameworks/SetupAssistant.framework/SetupAssistant"
+  },
+  {
+    "name": "CloudServices",
+    "base": "0x1ba864000",
+    "size": 172032,
+    "path": "/System/Library/PrivateFrameworks/CloudServices.framework/CloudServices"
+  },
+  {
+    "name": "AppleIDSSOAuthentication",
+    "base": "0x1dbc0e000",
+    "size": 61440,
+    "path": "/System/Library/PrivateFrameworks/AppleIDSSOAuthentication.framework/AppleIDSSOAuthentication"
+  },
+  {
+    "name": "CoreFollowUp",
+    "base": "0x1c43d2000",
+    "size": 98304,
+    "path": "/System/Library/PrivateFrameworks/CoreFollowUp.framework/CoreFollowUp"
+  },
+  {
+    "name": "SetupAssistantSupport",
+    "base": "0x1d2cea000",
+    "size": 61440,
+    "path": "/System/Library/PrivateFrameworks/SetupAssistantSupport.framework/SetupAssistantSupport"
+  },
+  {
+    "name": "MobileBackup",
+    "base": "0x1b5fe6000",
+    "size": 335872,
+    "path": "/System/Library/PrivateFrameworks/MobileBackup.framework/MobileBackup"
+  },
+  {
+    "name": "IntlPreferences",
+    "base": "0x1e0f67000",
+    "size": 122880,
+    "path": "/System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences"
+  },
+  {
+    "name": "NanoPreferencesSync",
+    "base": "0x1bf6fd000",
+    "size": 69632,
+    "path": "/System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync"
+  },
+  {
+    "name": "AppConduit",
+    "base": "0x1da7d1000",
+    "size": 147456,
+    "path": "/System/Library/PrivateFrameworks/AppConduit.framework/AppConduit"
+  },
+  {
+    "name": "Rapport",
+    "base": "0x1c43ea000",
+    "size": 499712,
+    "path": "/System/Library/PrivateFrameworks/Rapport.framework/Rapport"
+  },
+  {
+    "name": "StreamingZip",
+    "base": "0x1e622d000",
+    "size": 258048,
+    "path": "/System/Library/PrivateFrameworks/StreamingZip.framework/StreamingZip"
+  },
+  {
+    "name": "OctagonTrust",
+    "base": "0x1b9302000",
+    "size": 110592,
+    "path": "/System/Library/PrivateFrameworks/OctagonTrust.framework/OctagonTrust"
+  },
+  {
+    "name": "ProactiveSupport",
+    "base": "0x1bd9dd000",
+    "size": 454656,
+    "path": "/System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport"
+  },
+  {
+    "name": "DataDetectorsNaturalLanguage",
+    "base": "0x1de776000",
+    "size": 258048,
+    "path": "/System/Library/PrivateFrameworks/DataDetectorsNaturalLanguage.framework/DataDetectorsNaturalLanguage"
+  },
+  {
+    "name": "ProactiveEventTracker",
+    "base": "0x1af829000",
+    "size": 147456,
+    "path": "/System/Library/PrivateFrameworks/ProactiveEventTracker.framework/ProactiveEventTracker"
+  },
+  {
+    "name": "IntentsFoundation",
+    "base": "0x1e0f3c000",
+    "size": 57344,
+    "path": "/System/Library/PrivateFrameworks/IntentsFoundation.framework/IntentsFoundation"
+  },
+  {
+    "name": "InternationalTextSearch",
+    "base": "0x1e0f64000",
+    "size": 12288,
+    "path": "/System/Library/PrivateFrameworks/InternationalTextSearch.framework/InternationalTextSearch"
+  },
+  {
+    "name": "RTCReporting",
+    "base": "0x1e453d000",
+    "size": 49152,
+    "path": "/System/Library/PrivateFrameworks/RTCReporting.framework/RTCReporting"
+  },
+  {
+    "name": "MobileAsset",
+    "base": "0x1b604d000",
+    "size": 159744,
+    "path": "/System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset"
+  },
+  {
+    "name": "ResponseKit",
+    "base": "0x1d1da7000",
+    "size": 1093632,
+    "path": "/System/Library/PrivateFrameworks/ResponseKit.framework/ResponseKit"
+  },
+  {
+    "name": "CalendarDatabase",
+    "base": "0x1b85e8000",
+    "size": 696320,
+    "path": "/System/Library/PrivateFrameworks/CalendarDatabase.framework/CalendarDatabase"
+  },
+  {
+    "name": "CalendarDaemon",
+    "base": "0x1d471d000",
+    "size": 364544,
+    "path": "/System/Library/PrivateFrameworks/CalendarDaemon.framework/CalendarDaemon"
+  },
+  {
+    "name": "CalendarFoundation",
+    "base": "0x1ba2c5000",
+    "size": 450560,
+    "path": "/System/Library/PrivateFrameworks/CalendarFoundation.framework/CalendarFoundation"
+  },
+  {
+    "name": "iCalendar",
+    "base": "0x1c4854000",
+    "size": 217088,
+    "path": "/System/Library/PrivateFrameworks/iCalendar.framework/iCalendar"
+  },
+  {
+    "name": "PersonaKit",
+    "base": "0x1e2ce9000",
+    "size": 53248,
+    "path": "/System/Library/PrivateFrameworks/PersonaKit.framework/PersonaKit"
+  },
+  {
+    "name": "CoreDAV",
+    "base": "0x1cb7ef000",
+    "size": 544768,
+    "path": "/System/Library/PrivateFrameworks/CoreDAV.framework/CoreDAV"
+  },
+  {
+    "name": "libresolv.9.dylib",
+    "base": "0x1edb16000",
+    "size": 102400,
+    "path": "/usr/lib/libresolv.9.dylib"
+  },
+  {
+    "name": "NLP",
+    "base": "0x1ba396000",
+    "size": 970752,
+    "path": "/System/Library/PrivateFrameworks/NLP.framework/NLP"
+  },
+  {
+    "name": "ConstantClasses",
+    "base": "0x1dd02b000",
+    "size": 16384,
+    "path": "/System/Library/PrivateFrameworks/ConstantClasses.framework/ConstantClasses"
+  },
+  {
+    "name": "Montreal",
+    "base": "0x1b7fa1000",
+    "size": 1536000,
+    "path": "/System/Library/PrivateFrameworks/Montreal.framework/Montreal"
+  },
+  {
+    "name": "Espresso",
+    "base": "0x1b66cd000",
+    "size": 7884800,
+    "path": "/System/Library/PrivateFrameworks/Espresso.framework/Espresso"
+  },
+  {
+    "name": "SymptomPresentationFeed",
+    "base": "0x1e62af000",
+    "size": 118784,
+    "path": "/System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomPresentationFeed.framework/SymptomPresentationFeed"
+  },
+  {
+    "name": "CryptoTokenKit",
+    "base": "0x1befa5000",
+    "size": 286720,
+    "path": "/System/Library/Frameworks/CryptoTokenKit.framework/CryptoTokenKit"
+  },
+  {
+    "name": "FeatureFlagsSupport",
+    "base": "0x1df385000",
+    "size": 24576,
+    "path": "/System/Library/PrivateFrameworks/FeatureFlagsSupport.framework/FeatureFlagsSupport"
+  },
+  {
+    "name": "SymptomAnalytics",
+    "base": "0x1bf4ff000",
+    "size": 49152,
+    "path": "/System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomAnalytics.framework/SymptomAnalytics"
+  },
+  {
+    "name": "AVFAudio",
+    "base": "0x1b4be2000",
+    "size": 1060864,
+    "path": "/System/Library/Frameworks/AVFoundation.framework/Frameworks/AVFAudio.framework/AVFAudio"
+  },
+  {
+    "name": "AVFCore",
+    "base": "0x1ac63f000",
+    "size": 1703936,
+    "path": "/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore"
+  },
+  {
+    "name": "AVFCapture",
+    "base": "0x1be39d000",
+    "size": 806912,
+    "path": "/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture"
+  },
+  {
+    "name": "AudioSession",
+    "base": "0x1ac626000",
+    "size": 102400,
+    "path": "/System/Library/PrivateFrameworks/AudioSession.framework/AudioSession"
+  },
+  {
+    "name": "libAudioStatistics.dylib",
+    "base": "0x1ec71f000",
+    "size": 65536,
+    "path": "/usr/lib/libAudioStatistics.dylib"
+  },
+  {
+    "name": "CMCapture",
+    "base": "0x1be462000",
+    "size": 3473408,
+    "path": "/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture"
+  },
+  {
+    "name": "MediaToolbox",
+    "base": "0x1ad1e7000",
+    "size": 8216576,
+    "path": "/System/Library/Frameworks/MediaToolbox.framework/MediaToolbox"
+  },
+  {
+    "name": "MediaSafetyNet",
+    "base": "0x1c8d72000",
+    "size": 57344,
+    "path": "/System/Library/PrivateFrameworks/MediaSafetyNet.framework/MediaSafetyNet"
+  },
+  {
+    "name": "CoreAUC",
+    "base": "0x1c7276000",
+    "size": 69632,
+    "path": "/System/Library/PrivateFrameworks/CoreAUC.framework/CoreAUC"
+  },
+  {
+    "name": "CoreHaptics",
+    "base": "0x1add29000",
+    "size": 331776,
+    "path": "/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics"
+  },
+  {
+    "name": "NetworkStatistics",
+    "base": "0x1e2500000",
+    "size": 110592,
+    "path": "/System/Library/PrivateFrameworks/NetworkStatistics.framework/NetworkStatistics"
+  },
+  {
+    "name": "AlgosScoreFramework",
+    "base": "0x1da683000",
+    "size": 118784,
+    "path": "/System/Library/PrivateFrameworks/AlgosScoreFramework.framework/AlgosScoreFramework"
+  },
+  {
+    "name": "TimeSync",
+    "base": "0x1c8d80000",
+    "size": 253952,
+    "path": "/System/Library/PrivateFrameworks/TimeSync.framework/TimeSync"
+  },
+  {
+    "name": "MobileBluetooth",
+    "base": "0x1e1fe1000",
+    "size": 86016,
+    "path": "/System/Library/PrivateFrameworks/MobileBluetooth.framework/MobileBluetooth"
+  },
+  {
+    "name": "IOKitten",
+    "base": "0x1e0e29000",
+    "size": 40960,
+    "path": "/System/Library/PrivateFrameworks/IOKitten.framework/IOKitten"
+  },
+  {
+    "name": "AirPlaySync",
+    "base": "0x1da49e000",
+    "size": 892928,
+    "path": "/System/Library/PrivateFrameworks/AirPlaySync.framework/AirPlaySync"
+  },
+  {
+    "name": "Quagga",
+    "base": "0x1cdffd000",
+    "size": 593920,
+    "path": "/System/Library/PrivateFrameworks/Quagga.framework/Quagga"
+  },
+  {
+    "name": "Pegasus",
+    "base": "0x1c209b000",
+    "size": 303104,
+    "path": "/System/Library/PrivateFrameworks/Pegasus.framework/Pegasus"
+  },
+  {
+    "name": "UIKitServices",
+    "base": "0x1a8c4e000",
+    "size": 94208,
+    "path": "/System/Library/PrivateFrameworks/UIKitServices.framework/UIKitServices"
+  },
+  {
+    "name": "MaterialKit",
+    "base": "0x1c714e000",
+    "size": 86016,
+    "path": "/System/Library/PrivateFrameworks/MaterialKit.framework/MaterialKit"
+  },
+  {
+    "name": "DocumentManager",
+    "base": "0x1dead1000",
+    "size": 249856,
+    "path": "/System/Library/PrivateFrameworks/DocumentManager.framework/DocumentManager"
+  },
+  {
+    "name": "UIKitCore",
+    "base": "0x1a6a43000",
+    "size": 21676032,
+    "path": "/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore"
+  },
+  {
+    "name": "ShareSheet",
+    "base": "0x1b53bf000",
+    "size": 684032,
+    "path": "/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet"
+  },
+  {
+    "name": "DocumentManagerCore",
+    "base": "0x1deb0e000",
+    "size": 135168,
+    "path": "/System/Library/PrivateFrameworks/DocumentManagerCore.framework/DocumentManagerCore"
+  },
+  {
+    "name": "UIFoundation",
+    "base": "0x1adddb000",
+    "size": 1085440,
+    "path": "/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation"
+  },
+  {
+    "name": "XCTTargetBootstrap",
+    "base": "0x1e91d9000",
+    "size": 16384,
+    "path": "/System/Library/PrivateFrameworks/XCTTargetBootstrap.framework/XCTTargetBootstrap"
+  },
+  {
+    "name": "WebKitLegacy",
+    "base": "0x1c20e5000",
+    "size": 1458176,
+    "path": "/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy"
+  },
+  {
+    "name": "SignpostMetrics",
+    "base": "0x1e526d000",
+    "size": 4096,
+    "path": "/System/Library/PrivateFrameworks/SignpostMetrics.framework/SignpostMetrics"
+  },
+  {
+    "name": "PointerUIServices",
+    "base": "0x1e303f000",
+    "size": 49152,
+    "path": "/System/Library/PrivateFrameworks/PointerUIServices.framework/PointerUIServices"
+  },
+  {
+    "name": "StudyLog",
+    "base": "0x1ce08e000",
+    "size": 36864,
+    "path": "/System/Library/PrivateFrameworks/StudyLog.framework/StudyLog"
+  },
+  {
+    "name": "ContextKitExtraction",
+    "base": "0x1ca113000",
+    "size": 40960,
+    "path": "/System/Library/PrivateFrameworks/ContextKitExtraction.framework/ContextKitExtraction"
+  },
+  {
+    "name": "CoreMaterial",
+    "base": "0x1be17f000",
+    "size": 126976,
+    "path": "/System/Library/PrivateFrameworks/CoreMaterial.framework/CoreMaterial"
+  },
+  {
+    "name": "Pasteboard",
+    "base": "0x1e2c8b000",
+    "size": 184320,
+    "path": "/System/Library/PrivateFrameworks/Pasteboard.framework/Pasteboard"
+  },
+  {
+    "name": "PhysicsKit",
+    "base": "0x1e2f35000",
+    "size": 315392,
+    "path": "/System/Library/PrivateFrameworks/PhysicsKit.framework/PhysicsKit"
+  },
+  {
+    "name": "PrototypeTools",
+    "base": "0x1c38a9000",
+    "size": 135168,
+    "path": "/System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools"
+  },
+  {
+    "name": "TextInput",
+    "base": "0x1a8200000",
+    "size": 581632,
+    "path": "/System/Library/PrivateFrameworks/TextInput.framework/TextInput"
+  },
+  {
+    "name": "JavaScriptCore",
+    "base": "0x1adfd5000",
+    "size": 16453632,
+    "path": "/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore"
+  },
+  {
+    "name": "WebCore",
+    "base": "0x1b1689000",
+    "size": 38162432,
+    "path": "/System/Library/PrivateFrameworks/WebCore.framework/WebCore"
+  },
+  {
+    "name": "libwebrtc.dylib",
+    "base": "0x1e84c6000",
+    "size": 7589888,
+    "path": "/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libwebrtc.dylib"
+  },
+  {
+    "name": "DragUI",
+    "base": "0x1debb9000",
+    "size": 12288,
+    "path": "/System/Library/PrivateFrameworks/DragUI.framework/DragUI"
+  },
+  {
+    "name": "BaseBoardUI",
+    "base": "0x1b985d000",
+    "size": 86016,
+    "path": "/System/Library/PrivateFrameworks/BaseBoardUI.framework/BaseBoardUI"
+  },
+  {
+    "name": "RemoteTextInput",
+    "base": "0x1e4897000",
+    "size": 77824,
+    "path": "/System/Library/PrivateFrameworks/RemoteTextInput.framework/RemoteTextInput"
+  },
+  {
+    "name": "MediaServices",
+    "base": "0x1b8f25000",
+    "size": 249856,
+    "path": "/System/Library/PrivateFrameworks/MediaServices.framework/MediaServices"
+  },
+  {
+    "name": "IDS",
+    "base": "0x1abfb3000",
+    "size": 1118208,
+    "path": "/System/Library/PrivateFrameworks/IDS.framework/IDS"
+  },
+  {
+    "name": "Marco",
+    "base": "0x1e1452000",
+    "size": 4096,
+    "path": "/System/Library/PrivateFrameworks/Marco.framework/Marco"
+  },
+  {
+    "name": "IMFoundation",
+    "base": "0x1abf41000",
+    "size": 466944,
+    "path": "/System/Library/PrivateFrameworks/IMFoundation.framework/IMFoundation"
+  },
+  {
+    "name": "IDSFoundation",
+    "base": "0x1b3b6a000",
+    "size": 1499136,
+    "path": "/System/Library/PrivateFrameworks/IDSFoundation.framework/IDSFoundation"
+  },
+  {
+    "name": "Engram",
+    "base": "0x1dec4c000",
+    "size": 90112,
+    "path": "/System/Library/PrivateFrameworks/Engram.framework/Engram"
+  },
+  {
+    "name": "CorePrediction",
+    "base": "0x1ddb14000",
+    "size": 360448,
+    "path": "/System/Library/PrivateFrameworks/CorePrediction.framework/CorePrediction"
+  },
+  {
+    "name": "PDFKit",
+    "base": "0x1d7a41000",
+    "size": 819200,
+    "path": "/System/Library/Frameworks/PDFKit.framework/PDFKit"
+  },
+  {
+    "name": "SafariSafeBrowsing",
+    "base": "0x1b0ec7000",
+    "size": 311296,
+    "path": "/System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/SafariSafeBrowsing"
+  },
+  {
+    "name": "CoreOptimization",
+    "base": "0x1dda48000",
+    "size": 20480,
+    "path": "/System/Library/PrivateFrameworks/CoreOptimization.framework/CoreOptimization"
+  },
+  {
+    "name": "CorePDF",
+    "base": "0x1dda4d000",
+    "size": 778240,
+    "path": "/System/Library/PrivateFrameworks/CorePDF.framework/CorePDF"
+  },
+  {
+    "name": "RevealCore",
+    "base": "0x1e494c000",
+    "size": 20480,
+    "path": "/System/Library/PrivateFrameworks/RevealCore.framework/RevealCore"
+  },
+  {
+    "name": "CoreML",
+    "base": "0x1b6303000",
+    "size": 3973120,
+    "path": "/System/Library/Frameworks/CoreML.framework/CoreML"
+  },
+  {
+    "name": "DuetActivityScheduler",
+    "base": "0x1bbe3c000",
+    "size": 172032,
+    "path": "/System/Library/PrivateFrameworks/DuetActivityScheduler.framework/DuetActivityScheduler"
+  },
+  {
+    "name": "CoreDuet",
+    "base": "0x1a9252000",
+    "size": 2277376,
+    "path": "/System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet"
+  },
+  {
+    "name": "CoreDuetContext",
+    "base": "0x1af906000",
+    "size": 331776,
+    "path": "/System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext"
+  },
+  {
+    "name": "CoreDuetDebugLogging",
+    "base": "0x1dd3f9000",
+    "size": 12288,
+    "path": "/System/Library/PrivateFrameworks/CoreDuetDebugLogging.framework/CoreDuetDebugLogging"
+  },
+  {
+    "name": "CoreDuetDaemonProtocol",
+    "base": "0x1dd3e7000",
+    "size": 65536,
+    "path": "/System/Library/PrivateFrameworks/CoreDuetDaemonProtocol.framework/CoreDuetDaemonProtocol"
+  },
+  {
+    "name": "CTCarrierSpace",
+    "base": "0x1dc5c7000",
+    "size": 69632,
+    "path": "/System/Library/PrivateFrameworks/CTCarrierSpace.framework/CTCarrierSpace"
+  },
+  {
+    "name": "WirelessDiagnostics",
+    "base": "0x1a509c000",
+    "size": 299008,
+    "path": "/System/Library/PrivateFrameworks/WirelessDiagnostics.framework/WirelessDiagnostics"
+  },
+  {
+    "name": "libAWDSupportFramework.dylib",
+    "base": "0x1ec1e1000",
+    "size": 3915776,
+    "path": "/usr/lib/libAWDSupportFramework.dylib"
+  },
+  {
+    "name": "libAWDSupport.dylib",
+    "base": "0x1ec1a4000",
+    "size": 249856,
+    "path": "/usr/lib/libAWDSupport.dylib"
+  },
+  {
+    "name": "libprotobuf-lite.dylib",
+    "base": "0x1eda40000",
+    "size": 77824,
+    "path": "/usr/lib/libprotobuf-lite.dylib"
+  },
+  {
+    "name": "libprotobuf.dylib",
+    "base": "0x1eda53000",
+    "size": 405504,
+    "path": "/usr/lib/libprotobuf.dylib"
+  },
+  {
+    "name": "SAObjects",
+    "base": "0x1bbb62000",
+    "size": 671744,
+    "path": "/System/Library/PrivateFrameworks/SAObjects.framework/SAObjects"
+  },
+  {
+    "name": "AssistantServices",
+    "base": "0x1b0c5f000",
+    "size": 1708032,
+    "path": "/System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices"
+  },
+  {
+    "name": "SiriInstrumentation",
+    "base": "0x1c5686000",
+    "size": 499712,
+    "path": "/System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation"
+  },
+  {
+    "name": "VoiceServices",
+    "base": "0x1bbc06000",
+    "size": 290816,
+    "path": "/System/Library/PrivateFrameworks/VoiceServices.framework/VoiceServices"
+  },
+  {
+    "name": "SiriTTS",
+    "base": "0x1d272d000",
+    "size": 6017024,
+    "path": "/System/Library/PrivateFrameworks/SiriTTS.framework/SiriTTS"
+  },
+  {
+    "name": "libedit.3.dylib",
+    "base": "0x1ed1a4000",
+    "size": 122880,
+    "path": "/usr/lib/libedit.3.dylib"
+  },
+  {
+    "name": "libncurses.5.4.dylib",
+    "base": "0x1bdc2f000",
+    "size": 200704,
+    "path": "/usr/lib/libncurses.5.4.dylib"
+  },
+  {
+    "name": "PencilKit",
+    "base": "0x1c3a1a000",
+    "size": 2879488,
+    "path": "/System/Library/Frameworks/PencilKit.framework/PencilKit"
+  },
+  {
+    "name": "MailServices",
+    "base": "0x1cb755000",
+    "size": 94208,
+    "path": "/System/Library/PrivateFrameworks/MailServices.framework/MailServices"
+  },
+  {
+    "name": "CalendarUIKit",
+    "base": "0x1cba1a000",
+    "size": 249856,
+    "path": "/System/Library/PrivateFrameworks/CalendarUIKit.framework/CalendarUIKit"
+  },
+  {
+    "name": "CoreHandwriting",
+    "base": "0x1d0975000",
+    "size": 1323008,
+    "path": "/System/Library/PrivateFrameworks/CoreHandwriting.framework/CoreHandwriting"
+  },
+  {
+    "name": "ProofReader",
+    "base": "0x1cbe55000",
+    "size": 868352,
+    "path": "/System/Library/PrivateFrameworks/ProofReader.framework/ProofReader"
+  },
+  {
+    "name": "CVNLP",
+    "base": "0x1c49f0000",
+    "size": 516096,
+    "path": "/System/Library/PrivateFrameworks/CVNLP.framework/CVNLP"
+  },
+  {
+    "name": "libmecabra.dylib",
+    "base": "0x1ed3d1000",
+    "size": 2326528,
+    "path": "/usr/lib/libmecabra.dylib"
+  },
+  {
+    "name": "DifferentialPrivacy",
+    "base": "0x1c4c64000",
+    "size": 360448,
+    "path": "/System/Library/PrivateFrameworks/DifferentialPrivacy.framework/DifferentialPrivacy"
+  },
+  {
+    "name": "SearchFoundation",
+    "base": "0x1b8f62000",
+    "size": 1495040,
+    "path": "/System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation"
+  },
+  {
+    "name": "Navigation",
+    "base": "0x1c6e5d000",
+    "size": 1363968,
+    "path": "/System/Library/PrivateFrameworks/Navigation.framework/Navigation"
+  },
+  {
+    "name": "VectorKit",
+    "base": "0x1b42e8000",
+    "size": 8200192,
+    "path": "/System/Library/PrivateFrameworks/VectorKit.framework/VectorKit"
+  },
+  {
+    "name": "AppSupportUI",
+    "base": "0x1ba483000",
+    "size": 167936,
+    "path": "/System/Library/PrivateFrameworks/AppSupportUI.framework/AppSupportUI"
+  },
+  {
+    "name": "PersonaUI",
+    "base": "0x1e2cf6000",
+    "size": 57344,
+    "path": "/System/Library/PrivateFrameworks/PersonaUI.framework/PersonaUI"
+  },
+  {
+    "name": "CommunicationsFilter",
+    "base": "0x1dcf51000",
+    "size": 20480,
+    "path": "/System/Library/PrivateFrameworks/CommunicationsFilter.framework/CommunicationsFilter"
+  },
+  {
+    "name": "ContactsDonation",
+    "base": "0x1c6be2000",
+    "size": 98304,
+    "path": "/System/Library/PrivateFrameworks/ContactsDonation.framework/ContactsDonation"
+  },
+  {
+    "name": "EmojiFoundation",
+    "base": "0x1d1eb2000",
+    "size": 241664,
+    "path": "/System/Library/PrivateFrameworks/EmojiFoundation.framework/EmojiFoundation"
+  },
+  {
+    "name": "ContactsUICore",
+    "base": "0x1dd080000",
+    "size": 516096,
+    "path": "/System/Library/PrivateFrameworks/ContactsUICore.framework/ContactsUICore"
+  },
+  {
+    "name": "FamilyCircle",
+    "base": "0x1b07cb000",
+    "size": 94208,
+    "path": "/System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle"
+  },
+  {
+    "name": "OnBoardingKit",
+    "base": "0x1b6f50000",
+    "size": 311296,
+    "path": "/System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit"
+  },
+  {
+    "name": "TemplateKit",
+    "base": "0x1bdf21000",
+    "size": 286720,
+    "path": "/System/Library/PrivateFrameworks/TemplateKit.framework/TemplateKit"
+  },
+  {
+    "name": "CoreRecents",
+    "base": "0x1de4ad000",
+    "size": 49152,
+    "path": "/System/Library/PrivateFrameworks/CoreRecents.framework/CoreRecents"
+  },
+  {
+    "name": "VirtualGarage",
+    "base": "0x1d2dfd000",
+    "size": 208896,
+    "path": "/System/Library/PrivateFrameworks/VirtualGarage.framework/VirtualGarage"
+  },
+  {
+    "name": "IntentsCore",
+    "base": "0x1c6bfa000",
+    "size": 126976,
+    "path": "/System/Library/PrivateFrameworks/IntentsCore.framework/IntentsCore"
+  },
+  {
+    "name": "ExternalAccessory",
+    "base": "0x1d641a000",
+    "size": 98304,
+    "path": "/System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory"
+  },
+  {
+    "name": "BluetoothManager",
+    "base": "0x1dc2dc000",
+    "size": 65536,
+    "path": "/System/Library/PrivateFrameworks/BluetoothManager.framework/BluetoothManager"
+  },
+  {
+    "name": "IAP",
+    "base": "0x1c1c53000",
+    "size": 98304,
+    "path": "/System/Library/PrivateFrameworks/IAP.framework/IAP"
+  },
+  {
+    "name": "Email",
+    "base": "0x1beb6f000",
+    "size": 696320,
+    "path": "/System/Library/PrivateFrameworks/Email.framework/Email"
+  },
+  {
+    "name": "EmailFoundation",
+    "base": "0x1b8c09000",
+    "size": 524288,
+    "path": "/System/Library/PrivateFrameworks/EmailFoundation.framework/EmailFoundation"
+  },
+  {
+    "name": "MessageSupport",
+    "base": "0x1c5fd2000",
+    "size": 8192,
+    "path": "/System/Library/PrivateFrameworks/MessageSupport.framework/MessageSupport"
+  },
+  {
+    "name": "MIME",
+    "base": "0x1cb424000",
+    "size": 315392,
+    "path": "/System/Library/PrivateFrameworks/MIME.framework/MIME"
+  },
+  {
+    "name": "EmailAddressing",
+    "base": "0x1dec33000",
+    "size": 45056,
+    "path": "/System/Library/PrivateFrameworks/EmailAddressing.framework/EmailAddressing"
+  },
+  {
+    "name": "EmailCore",
+    "base": "0x1caa6e000",
+    "size": 442368,
+    "path": "/System/Library/PrivateFrameworks/EmailCore.framework/EmailCore"
+  },
+  {
+    "name": "GSS",
+    "base": "0x1d6470000",
+    "size": 188416,
+    "path": "/System/Library/Frameworks/GSS.framework/GSS"
+  },
+  {
+    "name": "Heimdal",
+    "base": "0x1e06c4000",
+    "size": 471040,
+    "path": "/System/Library/PrivateFrameworks/Heimdal.framework/Heimdal"
+  },
+  {
+    "name": "CommonAuth",
+    "base": "0x1dcf49000",
+    "size": 32768,
+    "path": "/System/Library/PrivateFrameworks/CommonAuth.framework/CommonAuth"
+  },
+  {
+    "name": "CoreRecognition",
+    "base": "0x1de4b9000",
+    "size": 446464,
+    "path": "/System/Library/PrivateFrameworks/CoreRecognition.framework/CoreRecognition"
+  },
+  {
+    "name": "Preferences",
+    "base": "0x1a8c65000",
+    "size": 1409024,
+    "path": "/System/Library/PrivateFrameworks/Preferences.framework/Preferences"
+  },
+  {
+    "name": "WebBookmarks",
+    "base": "0x1b90cf000",
+    "size": 376832,
+    "path": "/System/Library/PrivateFrameworks/WebBookmarks.framework/WebBookmarks"
+  },
+  {
+    "name": "CertUI",
+    "base": "0x1dcac2000",
+    "size": 36864,
+    "path": "/System/Library/PrivateFrameworks/CertUI.framework/CertUI"
+  },
+  {
+    "name": "SafariSharedUI",
+    "base": "0x1c42d7000",
+    "size": 770048,
+    "path": "/System/Library/PrivateFrameworks/SafariSharedUI.framework/SafariSharedUI"
+  },
+  {
+    "name": "SafariFoundation",
+    "base": "0x1c6faa000",
+    "size": 122880,
+    "path": "/System/Library/PrivateFrameworks/SafariFoundation.framework/SafariFoundation"
+  },
+  {
+    "name": "TelephonyUtilities",
+    "base": "0x1b9e1c000",
+    "size": 860160,
+    "path": "/System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities"
+  },
+  {
+    "name": "WebUI",
+    "base": "0x1e8c81000",
+    "size": 98304,
+    "path": "/System/Library/PrivateFrameworks/WebUI.framework/WebUI"
+  },
+  {
+    "name": "SafariCore",
+    "base": "0x1baf62000",
+    "size": 430080,
+    "path": "/System/Library/PrivateFrameworks/SafariCore.framework/SafariCore"
+  },
+  {
+    "name": "AuthKitUI",
+    "base": "0x1dbee3000",
+    "size": 397312,
+    "path": "/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI"
+  },
+  {
+    "name": "AppSSO",
+    "base": "0x1bf1e1000",
+    "size": 151552,
+    "path": "/System/Library/PrivateFrameworks/AppSSO.framework/AppSSO"
+  },
+  {
+    "name": "LocalAuthenticationPrivateUI",
+    "base": "0x1e1255000",
+    "size": 237568,
+    "path": "/System/Library/PrivateFrameworks/LocalAuthenticationPrivateUI.framework/LocalAuthenticationPrivateUI"
+  },
+  {
+    "name": "RemoteUI",
+    "base": "0x1e48aa000",
+    "size": 434176,
+    "path": "/System/Library/PrivateFrameworks/RemoteUI.framework/RemoteUI"
+  },
+  {
+    "name": "SharedWebCredentials",
+    "base": "0x1bf206000",
+    "size": 122880,
+    "path": "/System/Library/PrivateFrameworks/SharedWebCredentials.framework/SharedWebCredentials"
+  },
+  {
+    "name": "Vision",
+    "base": "0x1bd6e2000",
+    "size": 2744320,
+    "path": "/System/Library/Frameworks/Vision.framework/Vision"
+  },
+  {
+    "name": "TextRecognition",
+    "base": "0x1c9efd000",
+    "size": 1052672,
+    "path": "/System/Library/PrivateFrameworks/TextRecognition.framework/TextRecognition"
+  },
+  {
+    "name": "libfaceCore.dylib",
+    "base": "0x1d857b000",
+    "size": 12419072,
+    "path": "/System/Library/Frameworks/Vision.framework/libfaceCore.dylib"
+  },
+  {
+    "name": "Futhark",
+    "base": "0x1df75d000",
+    "size": 102400,
+    "path": "/System/Library/PrivateFrameworks/Futhark.framework/Futhark"
+  },
+  {
+    "name": "SettingsFoundation",
+    "base": "0x1c7aa8000",
+    "size": 73728,
+    "path": "/System/Library/PrivateFrameworks/SettingsFoundation.framework/SettingsFoundation"
+  },
+  {
+    "name": "NetAppsUtilities",
+    "base": "0x1d2e30000",
+    "size": 159744,
+    "path": "/System/Library/PrivateFrameworks/NetAppsUtilities.framework/NetAppsUtilities"
+  },
+  {
+    "name": "NetworkExtension",
+    "base": "0x1b6084000",
+    "size": 2433024,
+    "path": "/System/Library/Frameworks/NetworkExtension.framework/NetworkExtension"
+  },
+  {
+    "name": "Netrb",
+    "base": "0x1e2439000",
+    "size": 28672,
+    "path": "/System/Library/PrivateFrameworks/Netrb.framework/Netrb"
+  },
+  {
+    "name": "BiometricKit",
+    "base": "0x1c5700000",
+    "size": 282624,
+    "path": "/System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit"
+  },
+  {
+    "name": "ExposureNotification",
+    "base": "0x1c8e55000",
+    "size": 282624,
+    "path": "/System/Library/Frameworks/ExposureNotification.framework/ExposureNotification"
+  },
+  {
+    "name": "libnetworkextension.dylib",
+    "base": "0x1ed61c000",
+    "size": 90112,
+    "path": "/usr/lib/libnetworkextension.dylib"
+  },
+  {
+    "name": "ContextKit",
+    "base": "0x1afa72000",
+    "size": 77824,
+    "path": "/System/Library/PrivateFrameworks/ContextKit.framework/ContextKit"
+  },
+  {
+    "name": "PersonalizationPortrait",
+    "base": "0x1af898000",
+    "size": 450560,
+    "path": "/System/Library/PrivateFrameworks/PersonalizationPortrait.framework/PersonalizationPortrait"
+  },
+  {
+    "name": "IMCore",
+    "base": "0x1c1978000",
+    "size": 1970176,
+    "path": "/System/Library/PrivateFrameworks/IMCore.framework/IMCore"
+  },
+  {
+    "name": "UserActivity",
+    "base": "0x1add7a000",
+    "size": 397312,
+    "path": "/System/Library/PrivateFrameworks/UserActivity.framework/UserActivity"
+  },
+  {
+    "name": "CoreParsec",
+    "base": "0x1b5466000",
+    "size": 983040,
+    "path": "/System/Library/PrivateFrameworks/CoreParsec.framework/CoreParsec"
+  },
+  {
+    "name": "ParsecSubscriptionServiceSupport",
+    "base": "0x1e2c84000",
+    "size": 12288,
+    "path": "/System/Library/PrivateFrameworks/ParsecSubscriptionServiceSupport.framework/ParsecSubscriptionServiceSupport"
+  },
+  {
+    "name": "Translation",
+    "base": "0x1bbcad000",
+    "size": 1544192,
+    "path": "/System/Library/PrivateFrameworks/Translation.framework/Translation"
+  },
+  {
+    "name": "SafariShared",
+    "base": "0x1bafcb000",
+    "size": 2326528,
+    "path": "/System/Library/PrivateFrameworks/SafariShared.framework/SafariShared"
+  },
+  {
+    "name": "IMDPersistence",
+    "base": "0x1c3f1b000",
+    "size": 1413120,
+    "path": "/System/Library/PrivateFrameworks/IMDPersistence.framework/IMDPersistence"
+  },
+  {
+    "name": "IMSharedUtilities",
+    "base": "0x1b3cd8000",
+    "size": 1069056,
+    "path": "/System/Library/PrivateFrameworks/IMSharedUtilities.framework/IMSharedUtilities"
+  },
+  {
+    "name": "FTServices",
+    "base": "0x1ba4b5000",
+    "size": 352256,
+    "path": "/System/Library/PrivateFrameworks/FTServices.framework/FTServices"
+  },
+  {
+    "name": "DeviceManagement",
+    "base": "0x1bbc56000",
+    "size": 356352,
+    "path": "/System/Library/PrivateFrameworks/DeviceManagement.framework/DeviceManagement"
+  },
+  {
+    "name": "IncomingCallFilter",
+    "base": "0x1e0e70000",
+    "size": 28672,
+    "path": "/System/Library/PrivateFrameworks/IncomingCallFilter.framework/IncomingCallFilter"
+  },
+  {
+    "name": "CoreSDB",
+    "base": "0x1de526000",
+    "size": 102400,
+    "path": "/System/Library/PrivateFrameworks/CoreSDB.framework/CoreSDB"
+  },
+  {
+    "name": "IDSKVStore",
+    "base": "0x1e0af8000",
+    "size": 28672,
+    "path": "/System/Library/PrivateFrameworks/IDSKVStore.framework/IDSKVStore"
+  },
+  {
+    "name": "Sharing",
+    "base": "0x1b5236000",
+    "size": 1609728,
+    "path": "/System/Library/PrivateFrameworks/Sharing.framework/Sharing"
+  },
+  {
+    "name": "ToneLibrary",
+    "base": "0x1c84b9000",
+    "size": 397312,
+    "path": "/System/Library/PrivateFrameworks/ToneLibrary.framework/ToneLibrary"
+  },
+  {
+    "name": "libsysdiagnose.dylib",
+    "base": "0x1d50b6000",
+    "size": 24576,
+    "path": "/usr/lib/libsysdiagnose.dylib"
+  },
+  {
+    "name": "FTClientServices",
+    "base": "0x1def64000",
+    "size": 16384,
+    "path": "/System/Library/PrivateFrameworks/FTClientServices.framework/FTClientServices"
+  },
+  {
+    "name": "FTAWD",
+    "base": "0x1def44000",
+    "size": 131072,
+    "path": "/System/Library/PrivateFrameworks/FTAWD.framework/FTAWD"
+  },
+  {
+    "name": "MobileActivation",
+    "base": "0x1d4710000",
+    "size": 53248,
+    "path": "/System/Library/PrivateFrameworks/MobileActivation.framework/MobileActivation"
+  },
+  {
+    "name": "Catalyst",
+    "base": "0x1dca21000",
+    "size": 253952,
+    "path": "/System/Library/PrivateFrameworks/Catalyst.framework/Catalyst"
+  },
+  {
+    "name": "Categories",
+    "base": "0x1c4546000",
+    "size": 77824,
+    "path": "/System/Library/PrivateFrameworks/Categories.framework/Categories"
+  },
+  {
+    "name": "VideoSubscriberAccount",
+    "base": "0x1d84af000",
+    "size": 835584,
+    "path": "/System/Library/Frameworks/VideoSubscriberAccount.framework/VideoSubscriberAccount"
+  },
+  {
+    "name": "StoreServices",
+    "base": "0x1b4f82000",
+    "size": 2834432,
+    "path": "/System/Library/PrivateFrameworks/StoreServices.framework/StoreServices"
+  },
+  {
+    "name": "MetricsKit",
+    "base": "0x1e1f78000",
+    "size": 364544,
+    "path": "/System/Library/PrivateFrameworks/MetricsKit.framework/MetricsKit"
+  },
+  {
+    "name": "iTunesStore",
+    "base": "0x1d16de000",
+    "size": 626688,
+    "path": "/System/Library/PrivateFrameworks/iTunesStore.framework/iTunesStore"
+  },
+  {
+    "name": "EmbeddedAcousticRecognition",
+    "base": "0x1c4ea1000",
+    "size": 8278016,
+    "path": "/System/Library/PrivateFrameworks/EmbeddedAcousticRecognition.framework/EmbeddedAcousticRecognition"
+  },
+  {
+    "name": "Osprey",
+    "base": "0x1d2e57000",
+    "size": 413696,
+    "path": "/System/Library/PrivateFrameworks/Osprey.framework/Osprey"
+  },
+  {
+    "name": "libmorphun.dylib",
+    "base": "0x1ca1fc000",
+    "size": 2400256,
+    "path": "/usr/lib/libmorphun.dylib"
+  },
+  {
+    "name": "CoreSpeech",
+    "base": "0x1c3d96000",
+    "size": 1593344,
+    "path": "/System/Library/PrivateFrameworks/CoreSpeech.framework/CoreSpeech"
+  },
+  {
+    "name": "FeedbackLogger",
+    "base": "0x1df38b000",
+    "size": 40960,
+    "path": "/System/Library/PrivateFrameworks/FeedbackLogger.framework/FeedbackLogger"
+  },
+  {
+    "name": "SDAPI",
+    "base": "0x1e4967000",
+    "size": 3723264,
+    "path": "/System/Library/PrivateFrameworks/SDAPI.framework/SDAPI"
+  },
+  {
+    "name": "SpeakerRecognition",
+    "base": "0x1c58b8000",
+    "size": 729088,
+    "path": "/System/Library/PrivateFrameworks/SpeakerRecognition.framework/SpeakerRecognition"
+  },
+  {
+    "name": "VoiceTrigger",
+    "base": "0x1e804e000",
+    "size": 827392,
+    "path": "/System/Library/PrivateFrameworks/VoiceTrigger.framework/VoiceTrigger"
+  },
+  {
+    "name": "SoundAnalysis",
+    "base": "0x1d8224000",
+    "size": 1368064,
+    "path": "/System/Library/Frameworks/SoundAnalysis.framework/SoundAnalysis"
+  },
+  {
+    "name": "DistributedEvaluation",
+    "base": "0x1de96f000",
+    "size": 229376,
+    "path": "/System/Library/PrivateFrameworks/DistributedEvaluation.framework/DistributedEvaluation"
+  },
+  {
+    "name": "HealthKit",
+    "base": "0x1af5e4000",
+    "size": 2379776,
+    "path": "/System/Library/Frameworks/HealthKit.framework/HealthKit"
+  },
+  {
+    "name": "libxslt.1.dylib",
+    "base": "0x1edc6f000",
+    "size": 172032,
+    "path": "/usr/lib/libxslt.1.dylib"
+  },
+  {
+    "name": "UsageTracking",
+    "base": "0x1e74ea000",
+    "size": 176128,
+    "path": "/System/Library/PrivateFrameworks/UsageTracking.framework/UsageTracking"
+  },
+  {
+    "name": "ScreenTimeCore",
+    "base": "0x1c3217000",
+    "size": 491520,
+    "path": "/System/Library/PrivateFrameworks/ScreenTimeCore.framework/ScreenTimeCore"
+  },
+  {
+    "name": "BiomeStreams",
+    "base": "0x1c39dd000",
+    "size": 135168,
+    "path": "/System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams"
+  },
+  {
+    "name": "BiomeFoundation",
+    "base": "0x1c4bcd000",
+    "size": 12288,
+    "path": "/System/Library/PrivateFrameworks/BiomeFoundation.framework/BiomeFoundation"
+  },
+  {
+    "name": "BiomePubSub",
+    "base": "0x1dbfd4000",
+    "size": 106496,
+    "path": "/System/Library/PrivateFrameworks/BiomePubSub.framework/BiomePubSub"
+  },
+  {
+    "name": "BiomeStorage",
+    "base": "0x1b9ccd000",
+    "size": 69632,
+    "path": "/System/Library/PrivateFrameworks/BiomeStorage.framework/BiomeStorage"
+  },
+  {
+    "name": "ConfigurationEngineModel",
+    "base": "0x1c48b5000",
+    "size": 1114112,
+    "path": "/System/Library/PrivateFrameworks/ConfigurationEngineModel.framework/ConfigurationEngineModel"
+  },
+  {
+    "name": "HomeSharing",
+    "base": "0x1e0a24000",
+    "size": 503808,
+    "path": "/System/Library/PrivateFrameworks/HomeSharing.framework/HomeSharing"
+  },
+  {
+    "name": "MediaLibraryCore",
+    "base": "0x1e171f000",
+    "size": 2953216,
+    "path": "/System/Library/PrivateFrameworks/MediaLibraryCore.framework/MediaLibraryCore"
+  },
+  {
+    "name": "MediaPlatform",
+    "base": "0x1e19f0000",
+    "size": 581632,
+    "path": "/System/Library/PrivateFrameworks/MediaPlatform.framework/MediaPlatform"
+  },
+  {
+    "name": "MusicLibrary",
+    "base": "0x1c34c6000",
+    "size": 2957312,
+    "path": "/System/Library/PrivateFrameworks/MusicLibrary.framework/MusicLibrary"
+  },
+  {
+    "name": "iTunesCloud",
+    "base": "0x1b8236000",
+    "size": 2445312,
+    "path": "/System/Library/PrivateFrameworks/iTunesCloud.framework/iTunesCloud"
+  },
+  {
+    "name": "DAAPKit",
+    "base": "0x1de730000",
+    "size": 20480,
+    "path": "/System/Library/PrivateFrameworks/DAAPKit.framework/DAAPKit"
+  },
+  {
+    "name": "CacheDelete",
+    "base": "0x1c49c5000",
+    "size": 176128,
+    "path": "/System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete"
+  },
+  {
+    "name": "FSEvents",
+    "base": "0x1def3b000",
+    "size": 36864,
+    "path": "/System/Library/PrivateFrameworks/FSEvents.framework/FSEvents"
+  },
+  {
+    "name": "IntentsUI",
+    "base": "0x1d65cd000",
+    "size": 102400,
+    "path": "/System/Library/Frameworks/IntentsUI.framework/IntentsUI"
+  },
+  {
+    "name": "QuickLook",
+    "base": "0x1bfff2000",
+    "size": 786432,
+    "path": "/System/Library/Frameworks/QuickLook.framework/QuickLook"
+  },
+  {
+    "name": "libswiftPhotos.dylib",
+    "base": "0x1ede8e000",
+    "size": 4096,
+    "path": "/usr/lib/swift/libswiftPhotos.dylib"
+  },
+  {
+    "name": "PassKitCore",
+    "base": "0x1afe31000",
+    "size": 5623808,
+    "path": "/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore"
+  },
+  {
+    "name": "PassKitUI",
+    "base": "0x1bfaba000",
+    "size": 4710400,
+    "path": "/System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI"
+  },
+  {
+    "name": "AddressBook",
+    "base": "0x1d5c0d000",
+    "size": 172032,
+    "path": "/System/Library/Frameworks/AddressBook.framework/AddressBook"
+  },
+  {
+    "name": "BridgePreferences",
+    "base": "0x1dc3a0000",
+    "size": 172032,
+    "path": "/System/Library/PrivateFrameworks/BridgePreferences.framework/BridgePreferences"
+  },
+  {
+    "name": "PBBridgeSupport",
+    "base": "0x1e2be6000",
+    "size": 348160,
+    "path": "/System/Library/PrivateFrameworks/PBBridgeSupport.framework/PBBridgeSupport"
+  },
+  {
+    "name": "HSAAuthentication",
+    "base": "0x1e0477000",
+    "size": 16384,
+    "path": "/System/Library/PrivateFrameworks/HSAAuthentication.framework/HSAAuthentication"
+  },
+  {
+    "name": "DigitalAccess",
+    "base": "0x1de884000",
+    "size": 98304,
+    "path": "/System/Library/PrivateFrameworks/DigitalAccess.framework/DigitalAccess"
+  },
+  {
+    "name": "CoreIDV",
+    "base": "0x1c328f000",
+    "size": 57344,
+    "path": "/System/Library/PrivateFrameworks/CoreIDV.framework/CoreIDV"
+  },
+  {
+    "name": "SEService",
+    "base": "0x1e4cf4000",
+    "size": 147456,
+    "path": "/System/Library/PrivateFrameworks/SEService.framework/SEService"
+  },
+  {
+    "name": "CoreCDP",
+    "base": "0x1d4e03000",
+    "size": 131072,
+    "path": "/System/Library/PrivateFrameworks/CoreCDP.framework/CoreCDP"
+  },
+  {
+    "name": "KeychainCircle",
+    "base": "0x1cb3d0000",
+    "size": 139264,
+    "path": "/System/Library/PrivateFrameworks/KeychainCircle.framework/KeychainCircle"
+  },
+  {
+    "name": "Messages",
+    "base": "0x1d6761000",
+    "size": 135168,
+    "path": "/System/Library/Frameworks/Messages.framework/Messages"
+  },
+  {
+    "name": "SpringBoardUIServices",
+    "base": "0x1be19e000",
+    "size": 479232,
+    "path": "/System/Library/PrivateFrameworks/SpringBoardUIServices.framework/SpringBoardUIServices"
+  },
+  {
+    "name": "AppleAccountUI",
+    "base": "0x1ca1a0000",
+    "size": 364544,
+    "path": "/System/Library/PrivateFrameworks/AppleAccountUI.framework/AppleAccountUI"
+  },
+  {
+    "name": "AppStoreComponents",
+    "base": "0x1da86f000",
+    "size": 405504,
+    "path": "/System/Library/PrivateFrameworks/AppStoreComponents.framework/AppStoreComponents"
+  },
+  {
+    "name": "FindMyDevice",
+    "base": "0x1b8f05000",
+    "size": 131072,
+    "path": "/System/Library/PrivateFrameworks/FindMyDevice.framework/FindMyDevice"
+  },
+  {
+    "name": "CoreCDPUI",
+    "base": "0x1dd37a000",
+    "size": 163840,
+    "path": "/System/Library/PrivateFrameworks/CoreCDPUI.framework/CoreCDPUI"
+  },
+  {
+    "name": "NanoResourceGrabber",
+    "base": "0x1e23e0000",
+    "size": 32768,
+    "path": "/System/Library/PrivateFrameworks/NanoResourceGrabber.framework/NanoResourceGrabber"
+  },
+  {
+    "name": "PassKitUIFoundation",
+    "base": "0x1c7b62000",
+    "size": 167936,
+    "path": "/System/Library/PrivateFrameworks/PassKitUIFoundation.framework/PassKitUIFoundation"
+  },
+  {
+    "name": "ChatKit",
+    "base": "0x1aef86000",
+    "size": 6078464,
+    "path": "/System/Library/PrivateFrameworks/ChatKit.framework/ChatKit"
+  },
+  {
+    "name": "EmojiKit",
+    "base": "0x1c726d000",
+    "size": 36864,
+    "path": "/System/Library/PrivateFrameworks/EmojiKit.framework/EmojiKit"
+  },
+  {
+    "name": "CameraKit",
+    "base": "0x1dc8e8000",
+    "size": 20480,
+    "path": "/System/Library/PrivateFrameworks/CameraKit.framework/CameraKit"
+  },
+  {
+    "name": "StorageSettings",
+    "base": "0x1e60a3000",
+    "size": 114688,
+    "path": "/System/Library/PrivateFrameworks/StorageSettings.framework/StorageSettings"
+  },
+  {
+    "name": "SiriActivation",
+    "base": "0x1c7b1b000",
+    "size": 290816,
+    "path": "/System/Library/PrivateFrameworks/SiriActivation.framework/SiriActivation"
+  },
+  {
+    "name": "CarPlay",
+    "base": "0x1d5db4000",
+    "size": 258048,
+    "path": "/System/Library/Frameworks/CarPlay.framework/CarPlay"
+  },
+  {
+    "name": "TipKit",
+    "base": "0x1e6d07000",
+    "size": 77824,
+    "path": "/System/Library/PrivateFrameworks/TipKit.framework/TipKit"
+  },
+  {
+    "name": "PhotosFormats",
+    "base": "0x1cddf5000",
+    "size": 450560,
+    "path": "/System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats"
+  },
+  {
+    "name": "PhotosPlayer",
+    "base": "0x1cb76c000",
+    "size": 253952,
+    "path": "/System/Library/PrivateFrameworks/PhotosPlayer.framework/PhotosPlayer"
+  },
+  {
+    "name": "ContactsAutocompleteUI",
+    "base": "0x1bb6b4000",
+    "size": 299008,
+    "path": "/System/Library/PrivateFrameworks/ContactsAutocompleteUI.framework/ContactsAutocompleteUI"
+  },
+  {
+    "name": "PeopleSuggester",
+    "base": "0x1bef0c000",
+    "size": 581632,
+    "path": "/System/Library/PrivateFrameworks/PeopleSuggester.framework/PeopleSuggester"
+  },
+  {
+    "name": "IMTranscoding",
+    "base": "0x1e0dc2000",
+    "size": 65536,
+    "path": "/System/Library/PrivateFrameworks/IMTranscoding.framework/IMTranscoding"
+  },
+  {
+    "name": "IMSharedUI",
+    "base": "0x1e0d79000",
+    "size": 110592,
+    "path": "/System/Library/PrivateFrameworks/IMSharedUI.framework/IMSharedUI"
+  },
+  {
+    "name": "MediaConversionService",
+    "base": "0x1d07f6000",
+    "size": 172032,
+    "path": "/System/Library/PrivateFrameworks/MediaConversionService.framework/MediaConversionService"
+  },
+  {
+    "name": "CPAnalytics",
+    "base": "0x1dc59d000",
+    "size": 98304,
+    "path": "/System/Library/PrivateFrameworks/CPAnalytics.framework/CPAnalytics"
+  },
+  {
+    "name": "CloudPhotoServices",
+    "base": "0x1d168f000",
+    "size": 45056,
+    "path": "/System/Library/PrivateFrameworks/CloudPhotoServices.framework/CloudPhotoServices"
+  },
+  {
+    "name": "ImageCaptureCore",
+    "base": "0x1c6cbf000",
+    "size": 233472,
+    "path": "/System/Library/Frameworks/ImageCaptureCore.framework/ImageCaptureCore"
+  },
+  {
+    "name": "PhotosImagingFoundation",
+    "base": "0x1e2ef6000",
+    "size": 258048,
+    "path": "/System/Library/PrivateFrameworks/PhotosImagingFoundation.framework/PhotosImagingFoundation"
+  },
+  {
+    "name": "PhotoFoundation",
+    "base": "0x1b5556000",
+    "size": 307200,
+    "path": "/System/Library/PrivateFrameworks/PhotoFoundation.framework/PhotoFoundation"
+  },
+  {
+    "name": "CloudPhotoLibrary",
+    "base": "0x1c333d000",
+    "size": 1609728,
+    "path": "/System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/CloudPhotoLibrary"
+  },
+  {
+    "name": "DCIMServices",
+    "base": "0x1de752000",
+    "size": 57344,
+    "path": "/System/Library/PrivateFrameworks/DCIMServices.framework/DCIMServices"
+  },
+  {
+    "name": "CoreMediaStream",
+    "base": "0x1d50f9000",
+    "size": 1105920,
+    "path": "/System/Library/PrivateFrameworks/CoreMediaStream.framework/CoreMediaStream"
+  },
+  {
+    "name": "PhotoLibraryServices",
+    "base": "0x1b57f2000",
+    "size": 7544832,
+    "path": "/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices"
+  },
+  {
+    "name": "AssetsLibraryServices",
+    "base": "0x1b5f24000",
+    "size": 794624,
+    "path": "/System/Library/PrivateFrameworks/AssetsLibraryServices.framework/AssetsLibraryServices"
+  },
+  {
+    "name": "MMCS",
+    "base": "0x1c64d8000",
+    "size": 696320,
+    "path": "/System/Library/PrivateFrameworks/MMCS.framework/MMCS"
+  },
+  {
+    "name": "AssetCacheServices",
+    "base": "0x1dbd5a000",
+    "size": 126976,
+    "path": "/System/Library/PrivateFrameworks/AssetCacheServices.framework/AssetCacheServices"
+  },
+  {
+    "name": "MediaStream",
+    "base": "0x1cfb4f000",
+    "size": 135168,
+    "path": "/System/Library/PrivateFrameworks/MediaStream.framework/MediaStream"
+  },
+  {
+    "name": "BulletinBoard",
+    "base": "0x1bee7e000",
+    "size": 581632,
+    "path": "/System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard"
+  },
+  {
+    "name": "SiriUICore",
+    "base": "0x1c44be000",
+    "size": 491520,
+    "path": "/System/Library/PrivateFrameworks/SiriUICore.framework/SiriUICore"
+  },
+  {
+    "name": "CarKit",
+    "base": "0x1b8552000",
+    "size": 278528,
+    "path": "/System/Library/PrivateFrameworks/CarKit.framework/CarKit"
+  },
+  {
+    "name": "FMCoreLite",
+    "base": "0x1b9ddd000",
+    "size": 102400,
+    "path": "/System/Library/PrivateFrameworks/FMCoreLite.framework/FMCoreLite"
+  },
+  {
+    "name": "CarPlayUIServices",
+    "base": "0x1dc9e1000",
+    "size": 57344,
+    "path": "/System/Library/PrivateFrameworks/CarPlayUIServices.framework/CarPlayUIServices"
+  },
+  {
+    "name": "TipsCore",
+    "base": "0x1ba333000",
+    "size": 405504,
+    "path": "/System/Library/PrivateFrameworks/TipsCore.framework/TipsCore"
+  },
+  {
+    "name": "TipsUI",
+    "base": "0x1e6d1a000",
+    "size": 65536,
+    "path": "/System/Library/PrivateFrameworks/TipsUI.framework/TipsUI"
+  },
+  {
+    "name": "ChronoServices",
+    "base": "0x1a91b7000",
+    "size": 90112,
+    "path": "/System/Library/PrivateFrameworks/ChronoServices.framework/ChronoServices"
+  },
+  {
+    "name": "QuickLookSupport",
+    "base": "0x1e4522000",
+    "size": 94208,
+    "path": "/System/Library/PrivateFrameworks/QuickLookSupport.framework/QuickLookSupport"
+  },
+  {
+    "name": "ContactsAutocomplete",
+    "base": "0x1dd038000",
+    "size": 270336,
+    "path": "/System/Library/PrivateFrameworks/ContactsAutocomplete.framework/ContactsAutocomplete"
+  },
+  {
+    "name": "Message",
+    "base": "0x1b8a09000",
+    "size": 2097152,
+    "path": "/System/Library/PrivateFrameworks/Message.framework/Message"
+  },
+  {
+    "name": "DoNotDisturb",
+    "base": "0x1c644f000",
+    "size": 118784,
+    "path": "/System/Library/PrivateFrameworks/DoNotDisturb.framework/DoNotDisturb"
+  },
+  {
+    "name": "MailSupport",
+    "base": "0x1cd955000",
+    "size": 196608,
+    "path": "/System/Library/PrivateFrameworks/MailSupport.framework/MailSupport"
+  },
+  {
+    "name": "DocumentCamera",
+    "base": "0x1de9fe000",
+    "size": 864256,
+    "path": "/System/Library/PrivateFrameworks/DocumentCamera.framework/DocumentCamera"
+  },
+  {
+    "name": "DataAccess",
+    "base": "0x1bd980000",
+    "size": 380928,
+    "path": "/System/Library/PrivateFrameworks/DataAccess.framework/DataAccess"
+  },
+  {
+    "name": "EmailDaemon",
+    "base": "0x1cd1cb000",
+    "size": 1904640,
+    "path": "/System/Library/PrivateFrameworks/EmailDaemon.framework/EmailDaemon"
+  },
+  {
+    "name": "Notes",
+    "base": "0x1b8692000",
+    "size": 327680,
+    "path": "/System/Library/PrivateFrameworks/Notes.framework/Notes"
+  },
+  {
+    "name": "AppStoreOverlays",
+    "base": "0x1da8da000",
+    "size": 45056,
+    "path": "/System/Library/PrivateFrameworks/AppStoreOverlays.framework/AppStoreOverlays"
+  },
+  {
+    "name": "AppStoreDaemon",
+    "base": "0x1bb203000",
+    "size": 643072,
+    "path": "/System/Library/PrivateFrameworks/AppStoreDaemon.framework/AppStoreDaemon"
+  },
+  {
+    "name": "SpringBoardFoundation",
+    "base": "0x1be09c000",
+    "size": 929792,
+    "path": "/System/Library/PrivateFrameworks/SpringBoardFoundation.framework/SpringBoardFoundation"
+  },
+  {
+    "name": "TelephonyUI",
+    "base": "0x1c2061000",
+    "size": 237568,
+    "path": "/System/Library/PrivateFrameworks/TelephonyUI.framework/TelephonyUI"
+  },
+  {
+    "name": "ProgressUI",
+    "base": "0x1e449f000",
+    "size": 36864,
+    "path": "/System/Library/PrivateFrameworks/ProgressUI.framework/ProgressUI"
+  },
+  {
+    "name": "MobileObliteration",
+    "base": "0x1e2016000",
+    "size": 12288,
+    "path": "/System/Library/PrivateFrameworks/MobileObliteration.framework/MobileObliteration"
+  },
+  {
+    "name": "PrototypeToolsUI",
+    "base": "0x1e44a8000",
+    "size": 57344,
+    "path": "/System/Library/PrivateFrameworks/PrototypeToolsUI.framework/PrototypeToolsUI"
+  },
+  {
+    "name": "AccountsUI",
+    "base": "0x1c8172000",
+    "size": 180224,
+    "path": "/System/Library/PrivateFrameworks/AccountsUI.framework/AccountsUI"
+  },
+  {
+    "name": "ManagedConfigurationUI",
+    "base": "0x1ceedc000",
+    "size": 372736,
+    "path": "/System/Library/PrivateFrameworks/ManagedConfigurationUI.framework/ManagedConfigurationUI"
+  },
+  {
+    "name": "AccountsDaemon",
+    "base": "0x1c329d000",
+    "size": 655360,
+    "path": "/System/Library/PrivateFrameworks/AccountsDaemon.framework/AccountsDaemon"
+  },
+  {
+    "name": "CertInfo",
+    "base": "0x1dcaaa000",
+    "size": 98304,
+    "path": "/System/Library/PrivateFrameworks/CertInfo.framework/CertInfo"
+  },
+  {
+    "name": "NanoSystemSettings",
+    "base": "0x1e23e8000",
+    "size": 69632,
+    "path": "/System/Library/PrivateFrameworks/NanoSystemSettings.framework/NanoSystemSettings"
+  },
+  {
+    "name": "OAuth",
+    "base": "0x1e25d5000",
+    "size": 12288,
+    "path": "/System/Library/PrivateFrameworks/OAuth.framework/OAuth"
+  },
+  {
+    "name": "CoreCDPInternal",
+    "base": "0x1c8ec0000",
+    "size": 315392,
+    "path": "/System/Library/PrivateFrameworks/CoreCDPInternal.framework/CoreCDPInternal"
+  },
+  {
+    "name": "JetUI",
+    "base": "0x1d05af000",
+    "size": 389120,
+    "path": "/System/Library/PrivateFrameworks/JetUI.framework/JetUI"
+  },
+  {
+    "name": "JetEngine",
+    "base": "0x1bdd38000",
+    "size": 2002944,
+    "path": "/System/Library/PrivateFrameworks/JetEngine.framework/JetEngine"
+  },
+  {
+    "name": "libswiftCloudKit.dylib",
+    "base": "0x1bdac3000",
+    "size": 53248,
+    "path": "/usr/lib/swift/libswiftCloudKit.dylib"
+  },
+  {
+    "name": "DiagnosticLogCollection",
+    "base": "0x1de843000",
+    "size": 8192,
+    "path": "/System/Library/PrivateFrameworks/DiagnosticLogCollection.framework/DiagnosticLogCollection"
+  },
+  {
+    "name": "GLKit",
+    "base": "0x1d6446000",
+    "size": 172032,
+    "path": "/System/Library/Frameworks/GLKit.framework/GLKit"
+  },
+  {
+    "name": "SceneKit",
+    "base": "0x1d7dee000",
+    "size": 4386816,
+    "path": "/System/Library/Frameworks/SceneKit.framework/SceneKit"
+  },
+  {
+    "name": "ModelIO",
+    "base": "0x1d6c6c000",
+    "size": 10997760,
+    "path": "/System/Library/Frameworks/ModelIO.framework/ModelIO"
+  },
+  {
+    "name": "RenderBox",
+    "base": "0x1c6d50000",
+    "size": 430080,
+    "path": "/System/Library/PrivateFrameworks/RenderBox.framework/RenderBox"
+  },
+  {
+    "name": "AttributeGraph",
+    "base": "0x1cd179000",
+    "size": 196608,
+    "path": "/System/Library/PrivateFrameworks/AttributeGraph.framework/AttributeGraph"
+  },
+  {
+    "name": "CoreMIDI",
+    "base": "0x1d5e7d000",
+    "size": 434176,
+    "path": "/System/Library/Frameworks/CoreMIDI.framework/CoreMIDI"
+  },
+  {
+    "name": "CryptoKitCBridging",
+    "base": "0x1de715000",
+    "size": 16384,
+    "path": "/System/Library/PrivateFrameworks/CryptoKitCBridging.framework/CryptoKitCBridging"
+  },
+  {
+    "name": "libswiftCryptoTokenKit.dylib",
+    "base": "0x1eddf3000",
+    "size": 8192,
+    "path": "/usr/lib/swift/libswiftCryptoTokenKit.dylib"
+  },
+  {
+    "name": "PhotoLibrary",
+    "base": "0x1e2e4c000",
+    "size": 393216,
+    "path": "/System/Library/PrivateFrameworks/PhotoLibrary.framework/PhotoLibrary"
+  },
+  {
+    "name": "PhotosUICore",
+    "base": "0x1b767b000",
+    "size": 9592832,
+    "path": "/System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore"
+  },
+  {
+    "name": "CameraEditKit",
+    "base": "0x1dc743000",
+    "size": 184320,
+    "path": "/System/Library/PrivateFrameworks/CameraEditKit.framework/CameraEditKit"
+  },
+  {
+    "name": "NeutrinoCore",
+    "base": "0x1c9ceb000",
+    "size": 2105344,
+    "path": "/System/Library/PrivateFrameworks/NeutrinoCore.framework/NeutrinoCore"
+  },
+  {
+    "name": "NeutrinoKit",
+    "base": "0x1e251b000",
+    "size": 131072,
+    "path": "/System/Library/PrivateFrameworks/NeutrinoKit.framework/NeutrinoKit"
+  },
+  {
+    "name": "PhotoImaging",
+    "base": "0x1e2d2f000",
+    "size": 1167360,
+    "path": "/System/Library/PrivateFrameworks/PhotoImaging.framework/PhotoImaging"
+  },
+  {
+    "name": "Social",
+    "base": "0x1d2d01000",
+    "size": 405504,
+    "path": "/System/Library/Frameworks/Social.framework/Social"
+  },
+  {
+    "name": "VideoProcessing",
+    "base": "0x1bab0d000",
+    "size": 4243456,
+    "path": "/System/Library/PrivateFrameworks/VideoProcessing.framework/VideoProcessing"
+  },
+  {
+    "name": "InertiaCam",
+    "base": "0x1e0e77000",
+    "size": 512000,
+    "path": "/System/Library/PrivateFrameworks/InertiaCam.framework/InertiaCam"
+  },
+  {
+    "name": "AppleCVA",
+    "base": "0x1dba0d000",
+    "size": 1695744,
+    "path": "/System/Library/PrivateFrameworks/AppleCVA.framework/AppleCVA"
+  },
+  {
+    "name": "AutoLoop",
+    "base": "0x1dbf44000",
+    "size": 352256,
+    "path": "/System/Library/PrivateFrameworks/AutoLoop.framework/AutoLoop"
+  },
+  {
+    "name": "CoreAppleCVA",
+    "base": "0x1dd13c000",
+    "size": 1339392,
+    "path": "/System/Library/PrivateFrameworks/CoreAppleCVA.framework/CoreAppleCVA"
+  },
+  {
+    "name": "AssetsLibrary",
+    "base": "0x1d5c43000",
+    "size": 73728,
+    "path": "/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary"
+  },
+  {
+    "name": "libobjc-trampolines.dylib",
+    "base": "0x10902c000",
+    "size": 49152,
+    "path": "/usr/lib/libobjc-trampolines.dylib"
+  },
+  {
+    "name": "libsubstitute.dylib",
+    "base": "0x109040000",
+    "size": 98304,
+    "path": "/usr/lib/libsubstitute.dylib"
+  },
+  {
+    "name": "substitute-loader.dylib",
+    "base": "0x10bec8000",
+    "size": 3014656,
+    "path": "/usr/lib/substitute-loader.dylib"
+  },
+  {
+    "name": "libsubstrate.dylib",
+    "base": "0x109068000",
+    "size": 32768,
+    "path": "/usr/lib/libsubstrate.dylib"
+  },
+  {
+    "name": "CoreServicesInternal",
+    "base": "0x1baf30000",
+    "size": 204800,
+    "path": "/System/Library/PrivateFrameworks/CoreServicesInternal.framework/CoreServicesInternal"
+  },
+  {
+    "name": "AppSSOCore",
+    "base": "0x1c43b0000",
+    "size": 94208,
+    "path": "/System/Library/PrivateFrameworks/AppSSOCore.framework/AppSSOCore"
+  },
+  {
+    "name": "libEmbeddedSystemAUs.dylib",
+    "base": "0x1d5c55000",
+    "size": 1134592,
+    "path": "/System/Library/Frameworks/AudioToolbox.framework/libEmbeddedSystemAUs.dylib"
+  },
+  {
+    "name": "libAudioDSP.dylib",
+    "base": "0x1cf15f000",
+    "size": 5488640,
+    "path": "/System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib"
+  },
+  {
+    "name": "PersonalAudio",
+    "base": "0x1d41f2000",
+    "size": 86016,
+    "path": "/System/Library/PrivateFrameworks/PersonalAudio.framework/PersonalAudio"
+  },
+  {
+    "name": "AudioDataAnalysis",
+    "base": "0x1cf69b000",
+    "size": 49152,
+    "path": "/System/Library/PrivateFrameworks/AudioDataAnalysis.framework/AudioDataAnalysis"
+  },
+  {
+    "name": "HearingCore",
+    "base": "0x1c59b2000",
+    "size": 40960,
+    "path": "/System/Library/PrivateFrameworks/HearingCore.framework/HearingCore"
+  },
+  {
+    "name": "AudioCodecs",
+    "base": "0x1c7412000",
+    "size": 5349376,
+    "path": "/System/Library/Frameworks/AudioToolbox.framework/AudioCodecs"
+  },
+  {
+    "name": "libCGInterfaces.dylib",
+    "base": "0x1a6491000",
+    "size": 102400,
+    "path": "/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Libraries/libCGInterfaces.dylib"
+  },
+  {
+    "name": "libboringssl.dylib",
+    "base": "0x1ba50b000",
+    "size": 724992,
+    "path": "/usr/lib/libboringssl.dylib"
+  },
+  {
+    "name": "WABloksKit",
+    "base": "0x11a9f8000",
+    "size": 19136512,
+    "path": "/private/var/containers/Bundle/Application/19016FF0-2840-4025-AC55-4C56F8FD33BA/WhatsApp.app/Frameworks/WABloksKit.framework/WABloksKit"
+  },
+  {
+    "name": "libswiftGLKit.dylib",
+    "base": "0x1eddff000",
+    "size": 4096,
+    "path": "/usr/lib/swift/libswiftGLKit.dylib"
+  },
+  {
+    "name": "libswiftModelIO.dylib",
+    "base": "0x1ede26000",
+    "size": 12288,
+    "path": "/usr/lib/swift/libswiftModelIO.dylib"
+  },
+  {
+    "name": "libusrtcp.dylib",
+    "base": "0x1a828e000",
+    "size": 430080,
+    "path": "/usr/lib/libusrtcp.dylib"
+  },
+  {
+    "name": "liblog_network.dylib",
+    "base": "0x1edce4000",
+    "size": 12288,
+    "path": "/usr/lib/log/liblog_network.dylib"
+  },
+  {
+    "name": "libquic.dylib",
+    "base": "0x1edab6000",
+    "size": 393216,
+    "path": "/usr/lib/libquic.dylib"
+  },
+  {
+    "name": "libffi-trampolines.dylib",
+    "base": "0x1290e4000",
+    "size": 32768,
+    "path": "/usr/lib/libffi-trampolines.dylib"
+  },
+  {
+    "name": "TextInputUI",
+    "base": "0x1acd86000",
+    "size": 323584,
+    "path": "/System/Library/PrivateFrameworks/TextInputUI.framework/TextInputUI"
+  },
+  {
+    "name": "dyld",
+    "base": "0x109234000",
+    "size": 458752,
+    "path": "/usr/lib/dyld"
+  }
+]
