@@ -1,10 +1,12 @@
 import {printClass,hookClassMethod, disableSsl,printMethod,printModules,hookFuncByName,setMaxShowByte,logLengthData,printModuleAllExports,printModuleAllSymbol, logData} from "./iosFun.js"
-
+import {test} from './test.js'
+test();
 //printClass(['enc','mbedtls','gcm','curve','25519']);
 //hookClassMethod(['25519','json']);
-//hookClassMethod(['NSJSONSerialization','INJSONEncoder']);
+//hookClassMethod(['WAPushController']);
 //hookClassMethod(['NSData'],['URLSafeBase64EncodedString']);
 //printClass(['json']);
+//printMethod(null,['PushToken','push_token']);
 //printMethod(null,['mbedtls','gcm','setkey'])
 //printMethod(null,['base64']);
 //printModules();
@@ -25,18 +27,18 @@ import {printClass,hookClassMethod, disableSsl,printMethod,printModules,hookFunc
 // },(c,l)=>{
 //     return l;
 // });
-setMaxShowByte(0x10000);
-disableSsl();
-var length=0;
-var dataP:NativePointer;
-hookFuncByName("SharedModules","mbedtls_gcm_update","加密方法:mbedtls_gcm_update",(c,l)=>{
-    length=c.x1.toUInt32();
-    dataP=c.x3;
-    l=logLengthData(c.x2,length,'input',l);
+// setMaxShowByte(0x10000);
+// disableSsl();
+// var length=0;
+// var dataP:NativePointer;
+// hookFuncByName("SharedModules","mbedtls_gcm_update","加密方法:mbedtls_gcm_update",(c,l)=>{
+//     length=c.x1.toUInt32();
+//     dataP=c.x3;
+//     l=logLengthData(c.x2,length,'input',l);
     
-    return l;
-},(c,l)=>{
-    l=logLengthData(dataP,length,'out',l);
-    return l;
-});
+//     return l;
+// },(c,l)=>{
+//     l=logLengthData(dataP,length,'out',l);
+//     return l;
+// });
 //printModuleAllExports('SharedModules');
