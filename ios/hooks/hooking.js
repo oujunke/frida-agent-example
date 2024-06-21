@@ -65,8 +65,18 @@ export function hook(search_class,search_method){
         try {
             var n = 100;
             var last_arg = '';
+            //console.log('t1');
             for (var i = 2; i < n; ++i) {
+                //console.log('t2:'+args[i]);
+                var np3=new NativePointer(args[i]);
+                //console.log('np3:'+np3);
+                //console.log('np3 p:'+np3.readPointer());
+                if(args[i]<0xffffff){
+                    console.log('\t[+] Dump Arg' + i + ': ' + args[i]);
+                    continue;
+                }
                 var arg = (new ObjC.Object(args[i])).toString();
+                //console.log('t3');
                 if (arg == 'nil' || arg == last_arg) {
                     break;
                 }
@@ -75,37 +85,42 @@ export function hook(search_class,search_method){
                 var data = new ObjC.Object(args[i]);
                 console.log(colors.green, "\t\t[-] Arugment type: ", colors.resetColor);
                 console.log("\t\t\t", data.$className);
+                var arg = ObjC.Object(args[2]);
+                console.log(`toJSON:${arg.toJSON}-prototype:${arg.prototype}-constructor:${arg.constructor}-hasOwnProperty:${arg.hasOwnProperty}`);
+                // for(var k in arg){
+                //     console.log(`\t\t\t key:${k}--value:${arg[k]}`);
+                // }
                 /* Converting Byte to HexString */
-                console.log(colors.green, "\t\t[-] Bytes to Hex:", colors.resetColor);
-                try {
-                    var arg = ObjC.Object(args[2]);
-                    var length = arg.length().valueOf();
-                    var bytes = arg.bytes();
-                    var byteString = "";
-                    for (var i = 0; i < length; i++) {
-                        var byte = bytes.add(i).readU8();
-                        byteString += byte.toString(16).padStart(2, '0'); // Convert to hex and pad with leading zero if needed
-                    }
-                    console.log("\t\t\t", byteString);
-                } catch (err_bytes2hex) {
-                    console.log(colors.red, "\t\t\t[x] Cannot convert Byte to Hex. Error: ", err_bytes2hex, colors.resetColor);
-                }
-                /* Converting NSData to String */
-                console.log(colors.green, "\t\t[-] NSData to String: ", colors.resetColor);
-                try {
-                    var buf = data.bytes().readUtf8String(data.length());
-                    console.log("\t\t\t", buf);
-                } catch (err_nsdata2string) {
-                    console.log(colors.red, "\t\t\t[x] Cannot convert NSData to String. Error: ", err_nsdata2string, colors.resetColor);
-                }
-                /* Converting NSData to Binary Data */
-                console.log(colors.green, "\t\t[-] NSData to Binary Data: ", colors.resetColor);
-                try {
-                    var buf = data.bytes().readByteArray(data.length());
-                    console.log(hexdump(buf, { ansi: true }));
-                } catch (err_nsdata2bin) {
-                    console.log(colors.red, "\t\t\t[x] Cannot convert NSData to Binary Data. Error: ", err_nsdata2bin, colors.resetColor);
-                }
+                // console.log(colors.green, "\t\t[-] Bytes to Hex:", colors.resetColor);
+                // try {
+                //     var arg = ObjC.Object(args[2]);
+                //     var length = arg.length().valueOf();
+                //     var bytes = arg.bytes();
+                //     var byteString = "";
+                //     for (var i = 0; i < length; i++) {
+                //         var byte = bytes.add(i).readU8();
+                //         byteString += byte.toString(16).padStart(2, '0'); // Convert to hex and pad with leading zero if needed
+                //     }
+                //     console.log("\t\t\t", byteString);
+                // } catch (err_bytes2hex) {
+                //     console.log(colors.red, "\t\t\t[x] Cannot convert Byte to Hex. Error: ", err_bytes2hex, colors.resetColor);
+                // }
+                // /* Converting NSData to String */
+                // console.log(colors.green, "\t\t[-] NSData to String: ", colors.resetColor);
+                // try {
+                //     var buf = data.bytes().readUtf8String(data.length());
+                //     console.log("\t\t\t", buf);
+                // } catch (err_nsdata2string) {
+                //     console.log(colors.red, "\t\t\t[x] Cannot convert NSData to String. Error: ", err_nsdata2string, colors.resetColor);
+                // }
+                // /* Converting NSData to Binary Data */
+                // console.log(colors.green, "\t\t[-] NSData to Binary Data: ", colors.resetColor);
+                // try {
+                //     var buf = data.bytes().readByteArray(data.length());
+                //     console.log(hexdump(buf, { ansi: true }));
+                // } catch (err_nsdata2bin) {
+                //     console.log(colors.red, "\t\t\t[x] Cannot convert NSData to Binary Data. Error: ", err_nsdata2bin, colors.resetColor);
+                // }
             }
         } catch (err_dump) {
             console.log(colors.red, "\t\t\t[x] Cannot dump all arugment in method . Error: ", err_dump, colors.resetColor);
@@ -133,7 +148,7 @@ export function hook(search_class,search_method){
                     onEnter: function (args) {
                         this._className = ObjC.Object(args[0]).toString();
                         this._methodName = ObjC.selectorAsString(args[1]);
-                        console.log(colors.green, "[+] Detected call to: ", colors.resetColor);
+                        console.log(colors.green, "\r\n\r\n[+] Detected call to: ", colors.resetColor);
                         console.log('   ' + this._className + ' --> ' + this._methodName);
                         console.log(colors.green, "[+] Dump all arugment in method: ", colors.resetColor);
                         print_arguments(args);

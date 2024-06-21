@@ -7,7 +7,8 @@
   "scripts": {
     "prepare": "npm run build",
     "build": "frida-compile agent/index.ts -o _agent.js -c",
-    "watch": "frida-compile agent/index.ts -o _agent.js -w"
+    "watch": "frida-compile agent/index.ts -o _agent.js -w",
+    "watchIos": "frida-compile ios/index.ts -o _ios_agent.js -w"
   },
   "devDependencies": {
     "@types/frida-gum": "^18.5.1",

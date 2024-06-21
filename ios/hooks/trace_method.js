@@ -12,11 +12,12 @@ export function hook(search_class,search_method){
 //var search_method = [''];
 
 function print_methods(className) {
-    var methods = ObjC.classes[className].$ownMethods;
+    var c=ObjC.classes[className];
+    var methods = c.$ownMethods;
     if (Array.isArray(search_method) && search_method.length) { //search_method not empty
         for (var j = 0; j < search_method.length; j++) {
             if (methods.join(' ').toLowerCase().includes(search_method[j].toLowerCase())) {
-                console.log('[*] ' + className);
+                console.log('[*] ' + className+'---'+c.$moduleName);
                 for (var i = 0; i < methods.length; i++){
                     if (methods[i].toLowerCase().includes(search_method[j].toLowerCase())) {
                         console.log('   ' + methods[i]);

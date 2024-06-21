@@ -20,10 +20,10 @@ export function test(){
     //     console.log(`name:${element.symbol}-${element}`);
     // }
     console.log(`${cls}-$ivars:${cls.$ivars}`);//
-    for(var key in cls.$ivars){
-        console.log(`key:${key}--value:${cls.$ivars[key]}`);
-    }
-    console.log(`${cls}-$ivars.param1:${cls.$ivars.param1}`);//
+    var ivar=cls.$ivars;
+    console.log(`toJSON:${cls.toJSON()}-prototype:${cls.prototype}-constructor:${cls.constructor}-hasOwnProperty:${cls.hasOwnProperty}`);
+    console.log(`toJSON:${cls.toJSON()}-`);
+    console.log(`${cls}-$ivars.param1:${ivar.toJSON}-${ivar['ownKeys']}-${Object.keys(ivar)}`);//
     for (let index = 0; index < cls.$ivars.length; index++) {
         const element = cls[cls.$ivars[index]];
         // for(var key in element){

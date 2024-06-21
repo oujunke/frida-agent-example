@@ -1,6 +1,6 @@
 📦
 697 /ios/index.js.map
-1514 /ios/index.js
+1537 /ios/index.js
 5188 /general/base64.js.map
 4207 /general/base64.js
 696 /general/logger.js.map
@@ -9,12 +9,12 @@
 5666 /general/utils.js
 4063 /ios/NSURLRequest.js.map
 5566 /ios/NSURLRequest.js
-6586 /ios/hooks/hooking.js.map
-8054 /ios/hooks/hooking.js
+5983 /ios/hooks/hooking.js.map
+8865 /ios/hooks/hooking.js
 775 /ios/hooks/trace_class.js.map
 967 /ios/hooks/trace_class.js
-1804 /ios/hooks/trace_method.js.map
-2507 /ios/hooks/trace_method.js
+1865 /ios/hooks/trace_method.js.map
+2550 /ios/hooks/trace_method.js
 2342 /ios/iosFun.js.map
 2603 /ios/iosFun.js
 2707 /ios/pinning/SSLHandshake.js.map
@@ -29,21 +29,21 @@
 1162 /ios/pinning/tls_pinning.js
 1725 /ios/pinning/universal_pinning.js.map
 1691 /ios/pinning/universal_pinning.js
-1073 /ios/test.js.map
-1357 /ios/test.js
+1157 /ios/test.js.map
+1455 /ios/test.js
 ✄
-{"version":3,"file":"index.js","sourceRoot":"D:/gitCode/frida-agent-example/","sources":["ios/index.ts"],"names":[],"mappings":"AACA,OAAO,EAAC,IAAI,EAAC,MAAM,WAAW,CAAA;AAC9B,IAAI,EAAE,CAAC;AACP,sDAAsD;AACtD,oCAAoC;AACpC,wCAAwC;AACxC,6DAA6D;AAC7D,uBAAuB;AACvB,+CAA+C;AAC/C,8CAA8C;AAC9C,+BAA+B;AAC/B,iBAAiB;AACjB,wGAAwG;AACxG,6CAA6C;AAC7C,6CAA6C;AAC7C,6CAA6C;AAC7C,6CAA6C;AAC7C,6CAA6C;AAC7C,6CAA6C;AAC7C,6CAA6C;AAC7C,mCAAmC;AACnC,oCAAoC;AACpC,sCAAsC;AACtC,sCAAsC;AACtC,uCAAuC;AACvC,gBAAgB;AAChB,aAAa;AACb,gBAAgB;AAChB,MAAM;AACN,2BAA2B;AAC3B,gBAAgB;AAChB,gBAAgB;AAChB,2BAA2B;AAC3B,yFAAyF;AACzF,8BAA8B;AAC9B,kBAAkB;AAClB,8CAA8C;AAE9C,gBAAgB;AAChB,aAAa;AACb,6CAA6C;AAC7C,gBAAgB;AAChB,MAAM;AACN,yCAAyC"}
+{"version":3,"file":"index.js","sourceRoot":"D:/gitCode/frida-agent-example/","sources":["ios/index.ts"],"names":[],"mappings":"AACA,OAAO,EAAC,IAAI,EAAC,MAAM,WAAW,CAAA;AAC9B,IAAI,EAAE,CAAC;AACP,sDAAsD;AACtD,oCAAoC;AACpC,wCAAwC;AACxC,gEAAgE;AAChE,uBAAuB;AACvB,+CAA+C;AAC/C,8CAA8C;AAC9C,mDAAmD;AACnD,iBAAiB;AACjB,wGAAwG;AACxG,6CAA6C;AAC7C,6CAA6C;AAC7C,6CAA6C;AAC7C,6CAA6C;AAC7C,6CAA6C;AAC7C,6CAA6C;AAC7C,6CAA6C;AAC7C,mCAAmC;AACnC,oCAAoC;AACpC,sCAAsC;AACtC,sCAAsC;AACtC,uCAAuC;AACvC,gBAAgB;AAChB,aAAa;AACb,gBAAgB;AAChB,MAAM;AACN,2BAA2B;AAC3B,gBAAgB;AAChB,gBAAgB;AAChB,2BAA2B;AAC3B,yFAAyF;AACzF,8BAA8B;AAC9B,kBAAkB;AAClB,8CAA8C;AAE9C,gBAAgB;AAChB,aAAa;AACb,6CAA6C;AAC7C,gBAAgB;AAChB,MAAM;AACN,yCAAyC"}
 ✄
 import { test } from './test.js';
 test();
 //printClass(['enc','mbedtls','gcm','curve','25519']);
 //hookClassMethod(['25519','json']);
 //hookClassMethod(['WAPushController']);
-//hookClassMethod(['NSData'],['URLSafeBase64EncodedString']);
+//hookClassMethod(['NSData'],['wa_URLSafeBase64EncodedString']);
 //printClass(['json']);
 //printMethod(null,['PushToken','push_token']);
 //printMethod(null,['mbedtls','gcm','setkey'])
-//printMethod(null,['base64']);
+//printMethod(null,['URLSafeBase64EncodedString']);
 //printModules();
 // hookFuncByName("SharedModules","mbedtls_gcm_crypt_and_tag","加密方法:_mbedtls_gcm_crypt_and_tag",(c,l)=>{
 //     // l=logLengthData(c.x0,0x100,'x0',l);
@@ -492,7 +492,7 @@ export function hook() {
     }
 }
 ✄
-{"version":3,"file":"hooking.js","sourceRoot":"D:/gitCode/frida-agent-example/","sources":["ios/hooks/hooking.js"],"names":[],"mappings":"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"}
+{"version":3,"file":"hooking.js","sourceRoot":"D:/gitCode/frida-agent-example/","sources":["ios/hooks/hooking.js"],"names":[],"mappings":"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"}
 ✄
 /*
 Description:
@@ -557,8 +557,18 @@ export function hook(search_class, search_method) {
         try {
             var n = 100;
             var last_arg = '';
+            //console.log('t1');
             for (var i = 2; i < n; ++i) {
+                //console.log('t2:'+args[i]);
+                var np3 = new NativePointer(args[i]);
+                //console.log('np3:'+np3);
+                //console.log('np3 p:'+np3.readPointer());
+                if (args[i] < 0xffffff) {
+                    console.log('\t[+] Dump Arg' + i + ': ' + args[i]);
+                    continue;
+                }
                 var arg = (new ObjC.Object(args[i])).toString();
+                //console.log('t3');
                 if (arg == 'nil' || arg == last_arg) {
                     break;
                 }
@@ -567,40 +577,42 @@ export function hook(search_class, search_method) {
                 var data = new ObjC.Object(args[i]);
                 console.log(colors.green, "\t\t[-] Arugment type: ", colors.resetColor);
                 console.log("\t\t\t", data.$className);
+                var arg = ObjC.Object(args[2]);
+                console.log(`toJSON:${arg.toJSON}-prototype:${arg.prototype}-constructor:${arg.constructor}-hasOwnProperty:${arg.hasOwnProperty}`);
+                // for(var k in arg){
+                //     console.log(`\t\t\t key:${k}--value:${arg[k]}`);
+                // }
                 /* Converting Byte to HexString */
-                console.log(colors.green, "\t\t[-] Bytes to Hex:", colors.resetColor);
-                try {
-                    var arg = ObjC.Object(args[2]);
-                    var length = arg.length().valueOf();
-                    var bytes = arg.bytes();
-                    var byteString = "";
-                    for (var i = 0; i < length; i++) {
-                        var byte = bytes.add(i).readU8();
-                        byteString += byte.toString(16).padStart(2, '0'); // Convert to hex and pad with leading zero if needed
-                    }
-                    console.log("\t\t\t", byteString);
-                }
-                catch (err_bytes2hex) {
-                    console.log(colors.red, "\t\t\t[x] Cannot convert Byte to Hex. Error: ", err_bytes2hex, colors.resetColor);
-                }
-                /* Converting NSData to String */
-                console.log(colors.green, "\t\t[-] NSData to String: ", colors.resetColor);
-                try {
-                    var buf = data.bytes().readUtf8String(data.length());
-                    console.log("\t\t\t", buf);
-                }
-                catch (err_nsdata2string) {
-                    console.log(colors.red, "\t\t\t[x] Cannot convert NSData to String. Error: ", err_nsdata2string, colors.resetColor);
-                }
-                /* Converting NSData to Binary Data */
-                console.log(colors.green, "\t\t[-] NSData to Binary Data: ", colors.resetColor);
-                try {
-                    var buf = data.bytes().readByteArray(data.length());
-                    console.log(hexdump(buf, { ansi: true }));
-                }
-                catch (err_nsdata2bin) {
-                    console.log(colors.red, "\t\t\t[x] Cannot convert NSData to Binary Data. Error: ", err_nsdata2bin, colors.resetColor);
-                }
+                // console.log(colors.green, "\t\t[-] Bytes to Hex:", colors.resetColor);
+                // try {
+                //     var arg = ObjC.Object(args[2]);
+                //     var length = arg.length().valueOf();
+                //     var bytes = arg.bytes();
+                //     var byteString = "";
+                //     for (var i = 0; i < length; i++) {
+                //         var byte = bytes.add(i).readU8();
+                //         byteString += byte.toString(16).padStart(2, '0'); // Convert to hex and pad with leading zero if needed
+                //     }
+                //     console.log("\t\t\t", byteString);
+                // } catch (err_bytes2hex) {
+                //     console.log(colors.red, "\t\t\t[x] Cannot convert Byte to Hex. Error: ", err_bytes2hex, colors.resetColor);
+                // }
+                // /* Converting NSData to String */
+                // console.log(colors.green, "\t\t[-] NSData to String: ", colors.resetColor);
+                // try {
+                //     var buf = data.bytes().readUtf8String(data.length());
+                //     console.log("\t\t\t", buf);
+                // } catch (err_nsdata2string) {
+                //     console.log(colors.red, "\t\t\t[x] Cannot convert NSData to String. Error: ", err_nsdata2string, colors.resetColor);
+                // }
+                // /* Converting NSData to Binary Data */
+                // console.log(colors.green, "\t\t[-] NSData to Binary Data: ", colors.resetColor);
+                // try {
+                //     var buf = data.bytes().readByteArray(data.length());
+                //     console.log(hexdump(buf, { ansi: true }));
+                // } catch (err_nsdata2bin) {
+                //     console.log(colors.red, "\t\t\t[x] Cannot convert NSData to Binary Data. Error: ", err_nsdata2bin, colors.resetColor);
+                // }
             }
         }
         catch (err_dump) {
@@ -625,7 +637,7 @@ export function hook(search_class, search_method) {
                     onEnter: function (args) {
                         this._className = ObjC.Object(args[0]).toString();
                         this._methodName = ObjC.selectorAsString(args[1]);
-                        console.log(colors.green, "[+] Detected call to: ", colors.resetColor);
+                        console.log(colors.green, "\r\n\r\n[+] Detected call to: ", colors.resetColor);
                         console.log('   ' + this._className + ' --> ' + this._methodName);
                         console.log(colors.green, "[+] Dump all arugment in method: ", colors.resetColor);
                         print_arguments(args);
@@ -686,7 +698,7 @@ function hook(search_class) {
 }
 export { hook };
 ✄
-{"version":3,"file":"trace_method.js","sourceRoot":"D:/gitCode/frida-agent-example/","sources":["ios/hooks/trace_method.js"],"names":[],"mappings":"AAAA;;;;;;;EAOE;AAEF,MAAM,UAAU,IAAI,CAAC,YAAY,EAAC,aAAa;IAC/C,0BAA0B;IAC1B,2BAA2B;IAE3B,SAAS,aAAa,CAAC,SAAS;QAC5B,IAAI,OAAO,GAAG,IAAI,CAAC,OAAO,CAAC,SAAS,CAAC,CAAC,WAAW,CAAC;QAClD,IAAI,KAAK,CAAC,OAAO,CAAC,aAAa,CAAC,IAAI,aAAa,CAAC,MAAM,EAAE,EAAE,yBAAyB;YACjF,KAAK,IAAI,CAAC,GAAG,CAAC,EAAE,CAAC,GAAG,aAAa,CAAC,MAAM,EAAE,CAAC,EAAE,EAAE;gBAC3C,IAAI,OAAO,CAAC,IAAI,CAAC,GAAG,CAAC,CAAC,WAAW,EAAE,CAAC,QAAQ,CAAC,aAAa,CAAC,CAAC,CAAC,CAAC,WAAW,EAAE,CAAC,EAAE;oBAC1E,OAAO,CAAC,GAAG,CAAC,MAAM,GAAG,SAAS,CAAC,CAAC;oBAChC,KAAK,IAAI,CAAC,GAAG,CAAC,EAAE,CAAC,GAAG,OAAO,CAAC,MAAM,EAAE,CAAC,EAAE,EAAC;wBACpC,IAAI,OAAO,CAAC,CAAC,CAAC,CAAC,WAAW,EAAE,CAAC,QAAQ,CAAC,aAAa,CAAC,CAAC,CAAC,CAAC,WAAW,EAAE,CAAC,EAAE;4BACnE,OAAO,CAAC,GAAG,CAAC,KAAK,GAAG,OAAO,CAAC,CAAC,CAAC,CAAC,CAAC;yBACnC;qBACJ;iBACJ;aACJ;SACJ;aACI;YACD,OAAO,CAAC,GAAG,CAAC,MAAM,GAAG,SAAS,CAAC,CAAC;YAChC,IAAI,OAAO,GAAG,IAAI,CAAC,OAAO,CAAC,SAAS,CAAC,CAAC,WAAW,CAAC;YAClD,KAAK,IAAI,CAAC,GAAG,CAAC,EAAE,CAAC,GAAG,OAAO,CAAC,MAAM,EAAE,CAAC,EAAE,EAAC;gBACpC,OAAO,CAAC,GAAG,CAAC,KAAK,GAAG,OAAO,CAAC,CAAC,CAAC,CAAC,CAAC;aACnC;SACJ;IACL,CAAC;IAED,IAAI,IAAI,CAAC,SAAS,EAClB;QACI,OAAO,CAAC,GAAG,CAAC,qCAAqC,CAAC,CAAA;QAElD,KAAK,IAAI,SAAS,IAAI,IAAI,CAAC,OAAO,EAAE;YAChC,IAAI,KAAK,CAAC,OAAO,CAAC,YAAY,CAAC,IAAI,YAAY,CAAC,MAAM,EAAE,EAAE,yBAAyB;gBAC/E,KAAK,IAAI,CAAC,GAAG,CAAC,EAAE,CAAC,GAAG,YAAY,CAAC,MAAM,EAAE,CAAC,EAAE,EAAE;oBAC1C,IAAI,SAAS,CAAC,WAAW,EAAE,CAAC,QAAQ,CAAC,YAAY,CAAC,CAAC,CAAC,CAAC,WAAW,EAAE,CAAC,EAAE;wBACjE,aAAa,CAAC,SAAS,CAAC,CAAC;qBAC5B;iBACJ;aACJ;iBACI;gBACD,aAAa,CAAC,SAAS,CAAC,CAAC;aAC5B;SACJ;QACD,OAAO,CAAC,GAAG,CAAC,WAAW,CAAC,CAAC;KAC5B;SACI;QACD,OAAO,CAAC,GAAG,CAAC,uCAAuC,CAAC,CAAC;KACxD;AACD,CAAC"}
+{"version":3,"file":"trace_method.js","sourceRoot":"D:/gitCode/frida-agent-example/","sources":["ios/hooks/trace_method.js"],"names":[],"mappings":"AAAA;;;;;;;EAOE;AAEF,MAAM,UAAU,IAAI,CAAC,YAAY,EAAC,aAAa;IAC/C,0BAA0B;IAC1B,2BAA2B;IAE3B,SAAS,aAAa,CAAC,SAAS;QAC5B,IAAI,CAAC,GAAC,IAAI,CAAC,OAAO,CAAC,SAAS,CAAC,CAAC;QAC9B,IAAI,OAAO,GAAG,CAAC,CAAC,WAAW,CAAC;QAC5B,IAAI,KAAK,CAAC,OAAO,CAAC,aAAa,CAAC,IAAI,aAAa,CAAC,MAAM,EAAE,EAAE,yBAAyB;YACjF,KAAK,IAAI,CAAC,GAAG,CAAC,EAAE,CAAC,GAAG,aAAa,CAAC,MAAM,EAAE,CAAC,EAAE,EAAE;gBAC3C,IAAI,OAAO,CAAC,IAAI,CAAC,GAAG,CAAC,CAAC,WAAW,EAAE,CAAC,QAAQ,CAAC,aAAa,CAAC,CAAC,CAAC,CAAC,WAAW,EAAE,CAAC,EAAE;oBAC1E,OAAO,CAAC,GAAG,CAAC,MAAM,GAAG,SAAS,GAAC,KAAK,GAAC,CAAC,CAAC,WAAW,CAAC,CAAC;oBACpD,KAAK,IAAI,CAAC,GAAG,CAAC,EAAE,CAAC,GAAG,OAAO,CAAC,MAAM,EAAE,CAAC,EAAE,EAAC;wBACpC,IAAI,OAAO,CAAC,CAAC,CAAC,CAAC,WAAW,EAAE,CAAC,QAAQ,CAAC,aAAa,CAAC,CAAC,CAAC,CAAC,WAAW,EAAE,CAAC,EAAE;4BACnE,OAAO,CAAC,GAAG,CAAC,KAAK,GAAG,OAAO,CAAC,CAAC,CAAC,CAAC,CAAC;yBACnC;qBACJ;iBACJ;aACJ;SACJ;aACI;YACD,OAAO,CAAC,GAAG,CAAC,MAAM,GAAG,SAAS,CAAC,CAAC;YAChC,IAAI,OAAO,GAAG,IAAI,CAAC,OAAO,CAAC,SAAS,CAAC,CAAC,WAAW,CAAC;YAClD,KAAK,IAAI,CAAC,GAAG,CAAC,EAAE,CAAC,GAAG,OAAO,CAAC,MAAM,EAAE,CAAC,EAAE,EAAC;gBACpC,OAAO,CAAC,GAAG,CAAC,KAAK,GAAG,OAAO,CAAC,CAAC,CAAC,CAAC,CAAC;aACnC;SACJ;IACL,CAAC;IAED,IAAI,IAAI,CAAC,SAAS,EAClB;QACI,OAAO,CAAC,GAAG,CAAC,qCAAqC,CAAC,CAAA;QAElD,KAAK,IAAI,SAAS,IAAI,IAAI,CAAC,OAAO,EAAE;YAChC,IAAI,KAAK,CAAC,OAAO,CAAC,YAAY,CAAC,IAAI,YAAY,CAAC,MAAM,EAAE,EAAE,yBAAyB;gBAC/E,KAAK,IAAI,CAAC,GAAG,CAAC,EAAE,CAAC,GAAG,YAAY,CAAC,MAAM,EAAE,CAAC,EAAE,EAAE;oBAC1C,IAAI,SAAS,CAAC,WAAW,EAAE,CAAC,QAAQ,CAAC,YAAY,CAAC,CAAC,CAAC,CAAC,WAAW,EAAE,CAAC,EAAE;wBACjE,aAAa,CAAC,SAAS,CAAC,CAAC;qBAC5B;iBACJ;aACJ;iBACI;gBACD,aAAa,CAAC,SAAS,CAAC,CAAC;aAC5B;SACJ;QACD,OAAO,CAAC,GAAG,CAAC,WAAW,CAAC,CAAC;KAC5B;SACI;QACD,OAAO,CAAC,GAAG,CAAC,uCAAuC,CAAC,CAAC;KACxD;AACD,CAAC"}
 ✄
 /*
 Description:
@@ -700,11 +712,12 @@ export function hook(search_class, search_method) {
     //var search_class = [''];
     //var search_method = [''];
     function print_methods(className) {
-        var methods = ObjC.classes[className].$ownMethods;
+        var c = ObjC.classes[className];
+        var methods = c.$ownMethods;
         if (Array.isArray(search_method) && search_method.length) { //search_method not empty
             for (var j = 0; j < search_method.length; j++) {
                 if (methods.join(' ').toLowerCase().includes(search_method[j].toLowerCase())) {
-                    console.log('[*] ' + className);
+                    console.log('[*] ' + className + '---' + c.$moduleName);
                     for (var i = 0; i < methods.length; i++) {
                         if (methods[i].toLowerCase().includes(search_method[j].toLowerCase())) {
                             console.log('   ' + methods[i]);
@@ -1078,7 +1091,7 @@ export function catchCertificates() {
     send("[*] SecCertificateCreateWithBytes(...) hooked!");
 }
 ✄
-{"version":3,"file":"test.js","sourceRoot":"D:/gitCode/frida-agent-example/","sources":["ios/test.js"],"names":[],"mappings":"AAAA,MAAM,UAAU,IAAI;IAChB,IAAI,GAAG,GAAG,IAAI,CAAC,OAAO,CAAC,kBAAkB,CAAC,CAAC;IAC3C,IAAG,GAAG,IAAE,IAAI,EAAC;QACT,OAAO,CAAC,GAAG,CAAC,SAAS,CAAC,CAAC;KAC1B;IACD,oCAAoC;IACpC,8DAA8D;IAC9D,gDAAgD;IAChD,kCAAkC;IAClC,+DAA+D;IAC/D,WAAW;IACX,wDAAwD;IACxD,IAAI;IACJ,uCAAuC;IACvC,iEAAiE;IACjE,mDAAmD;IACnD,kCAAkC;IAClC,+DAA+D;IAC/D,WAAW;IACX,wDAAwD;IACxD,IAAI;IACJ,OAAO,CAAC,GAAG,CAAC,GAAG,GAAG,WAAW,GAAG,CAAC,MAAM,EAAE,CAAC,CAAC,CAAA,EAAE;IAC7C,KAAI,IAAI,GAAG,IAAI,GAAG,CAAC,MAAM,EAAC;QACtB,OAAO,CAAC,GAAG,CAAC,OAAO,GAAG,WAAW,GAAG,CAAC,MAAM,CAAC,GAAG,CAAC,EAAE,CAAC,CAAC;KACvD;IACD,OAAO,CAAC,GAAG,CAAC,GAAG,GAAG,kBAAkB,GAAG,CAAC,MAAM,CAAC,MAAM,EAAE,CAAC,CAAC,CAAA,EAAE;IAC3D,KAAK,IAAI,KAAK,GAAG,CAAC,EAAE,KAAK,GAAG,GAAG,CAAC,MAAM,CAAC,MAAM,EAAE,KAAK,EAAE,EAAE;QACpD,MAAM,OAAO,GAAG,GAAG,CAAC,GAAG,CAAC,MAAM,CAAC,KAAK,CAAC,CAAC,CAAC;QACvC,2BAA2B;QAC3B,wDAAwD;QACxD,IAAI;QACJ,OAAO,CAAC,GAAG,CAAC,QAAQ,OAAO,CAAC,MAAM,IAAI,OAAO,EAAE,CAAC,CAAC;KACpD;AACL,CAAC"}
+{"version":3,"file":"test.js","sourceRoot":"D:/gitCode/frida-agent-example/","sources":["ios/test.js"],"names":[],"mappings":"AAAA,MAAM,UAAU,IAAI;IAChB,IAAI,GAAG,GAAG,IAAI,CAAC,OAAO,CAAC,kBAAkB,CAAC,CAAC;IAC3C,IAAG,GAAG,IAAE,IAAI,EAAC;QACT,OAAO,CAAC,GAAG,CAAC,SAAS,CAAC,CAAC;KAC1B;IACD,oCAAoC;IACpC,8DAA8D;IAC9D,gDAAgD;IAChD,kCAAkC;IAClC,+DAA+D;IAC/D,WAAW;IACX,wDAAwD;IACxD,IAAI;IACJ,uCAAuC;IACvC,iEAAiE;IACjE,mDAAmD;IACnD,kCAAkC;IAClC,+DAA+D;IAC/D,WAAW;IACX,wDAAwD;IACxD,IAAI;IACJ,OAAO,CAAC,GAAG,CAAC,GAAG,GAAG,WAAW,GAAG,CAAC,MAAM,EAAE,CAAC,CAAC,CAAA,EAAE;IAC7C,IAAI,IAAI,GAAC,GAAG,CAAC,MAAM,CAAC;IACpB,OAAO,CAAC,GAAG,CAAC,UAAU,GAAG,CAAC,MAAM,EAAE,cAAc,GAAG,CAAC,SAAS,gBAAgB,GAAG,CAAC,WAAW,mBAAmB,GAAG,CAAC,cAAc,EAAE,CAAC,CAAC;IACrI,OAAO,CAAC,GAAG,CAAC,GAAG,GAAG,kBAAkB,IAAI,CAAC,MAAM,IAAI,IAAI,CAAC,SAAS,CAAC,IAAI,MAAM,CAAC,IAAI,CAAC,IAAI,CAAC,EAAE,CAAC,CAAC,CAAA,EAAE;IAC7F,KAAK,IAAI,KAAK,GAAG,CAAC,EAAE,KAAK,GAAG,GAAG,CAAC,MAAM,CAAC,MAAM,EAAE,KAAK,EAAE,EAAE;QACpD,MAAM,OAAO,GAAG,GAAG,CAAC,GAAG,CAAC,MAAM,CAAC,KAAK,CAAC,CAAC,CAAC;QACvC,2BAA2B;QAC3B,wDAAwD;QACxD,IAAI;QACJ,OAAO,CAAC,GAAG,CAAC,QAAQ,OAAO,CAAC,MAAM,IAAI,OAAO,EAAE,CAAC,CAAC;KACpD;AACL,CAAC"}
 ✄
 export function test() {
     var cls = ObjC.classes['WAPushController'];
@@ -1102,10 +1115,9 @@ export function test() {
     //     console.log(`name:${element.symbol}-${element}`);
     // }
     console.log(`${cls}-$ivars:${cls.$ivars}`); //
-    for (var key in cls.$ivars) {
-        console.log(`key:${key}--value:${cls.$ivars[key]}`);
-    }
-    console.log(`${cls}-$ivars.param1:${cls.$ivars.param1}`); //
+    var ivar = cls.$ivars;
+    console.log(`toJSON:${cls.toJSON()}-prototype:${cls.prototype}-constructor:${cls.constructor}-hasOwnProperty:${cls.hasOwnProperty}`);
+    console.log(`${cls}-$ivars.param1:${ivar.toJSON}-${ivar['ownKeys']}-${Object.keys(ivar)}`); //
     for (let index = 0; index < cls.$ivars.length; index++) {
         const element = cls[cls.$ivars[index]];
         // for(var key in element){

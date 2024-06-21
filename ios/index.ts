@@ -4,11 +4,11 @@ test();
 //printClass(['enc','mbedtls','gcm','curve','25519']);
 //hookClassMethod(['25519','json']);
 //hookClassMethod(['WAPushController']);
-//hookClassMethod(['NSData'],['URLSafeBase64EncodedString']);
+//hookClassMethod(['NSData'],['wa_URLSafeBase64EncodedString']);
 //printClass(['json']);
 //printMethod(null,['PushToken','push_token']);
 //printMethod(null,['mbedtls','gcm','setkey'])
-//printMethod(null,['base64']);
+//printMethod(null,['URLSafeBase64EncodedString']);
 //printModules();
 // hookFuncByName("SharedModules","mbedtls_gcm_crypt_and_tag","加密方法:_mbedtls_gcm_crypt_and_tag",(c,l)=>{
 //     // l=logLengthData(c.x0,0x100,'x0',l);

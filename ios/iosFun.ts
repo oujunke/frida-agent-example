@@ -48,6 +48,7 @@ function printClass(search_class:string[]|null=null){
  * @param search_method 
  */
 function printMethod(search_class:string[]|null=null,search_method:string[]|null=null){
+    ObjC.api.
     printMethodHook(search_class,search_method);
 }
 export function printModules(){
