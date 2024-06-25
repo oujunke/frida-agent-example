@@ -63,20 +63,24 @@ export function hook(search_class,search_method){
      */
     function print_arguments(args) {
         try {
-            var n = 100;
+            var n = 12;
             var last_arg = '';
-            //console.log('t1');
+            //console.log('args length');
+            //console.log('args length:'+args.length);
             for (var i = 2; i < n; ++i) {
                 //console.log('t2:'+args[i]);
                 var np3=new NativePointer(args[i]);
                 //console.log('np3:'+np3);
                 //console.log('np3 p:'+np3.readPointer());
-                if(args[i]<0xffffff){
-                    console.log('\t[+] Dump Arg' + i + ': ' + args[i]);
+                console.log('\t[+] Dump Arg' + i + ': ' + args[i]);
+                //continue;
+                if(args[i]<0xffffff||args[i]>0xfffff00000000000){
+                    
                     continue;
                 }
+                console.log('ObjC.Object(args[i])');
                 var arg = (new ObjC.Object(args[i])).toString();
-                //console.log('t3');
+                console.log('ObjC.Object(args[i]) success');
                 if (arg == 'nil' || arg == last_arg) {
                     break;
                 }
@@ -85,8 +89,8 @@ export function hook(search_class,search_method){
                 var data = new ObjC.Object(args[i]);
                 console.log(colors.green, "\t\t[-] Arugment type: ", colors.resetColor);
                 console.log("\t\t\t", data.$className);
-                var arg = ObjC.Object(args[2]);
-                console.log(`toJSON:${arg.toJSON}-prototype:${arg.prototype}-constructor:${arg.constructor}-hasOwnProperty:${arg.hasOwnProperty}`);
+                //var arg = ObjC.Object(args[2]);
+                //console.log(`toJSON:${arg.toJSON}-prototype:${arg.prototype}-constructor:${arg.constructor}-hasOwnProperty:${arg.hasOwnProperty}`);
                 // for(var k in arg){
                 //     console.log(`\t\t\t key:${k}--value:${arg[k]}`);
                 // }
@@ -153,9 +157,22 @@ export function hook(search_class,search_method){
                         console.log(colors.green, "[+] Dump all arugment in method: ", colors.resetColor);
                         print_arguments(args);
                         /* Backtrace */
-                        console.log(colors.green, "[+] Backtrace: ", colors.resetColor);
+                        console.log(colors.green, "[+] Backtrace-ACCURATE: ", colors.resetColor);
                         try {
                             console.log(Thread.backtrace(this.context, Backtracer.ACCURATE).map(DebugSymbol.fromAddress).join("\n\t"));
+                        } catch (err_backtrace) {
+                            console.log(colors.red, "\t\t\t[x] Cannot backtrace . Error: ", err_backtrace, colors.resetColor);
+                        }
+                        console.log(colors.green, "\r\n[+] Backtrace-FUZZY: ", colors.resetColor);
+                        try {
+                            var dss=Thread.backtrace(this.context, Backtracer.FUZZY).map(DebugSymbol.fromAddress);
+                            var str='\n\t';
+                            for (let index = 0; index < dss.length; index++) {
+                                const element = dss[index];
+                                str+=`name:${element.name},moduleName:${element.moduleName},address:${element.address},fileName:${element.fileName}
+                                ,lineNumber:${element.lineNumber}`;
+                            }
+                            //console.log(.join("\n\t"));
                         } catch (err_backtrace) {
                             console.log(colors.red, "\t\t\t[x] Cannot backtrace . Error: ", err_backtrace, colors.resetColor);
                         }

@@ -9,7 +9,8 @@ import { hook as reqHook } from "./NSURLRequest.js";
 import { hook as printClassHook } from "./hooks/trace_class.js";
 import { hook as printMethodHook } from "./hooks/trace_method.js";
 import{info} from '../general/logger.js'
-import { hookFuncByName, hookFunc,logData,logLengthData,logOffsetData,setMaxShowByte} from "../general/utils.js";
+import { hookFuncByName,hookFuncAddressArgs,hookFuncArgsByName,exceptionHandler, hookFunc,hookFuncArgs,logData,logLengthData,logOffsetData,setMaxShowByte} from "../general/utils.js";
+import {dumpModule} from './dump.js'
 /**
  * 关闭ssl校验
  */
@@ -48,14 +49,14 @@ function printClass(search_class:string[]|null=null){
  * @param search_method 
  */
 function printMethod(search_class:string[]|null=null,search_method:string[]|null=null){
-    ObjC.api.
+    //ObjC.api.
     printMethodHook(search_class,search_method);
 }
 export function printModules(){
     var modules=Process.enumerateModules();
     for (let index = 0; index < modules.length; index++) {
         const element = modules[index];
-        console.log(`name:${element.name}-path:${element.path}-size:${element.size}`);
+        console.log(`name:${element.name}-path:${element.path}-size:${element.size}-base:${element.base}-end:${element.base.add(element.size)}`);
     }
 }
 export function printModuleAllExports(name:string){
@@ -82,4 +83,35 @@ export function printModuleAllSymbol(name:string){
         console.log(`name:${element.name}-type:${element.type}-address:${element.address}`);
     }
 }
-export {disableSsl,hookUrlRequest,hookClassMethod,printClass,printMethod,hookFuncByName,setMaxShowByte, hookFunc,logData,logLengthData,logOffsetData}
+export function toObjectCString(handle: NativePointer):string{
+    var obj=new ObjC.Object(handle);
+    return `${obj.$moduleName}:${obj.$className}:${obj}`;
+}
+export function hookFuncArgsByClassMenth(className:string,methodName:string,label:string,
+    callback: (this: InvocationContext,context: Arm64CpuContext,args: InvocationArguments, log: string) => string,
+    leaveCallback: ((this: InvocationContext,context: Arm64CpuContext, log: string) => string)|null=null
+    ,isIgnore:((this: InvocationContext)=>boolean)|null=null):InvocationListener|null{
+    var cls=ObjC.classes[className];
+    if(cls==null){
+        info("当前cls不存在");
+        return null;
+    }
+    var methods=cls.$ownMethods;
+    var fun:any=null;
+    for (var i = 0; i < methods.length; i++){
+        if (methods[i].toLowerCase().includes(methodName.toLowerCase())) {
+            //info(`当前匹配fun:${methods[i]}-${methodName}`);
+            fun=methods[i];
+        }else{
+            //info(`当前不匹配fun:${methods[i]}-${methodName}`);
+        }
+    }
+    if(fun==null){
+        info("当前fun不存在");
+        return null;
+    }
+    var add=cls[fun].implementation;
+    var module=Process.getModuleByAddress(add);
+    return hookFuncArgs(module,add.sub(module.base).toInt32(),label,callback,leaveCallback,isIgnore);
+}
+export {exceptionHandler,hookFuncArgs,hookFuncArgsByName,disableSsl,dumpModule,hookUrlRequest,hookClassMethod,printClass,printMethod,hookFuncByName,setMaxShowByte, hookFunc,logData,logLengthData,logOffsetData}
