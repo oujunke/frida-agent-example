@@ -9,7 +9,7 @@ import { hook as reqHook } from "./NSURLRequest.js";
 import { hook as printClassHook } from "./hooks/trace_class.js";
 import { hook as printMethodHook } from "./hooks/trace_method.js";
 import{info} from '../general/logger.js'
-import { hookFuncByName,hookFuncAddressArgs,hookFuncArgsByName,exceptionHandler, hookFunc,hookFuncArgs,logData,logLengthData,logOffsetData,setMaxShowByte} from "../general/utils.js";
+import { hookFuncArgsByAddress,hookFuncByName,hookFuncAddressArgs,hookFuncArgsByName,exceptionHandler, hookFunc,hookFuncArgs,logData,logLengthData,logOffsetData,setMaxShowByte} from "../general/utils.js";
 import {dumpModule} from './dump.js'
 /**
  * 关闭ssl校验
@@ -114,4 +114,11 @@ export function hookFuncArgsByClassMenth(className:string,methodName:string,labe
     var module=Process.getModuleByAddress(add);
     return hookFuncArgs(module,add.sub(module.base).toInt32(),label,callback,leaveCallback,isIgnore);
 }
-export {exceptionHandler,hookFuncArgs,hookFuncArgsByName,disableSsl,dumpModule,hookUrlRequest,hookClassMethod,printClass,printMethod,hookFuncByName,setMaxShowByte, hookFunc,logData,logLengthData,logOffsetData}
+export function printHead(){
+    console.log("\r\n\r\n");
+    info(`-------------------------------------`);
+    info(`Start By ${new Date().toLocaleString()}`);
+    info(`-------------------------------------`);
+    console.log("\r\n\r\n");
+}
+export {exceptionHandler,hookFuncArgsByAddress,hookFuncAddressArgs,hookFuncArgs,hookFuncArgsByName,disableSsl,dumpModule,hookUrlRequest,hookClassMethod,printClass,printMethod,hookFuncByName,setMaxShowByte, hookFunc,logData,logLengthData,logOffsetData}

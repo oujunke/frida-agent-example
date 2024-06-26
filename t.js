@@ -48,12 +48,12 @@ function hookFuncByName(moduleName,funcName,label,
     ,isIgnore){
     var module=Process.getModuleByName(moduleName);
     if(module==null){
-        info("µ±Ç°Module²»´æÔÚ");
+        info("å½“å‰Moduleä¸å­˜åœ¨");
         return null;
     }
     var fun=module.findExportByName(funcName);
     if(fun==null){
-        info("µ±Ç°fun²»´æÔÚ");
+        info("å½“å‰funä¸å­˜åœ¨");
         return null;
     }
     return hookFunc(module,fun.sub(module.base).toInt32(),label,callback,leaveCallback,isIgnore);
@@ -63,23 +63,23 @@ function logLengthData(dataPointer,length,head,log)
 {
     var suffix="";
     if(length>maxShowByte){
-        suffix=`\r\nÊ¡ÂÔÒÔÏÂ${length-maxShowByte}×Ö½Ú`;
+        suffix=`\r\nÊ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½${length-maxShowByte}ï¿½Ö½ï¿½`;
         length=maxShowByte;
     }
     if(length==0||dataPointer.toUInt32()==0){
-        log+=`${head} length:${length} ×Ö·û´®Îª¿Õ\r\n`;
+        log+=`${head} length:${length} ï¿½Ö·ï¿½ï¿½ï¿½Îªï¿½ï¿½\r\n`;
         return log;
     }
     var da=dataPointer.readByteArray(length);
     if(da==null){
-        log+=`${head} length:${length} ×Ö·û´®Îª¿Õ\r\n`;
+        log+=`${head} length:${length} ï¿½Ö·ï¿½ï¿½ï¿½Îªï¿½ï¿½\r\n`;
     }else{
         log+=`${head} length:${length} \r\nbase64:${base64FromByteArray(new Uint8Array(da))} \r\nstr:\r\n${hexdump(da)}${suffix}\r\n`;
     }
     return log;
 }
 var length=0;
-hookFuncByName("SharedModules","mbedtls_gcm_update","¼ÓÃÜ·½·¨:mbedtls_gcm_update",(c,l)=>{
+hookFuncByName("SharedModules","mbedtls_gcm_update","ï¿½ï¿½ï¿½Ü·ï¿½ï¿½ï¿½:mbedtls_gcm_update",(c,l)=>{
     length=c.x1.toUInt32();
     l=logLengthData(c.x2,length,'input',l);
     return l;

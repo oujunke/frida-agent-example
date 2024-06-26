@@ -89,6 +89,7 @@ function exceptionHandler(){
        }
     );
 }
+
 /**
  * 打印多的堆栈信息
  * @param obj 
@@ -255,6 +256,19 @@ function hookFuncByName(moduleName:string,funcName:string,label:string,
         return null;
     }
     return hookFunc(module,fun.sub(module.base).toInt32(),label,callback,leaveCallback,isIgnore);
+}
+export function hookFuncArgsByAddress(moduleName:string,add:number,label:string,
+    callback: (this: InvocationContext,context: Arm64CpuContext,args: InvocationArguments, log: string) => string,
+    leaveCallback: ((this: InvocationContext,context: Arm64CpuContext,log: string) => string)|null=null
+    ,isIgnore:((this: InvocationContext)=>boolean)|null=null):InvocationListener|null{
+    var module=Process.getModuleByName(moduleName);
+    if(module==null){
+        info("当前Module不存在");
+        return null;
+    }
+    info(`Module:${moduleName}地址:${module.base}-add:${add.toString(16)}-hookAdd:${module.base.add(add)}`);
+    //return null;
+    return hookFuncArgs(module,add,label,callback,leaveCallback,isIgnore);
 }
 function hookFuncArgsByName(moduleName:string,funcName:string,label:string,
     callback: (this: InvocationContext,context: Arm64CpuContext,args: InvocationArguments, log: string) => string,
