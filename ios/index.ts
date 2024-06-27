@@ -89,3 +89,13 @@ function GetPushToken(){
         return l;
     });
 }
+function GetPushCode(){
+    //hookClassMethod(['WAPushController']);
+    hookFuncArgsByAddress("WhatsApp",0x28BADE0,"1028BADE0",(c,a,l)=>{
+        //console.log(`\r\nArg1:${toObjectCString(a[1])}`);
+        l+=`\r\nArg2:${toObjectCString(a[2])}`;
+        l+=`\r\nArg3:${toObjectCString(a[3])}`;
+        return l;
+    });
+}
+GetPushCode();

@@ -213,6 +213,7 @@ export function hookFuncAddressArgs(baseAddress:NativePointer,add:number,label:s
             let contextArm=this.context as  Arm64CpuContext;
             let log=`entered HookFunc ${add.toString(16)}-${label}-${this.threadId}:`;//+args.length;
             try{
+                contextArm.
                 log+=`\r\n\t${logAllX(contextArm,log)}\r\n`;
                 log=callback.apply(this,[contextArm,args,log]);
             }catch(ex:any){

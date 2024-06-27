@@ -73,7 +73,7 @@ export function hook(search_class,search_method){
                 //console.log('np3:'+np3);
                 //console.log('np3 p:'+np3.readPointer());
                 console.log('\t[+] Dump Arg' + i + ': ' + args[i]);
-                //continue;
+                continue;
                 if(args[i]<0xffffff||args[i]>0xfffff00000000000){
                     
                     continue;
