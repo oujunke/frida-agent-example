@@ -97,5 +97,21 @@ function GetPushCode(){
         l+=`\r\nArg3:${toObjectCString(a[3])}`;
         return l;
     });
+    hookFuncArgsByAddress("WhatsApp",0x2923700,"102923700==verificationCodeRequestURLWithBaseURL",(c,a,l)=>{
+        //console.log(`\r\nArg1:${toObjectCString(a[1])}`);
+        l+=`\r\nArg0:${toObjectCString(a[0])}`;
+        //l+=`\r\nArg1:${toObjectCString(a[1])}`;
+        l+=`\r\nArg2:${toObjectCString(a[2])}`;
+        l+=`\r\nArg3:${toObjectCString(a[3])}`;
+        l+=`\r\nArg4:${toObjectCString(a[4])}`;
+        l+=`\r\nArg5:${toObjectCString(a[5])}`;
+        //l+=`\r\nArg6:${toObjectCString(a[6])}`;
+        //l+=`\r\nArg7:${toObjectCString(a[7])}`;
+        //l=logLengthData(a[8],0x100,"arg8",l);
+        //l+=`\r\nArg8:${toObjectCString(a[8])}`;
+        l+=`\r\nArg9:${toObjectCString(a[9])}`;
+        l+=`\r\nArg10:${toObjectCString(a[10])}`;
+        return l;
+    });
 }
 GetPushCode();
